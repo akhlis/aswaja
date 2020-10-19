@@ -1,0 +1,42 @@
+{{ define "main" }}
+<div class="grid-content body--dark-bg">
+        <div class="grid-wrapper grid-col-2">
+            <header class="grid--full grid-term__header is-center">
+                <h3 class="grid-term__title">{{ .Title }}</h3>
+            </header>
+            <div class="grid--full">
+                <div class="product-terms__nav">
+                    {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
+                    <a href="#{{ $name | urlize }}" class="product-terms__link">{{ $name }}</a> {{ end }}
+                </div>
+            </div>
+        </div>
+    </div>
+<main id="site-main" class="grid-content">
+    <div class="grid-wrapper grid-col-2">
+        <div class="grid--full breadcrumb">
+            <span><a href="{{ .Site.BaseURL }}"><i class="icon-home"></i>Home</a><i class="icon-angle-right"></i></span>
+            <span>{{ .Title }}</span>
+        </div>
+    </div>
+    <div class="grid-wrapper grid-col-5 no-space">
+        {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
+        <header class="grid-term product-terms__head">
+            <a class="product-terms__title-link" href="/tags/{{ $name | urlize }}">
+                <h3 id="{{ $name | urlize }}" class="product-terms__title">{{ $name }}</h3>
+            </a>
+        </header>
+        {{ range $taxonomy }} {{ partial "grid.html" . }} {{ end }} {{ end }}
+    </div>
+    
+ <div class="grid-wrapper grid-col-5 no-space">
+        {{ range $name, $taxonomy := .Site.Taxonomies.tag }}
+        <header class="grid-term product-terms__head">
+            <a class="product-terms__title-link" href="/produk/{{ $name | urlize }}">
+                <h3 id="{{ $name | urlize }}" class="product-terms__title">{{ $name }}</h3>
+            </a>
+        </header>
+        {{ range $taxonomy }} {{ partial "grid.html" . }} {{ end }} {{ end }}
+    </div>
+</main>
+{{ end }}

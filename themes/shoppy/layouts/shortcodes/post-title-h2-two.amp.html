@@ -1,0 +1,20 @@
+<div class="post-title__wrapper space--center">
+    <div {{ with .Get "class" }}class="title-bg {{.}}"{{ end }}>
+        <section class="post-title__inner">
+            <h2 class="post-title-h1 light-text-color is-center {{.Get "text-weight"}}"><strong>{{.Get "text"}}</strong>{{.Get "title"}}</h2>
+            <div {{ with .Get "class" }}class="title-line {{.}}"{{ end }}></div>
+            <div class="flex-col">
+               <div class="post-desc light-text-color flex-1-2">
+                   <p>{{.Get "text-1"}}</p>
+                   <p>{{.Get "text-2"}}</p>
+                   <p>{{.Get "text-3"}}</p>
+                   <p>{{.Get "text-4"}}</p>
+                   <p>{{.Get "text-5"}}</p>
+               </div>
+                <div class="post-media flex-1-2">
+                    <amp-img src="{{.Get "src" }}" alt="{{.Get "alt"}}" width="{{.Get "width" }}" height="{{.Get "height" }}" layout="responsive"></amp-img>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>

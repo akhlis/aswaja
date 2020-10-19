@@ -1,0 +1,21 @@
+{{ if $.Site.Data.theme.widgets.widget_subscribe | default true }}
+<section class="sidebar-widget">
+    <div class="widget-subscribe body--dark-bg subscribe-active">
+        <div class="widget-subscribe__content">
+            <div class="widget-subscribe__newsletter">
+                <h3 class="widget-subscribe__title">Kirimi Info</h3>
+                <p class="widget-subscribe__description">Dapatkan info PayTren terkini lewat email.</p>
+            </div>
+            <form method="post" action="/subscribe/" class="">
+                <input class="confirm" type="hidden" name="confirm"><input class="location" type="hidden" name="location"><input class="referrer" type="hidden" name="referrer">
+
+                <div class="form-group">
+                    <input class="subscribe-email" type="email" name="email" placeholder="Masukkan email Anda ...">
+                </div>
+                <button class="" type="submit"><span>ya, saya mau</span></button>
+                <script type="text/javascript">(function(g,h,o,s,t){h[o]('.location')[s]=h[o]('.location')[s] || g.location.href;h[o]('.referrer')[s]=h[o]('.referrer')[s] || h.referrer;})(window,document,'querySelector','value');</script>
+            </form>
+        </div>
+    </div>
+</section>
+{{ end }}

@@ -1,0 +1,3 @@
+<blockquote class="tips bg-green-50 border-l-4 border-solid border-green-400 py-3 px-6 my-8">
+    <p class="mb-0">{{ with .Get "text" }}<em>{{.}}: </em>{{ end }}{{ .Inner | markdownify }}</p>
+</blockquote>

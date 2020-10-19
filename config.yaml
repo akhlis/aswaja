@@ -1,0 +1,226 @@
+---
+baseurl: "/"
+title: Codingku
+description: Tempat Belajar Web Programing Terlengkap di Indonesia
+languageCode: id
+theme: shoppy
+DefaultContentLanguage: id
+preserveTaxonomyNames: true
+metaDataFormat: yaml
+summaryLength: 14
+paginate: 9
+permalinks:
+  blog: "/:slug/"
+  pages: "/:slug/"
+  post: "/:slug/"
+  categories: "/:slug/"
+  tags: "/tags/:slug/"
+  authors: "/:slug/"
+  cssref: "/cssref/:slug/"
+  css_collection: "/:slug/"
+  latihan: "/latihan/:slug/"
+  tryit: "/:slug/"
+sitemap:
+  changefreq: monthly
+  filename: sitemap.xml
+  priority: 0.5
+taxonomies:
+  category: categories
+  tag: tags
+  author: authors
+  css-collection: css_collections
+outputFormats:
+  SearchIndex:
+    mediaType: "application/json"
+    baseName: "searchindex"
+    isPlainText: true
+    notAlternative: true
+outputs:
+  home:
+  - HTML
+  - CSS
+  - RSS
+  - JSON
+  - SearchIndex
+  page:
+  - HTML
+  - AMP
+  section:
+  - HTML
+  - AMP
+  - RSS
+author:
+  name: Akhlis
+  bio: I'm Shane, a girly girl and lover of life. Join me on the journey to find latest in fashion.
+  avatar: /images/author.jpg
+  url: akhlis
+params:
+  author: Codingku
+  description: Codingku.id
+  facebookPixelID: ''
+  favicon: images/hijacket-icon.ico
+  googleAnalyticsUserID: ''
+  googleTagManagerID: ''
+  logo:
+    url: images/logo-hijacket-solid.png
+    width: 160
+    height: 42
+  image:
+    url: "images/avatar.png"
+    width: 800
+    height: 600
+  mainSections:
+    - post
+  blogSections:
+    - post
+  feedSections:
+    - post
+    - html
+    - css
+  latihanSection:
+    - latihan
+  widgets:
+    - recent_articles_num: 5
+  plugins:
+    js:
+      # - URL: plugins/highlight.pack.js
+      - URL: plugins/clipboard.min.js
+      - URL: plugins/lazysizes.min.js
+  codeku:
+    js:
+      - URL: plugins/prism.js
+      - URL: plugins/prism-highlight.js
+      - URL: plugins/app.js
+  tryit:
+    js:
+      - URL: plugins/interact.min.js
+      - URL: plugins/prism.js
+      - URL: plugins/prism-highlight.js
+      - URL: plugins/tryit.js
+  nav:
+    - Name: HTML
+      URL: /html/
+      icon: svg/icon-html.svg
+    - Name: CSS
+      URL: /css/
+      icon: svg/icon-css.svg
+    - Name: JavaScript
+      URL: /css/
+      icon: svg/icon-js.svg
+    - Name: Sass/SCSS
+      URL: /css/
+      icon: svg/icon-sass.svg
+    - Name: PostCSS
+      URL: /css/
+      icon: svg/icon-postcss.svg
+  menu:
+    - Name: HTML
+      URL: /html/
+      icon: svg/icon-html.svg
+    - Name: CSS
+      URL: /css/
+      icon: svg/icon-css.svg
+    - Name: JavaScript
+      URL: /css/
+      icon: svg/icon-js.svg
+    - Name: Sass/SCSS
+      URL: /css/
+      icon: svg/icon-sass.svg
+    - Name: PostCSS
+      URL: /css/
+      icon: svg/icon-postcss.svg
+    - Name: Bootstrap
+      URL: /css/
+      icon: svg/icon-bootstrap.svg
+    - Name: Tailwind CSS
+      URL: /css/
+      icon: svg/icon-tailwind.svg
+    - Name: VueJS
+      URL: /css/
+      icon: svg/icon-vuejs.svg
+    - Name: DevTool
+      URL: /css/
+      icon: svg/icon-devtool.svg
+    - Name: Gridsome
+      URL: /css/
+      icon: svg/icon-gridsome.svg
+    - Name: Hugo
+      URL: /css/
+      icon: svg/icon-hugo.svg
+    - Name: Publii CMS
+      URL: /css/
+      icon: svg/icon-publii.svg
+    - Name: Headless CMS
+      URL: /css/
+      icon: svg/icon-headlesscms.svg
+    - Name: Git
+      URL: /css/
+      icon: svg/icon-git.svg
+    - Name: Blog
+      URL: /css/
+      icon: svg/icon-blog.svg
+    - Name: Templates
+      URL: /css/
+      icon: svg/icon-templates.svg
+  sidebar:
+    home: "right"
+    list: "right"
+    single: "right"
+    widgets: ["author", "recent", "social", "categories", "taglist"]
+  footer_widget: false
+  footer:
+    widgets_left: ["author", "social"]
+    widgets_center: ["recent"]
+    widgets_right: ["categories", "taglist"]
+  widgets:
+    recent_num: 5 # Set the number of articles in the "Recent articles" widget
+    categories_counter: true # Enable counter for each category in "Category" widget (enabled by default)
+    tags_counter: true # Enable counter for each tag in "Tags" widget (enabled by default)
+    social:
+      facebook: "akhlis"
+      twitter: "akhlis"
+      instagram: "akhlis"
+      telegram: "akhlis"
+      pinterest: "akhlis"
+      rss: "akhlis"
+      mail: "akhlis"
+Copyright: 2020 - Kodekit.id
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false
+    style: solarized-dark256
+    tabWidth: 4
+  tableOfContents:
+    endLevel: 4
+    ordered: false
+    startLevel: 2
+menu:
+  main:
+  - Identifier: tutorial
+    Name: Tutorial
+    Parent: ''
+    URL: "/tutorial/"
+    Weight: '2'
+  - Identifier: ''
+    Name: HTML
+    Parent: tutorial
+    URL: "/html/"
+    Weight: '1'
+  - Identifier: ''
+    Name: CSS
+    Parent: tutorial
+    URL: "/css/"
+    Weight: '2'
+  - Identifier: htmlref
+    Name: Tag HTML
+    Parent: ''
+    URL: "/element/"
+    Weight: '3'
+  - Identifier: cssref
+    Name: Referensi CSS
+    Parent: ''
+    URL: "/cssref/"
+    Weight: '4'

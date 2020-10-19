@@ -1,0 +1,5 @@
+<section id="{{- with .Parent -}}tab-result-content{{.Get "editor"}}{{- else -}}tab-result-content{{ end }}" class="preview__tab-content hidden w-full px-4 py-8">
+    <div class="preview__tab-result">
+        {{ .Inner }}
+    </div>
+</section>

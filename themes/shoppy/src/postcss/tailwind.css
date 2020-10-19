@@ -1,0 +1,111 @@
+/*------------------------------------------------------------------
+Project:		kodekit Theme
+Version:		1.0.0
+Last change: 	19/12/10
+-------------------------------------------------------------------*/
+
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+
+@import "partials/var.css";
+@import "partials/header.css";
+@import "partials/search.css";
+@import "partials/docs-content.css";
+@import "partials/docs-post.css";
+/* @import "partials/cssref.css"; */
+@import "partials/sidebar.css";
+@import "partials/highlighter.css";
+@import "partials/tooltip.css";
+@import "partials/keyframes.css";
+@import "partials/fontello.css";
+/* @import "partials/docscssref.css"; */
+
+.content-stretch {
+    align-content: stretch;
+}
+
+.self-baseline {
+    align-self: baseline;
+}
+
+.border-groove {
+    border-style: groove;
+}
+
+.border-box {
+    box-sizing: border-box;
+}
+
+.content-box {
+    box-sizing: content-box;
+}
+
+.blur-up {
+    filter: blur(5px);
+    transition: filter 1s;
+}
+
+/*! purgecss start ignore */
+.button__clipboard {
+    @apply text-xs text-white bg-blue-400 rounded-sm py-3px px-3 ml-auto;
+
+    &:hover {
+        @apply bg-blue-500;
+    }
+}
+
+.button__clipboard {
+    display: block;
+}
+
+.blur-up.lazyloaded {
+    filter: blur(0);
+}
+
+.bg-purple {
+    background: linear-gradient(rgba(156, 39, 176, .2), #fff);
+}
+
+.bg-orange {
+    background: linear-gradient(rgba(255, 138, 0, .2), #fff);
+}
+
+/*! purgecss end ignore */
+
+/* content/css/panduan-grid.md*/
+.gtr-50px-100px {
+    grid-template-rows: 50px 100px;
+}
+
+.gtc-90px-50px-120px {
+    grid-template-columns: 90px 50px 120px;
+}
+
+.gtc-1fr-1fr-2fr {
+    grid-template-columns: 1fr 1fr 2fr
+}
+
+.gtc-3rem-25pr-1fr-2fr {
+    grid-template-columns: 3rem 25% 1fr 2fr
+}
+
+.gtr-minmax-100px-auto {
+    grid-template-rows: minmax(100px, auto);
+    grid-template-columns: minmax(auto, 50%) 1fr 3em;
+}
+
+.gtr-repeat-4-100px {
+    grid-template-rows: repeat(4, 100px);
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.gtc-30px-repeat-3-1fr-30px {
+    grid-template-columns: 30px repeat(3, 1fr) 30px
+}
+
+.gap-100px-em {
+    grid-gap: 100px 1em
+}

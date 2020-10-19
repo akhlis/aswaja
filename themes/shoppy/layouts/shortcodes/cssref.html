@@ -1,0 +1,27 @@
+<div class="w3-responsive">
+    <table class="w3-table-all">
+        <tbody>
+            {{ with .Get "default"}}
+            <tr>
+                <th style="width:25%">Default value:</th>
+                <td>{{.}}</td>
+            </tr>{{ end }}
+            {{ with .Get "inherited"}}
+            <tr>
+                <th>Inherited:</th>
+                <td>{{.}}</td>
+            </tr>{{ end }}
+            {{ with .Get "animatable"}}
+            <tr>
+                <th>Animatable:</th>
+                <td>{{.}} <a href="css_animatable.asp">Read about <em>animatable</em></a>
+                </td>
+            </tr>{{ end }}
+            {{ with .Get "version"}}
+            <tr>
+                <th>Version:</th>
+                <td>{{.}}</td>
+            </tr>{{ end }}
+        </tbody>
+    </table>
+</div>

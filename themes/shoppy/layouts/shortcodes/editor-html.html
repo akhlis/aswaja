@@ -1,0 +1,3 @@
+<section id="{{- with .Parent -}}tab-html-content{{.Get "editor"}}{{- else -}}tab-html-content{{ end }}" class="preview__tab-content hidden w-full px-4 pt-4">
+    {{ .Inner | markdownify }}
+</section>

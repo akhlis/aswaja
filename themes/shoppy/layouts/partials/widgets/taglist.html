@@ -1,0 +1,22 @@
+{{- $tags := .Site.Taxonomies.tags }}
+{{- if gt (len $tags) 0 }}
+<section class="sidebar-widget widget-category border border-t-0 border-solid border-gray-300 pb-4 mb-8">
+    <div class="widget-header text-center pt-2 border-t border-solid border-red-400 mb-6">
+        <h3 class="text-base uppercase font-body border-b border-solid border-gray-300 pb-2 mb-0">{{ T "tags_title" }}</h3>
+    </div>
+    <div class="px-4">
+        <ul class="widget__list pl-0">
+            {{- range $name, $taxonomy := $tags }}
+            {{- with $.Site.GetPage (printf "/tags/%s" $name) }}
+            <li class="flex justify-between items-center border-b border-solid border-gray-300 pb-2 mb-2">
+                <a class="text-sm text-gray-600 before:empty-content before:float-left before:w-6px before:h-6px before:border before:border-solid before:border-red-500 before:rounded-full before:mt-9px before:mr-3"
+                    href="{{ .RelPermalink }}" title="{{ .Title }}">{{- .Title -}}</a>
+                {{- if .Site.Params.widgets.tags_counter }}<span class="text-sm text-gray-400">
+                    ({{ $taxonomy.Count }})</span>{{ end -}}
+            </li>
+            {{- end }}
+            {{- end }}
+        </ul>
+    </div>
+</section>
+{{- end }}

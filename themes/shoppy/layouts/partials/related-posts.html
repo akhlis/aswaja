@@ -1,0 +1,28 @@
+{{ $related := first 3 (where (where (where .Site.Pages.ByDate.Reverse ".Type" "==" "post") ".Params.categories" "intersect" .Params.categories) "Permalink" "!=" .Permalink) }}
+{{ if $related }}
+<section class="related-posts">
+    <header class="mb-4 text-center uppercase">
+        <h3 class="font-body text-gray-900 text-xs font-medium relative inline-block before:absolute before:empty-content before:border-b before:border-solid before:border-gray-400 before:w-full-40px before:top-50pr before:-left-20px before:z-10"
+            href="{{ .Permalink }}"><span class="relative bg-white px-2 z-20">Info Menarik Lainnya</span></h3>
+    </header>
+    <div class="related-posts__wrapper grid grid-cols-1 lg:grid-cols-6 gap-8">
+        {{ range $related }}
+        <div class="related-post col-span-1 lg:col-span-2">
+            {{ if .Params.thumbnail }}
+            <div class="related-post__media col-span-2 pt-6px mb-4">
+                <figure class="relative pt-4-3">
+                    <img class="related-post__img lazyload absolute w-full h-full top-0 right-0 object-cover"
+                        src="{{ .Params.thumbnail | relURL }}" alt="{{ .Title }}">
+                </figure>
+            </div>
+            {{ end }}
+            <div class="related-post__body text-center">
+                <p class="related-post__title mb-0">
+                    <a href="{{ .RelPermalink }}" class="font-medium text-gray-900 hover:text-gray-600">{{ .Title }}</a>
+                </p>
+            </div>
+        </div>
+        {{ end }}
+    </div>
+</section>
+{{ end }}

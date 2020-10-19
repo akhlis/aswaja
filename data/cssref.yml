@@ -1,0 +1,376 @@
+- title: CSS Tutorial
+  items:
+    - title: CSS - Tutorial CSS
+      link: /css
+    - title: CSS - Pengenalan
+      link: /css/pengenalan-css/
+    - title: CSS - Property & Value
+      link: /css/penjelasan-selector-property-dan-value-css/
+    - title: CSS - Selector
+      link: /css/penjelasan-selector-css/
+    - title: CSS - Color (Warna)
+      link: /css/color
+    - title: CSS - Background
+      link: /css/cara-membuat-background-dengan-css/
+    - title: CSS - Border (Garis Pembatas)
+      link: /css/cara-membuat-border-dengan-css/
+    - title: CSS - Margin (Batas Luar)
+      link: /css/pengertian-margin-css/
+    - title: CSS - Padding (Lapisan Elemen)
+      link: /css/pengertian-padding-css/
+    - title: CSS - Height/Width (Lebar & Tinggi)
+      link: /css/cara-mengatur-lebar-dan-tinggi-elemen/
+    - title: CSS - Box Model
+      link: /css/pengertian-box-model-css/
+    - title: CSS - Outline (Garis Luar)
+      link: /css/outline
+    - title: CSS - Text
+      link: /css/cara-mengatur-format-teks/
+    - title: CSS - Font
+      link: /css/cara-mengatur-font-dengan-css/
+    - title: CSS - Icon
+      link: /css/icon
+    - title: CSS - Link
+      link: /css/cara-mengatur-tampilan-link-dengan-css/
+    - title: CSS - List (Daftar tem)
+      link: /css/cara-mengatur-tampilan-list-dengan-css/
+    - title: CSS - Table
+      link: /css/cara-mengatur-tampilan-tabel-dengan-css/
+    - title: CSS - Display
+      link: /css/pengertian-display-css/
+    - title: CSS - Max-width
+      link: /css/mengatur-lebar-maksimal-dan-margin-otomatis/
+    - title: CSS - Position
+      link: /css/pengertian-position-css/
+    - title: CSS - Menengahkan Elemen
+      link: /css/cara-menengahkan-elemen/
+    - title: CSS - Overflow
+      link: /css/overflow
+    - title: CSS - Float
+      link: /css/float
+    - title: CSS - Inline Block
+      link: /css/inline-block
+    - title: CSS - Align
+      link: /css/align
+    - title: CSS - Combinator
+      link: /css/combinator
+    - title: CSS - Pseudo-class
+      link: /css/pseudo-class
+    - title: CSS - Pseudo-element
+      link: /css/pseudo-element
+    - title: CSS - Opacity
+      link: /css/opacity
+    - title: CSS - Menu Navigasi
+      link: /css/menu-navigasi
+    - title: CSS - Dropdown
+      link: /css/dropdown
+
+- title : HTML Form
+  items:
+    - title: CSS - Form
+      link: /css/form
+    - title: CSS - Form Element
+      link: /css/form-element
+    - title: CSS - Input Type
+      link: /css/input-type
+    - title: CSS - Atribut Input
+      link: /css/atribut-input
+      
+- title : HTML Tags
+  items:
+    - title: align-content
+      link: /cssref/align-content/
+    - title: align-items
+      link: /cssref/align-items/
+    - title: align-self
+      link: /cssref/align-self/
+    - title: animation-delay
+      link: /cssref/animation-delay
+    - title: animation-direction
+      link: /cssref/animation-direction/
+    - title: animation-duration
+      link: /cssref/animation-duration/
+    - title: animation-fill-mode
+      link: /cssref/animation-fill-mode/
+    - title: animation-iteration-count
+      link: /cssref/animation-iteration-count/
+    - title: animation-name
+      link: /cssref/animation-name/
+    - title: animation-play-state
+      link: /cssref/animation-play-state/
+    - title: animation-timing-function
+      link: /cssref/animation-timing-function/
+    - title: animation
+      link: /cssref/animation/
+    - title: background-attachment
+      link: /cssref/background-attachment/
+    - title: background-clip
+      link: /cssref/background-clip/
+    - title: background-color
+      link: /cssref/background-color/
+    - title: background-image
+      link: /cssref/background-image/
+    - title: background-origin
+      link: /cssref/background-origin/
+    - title: background-position
+      link: /cssref/background-position/
+    - title: background-repeat
+      link: /cssref/background-repeat/
+    - title: background-size
+      link: /cssref/background-size/
+    - title: background
+      link: /cssref/background/
+    - title: border-bottom-color
+      link: /cssref/border-bottom-color/
+    - title: border-bottom-left-radius
+      link: /cssref/border-bottom-left-radius/
+    - title: border-bottom-right-radius
+      link: /cssref/border-bottom-right-radius/
+    - title: border-bottom-style
+      link: /cssref/border-bottom-style/
+    - title: border-bottom-width
+      link: /cssref/border-bottom-width/
+    - title: border-bottom
+      link: /cssref/border-bottom/
+    - title: border-collapse
+      link: /cssref/border-collapse/
+    - title: border-color
+      link: /cssref/border-color/
+    - title: border-left-color
+      link: /cssref/border-left-color/
+    - title: border-left-style
+      link: /cssref/border-left-style/
+    - title: border-left-width
+      link: /cssref/border-left-width/
+    - title: border-left
+      link: /cssref/border-left/
+    - title: border-radius
+      link: /cssref/border-radius/
+    - title: border-right-color
+      link: /cssref/border-right-color/
+    - title: border-right-style
+      link: /cssref/border-right-style/
+    - title: border-right-width
+      link: /cssref/border-right-width/
+    - title: border-right
+      link: /cssref/border-right/
+    - title: border-style
+      link: /cssref/border-style/
+    - title: border-top-color
+      link: /cssref/border-top-color/
+    - title: border-top-left-radius
+      link: /cssref/border-top-left-radius/
+    - title: border-top-right-radius
+      link: /cssref/border-top-right-radius/
+    - title: border-top-style
+      link: /cssref/border-top-style/
+    - title: border-top-width
+      link: /cssref/border-top-width/
+    - title: border-top
+      link: /cssref/border-top/
+    - title: border-width
+      link: /cssref/border-width/
+    - title: border
+      link: /cssref/border/
+    - title: bottom
+      link: /cssref/bottom/
+    - title: box-shadow
+      link: /cssref/box-shadow/
+    - title: box-sizing
+      link: /cssref/box-sizing/
+    - title: clear
+      link: /cssref/clear/
+    - title: color
+      link: /cssref/color/
+    - title: column-count
+      link: /cssref/column-count/
+    - title: column-gap
+      link: /cssref/column-gap/
+    - title: column-width
+      link: /cssref/column-width/
+    - title: content
+      link: /cssref/content/
+    - title: cursor
+      link: /cssref/cursor/
+    - title: display
+      link: /cssref/display/
+    - title: flex-basis
+      link: /cssref/flex-basis/
+    - title: flex-direction
+      link: /cssref/flex-direction/
+    - title: flex-flow
+      link: /cssref/flex-flow/
+    - title: flex-grow
+      link: /cssref/flex-grow/
+    - title: flex-shrink
+      link: /cssref/flex-shrink/
+    - title: flex-wrap
+      link: /cssref/flex-wrap/
+    - title: float
+      link: /cssref/float/
+    - title: font-family
+      link: /cssref/font-family/
+    - title: font-size
+      link: /cssref/font-size/
+    - title: font-style
+      link: /cssref/font-style/
+    - title: font-variant
+      link: /cssref/font-variant/
+    - title: font-weight
+      link: /cssref/font-weight/
+    - title: font
+      link: /cssref/font/
+    - title: grid-area
+      link: /cssref/grid-area/
+    - title: grid-auto-columns
+      link: /cssref/grid-auto-columns/
+    - title: grid-auto-flow
+      link: /cssref/grid-auto-flow/
+    - title: grid-auto-rows
+      link: /cssref/grid-auto-rows/
+    - title: grid-column-end
+      link: /cssref/grid-column-end/
+    - title: grid-column-gap
+      link: /cssref/grid-column-gap/
+    - title: grid-column-start
+      link: /cssref/grid-column-start/
+    - title: grid-column
+      link: /cssref/grid-column/
+    - title: grid-gap
+      link: /cssref/grid-gap/
+    - title: grid-row-end
+      link: /cssref/grid-row-end/
+    - title: grid-row-gap
+      link: /cssref/grid-row-gap/
+    - title: grid-row-start
+      link: /cssref/grid-row-start/
+    - title: grid-row
+      link: /cssref/grid-row/
+    - title: grid-template-areas
+      link: /cssref/grid-template-areas/
+    - title: grid-template-columns
+      link: /cssref/grid-template-columns/
+    - title: grid-template-rows
+      link: /cssref/grid-template-rows/
+    - title: grid-template
+      link: /cssref/grid-template/
+    - title: grid
+      link: /cssref/grid/
+    - title: height
+      link: /cssref/height/
+    - title: justify-content
+      link: /cssref/justify-content/
+    - title: left
+      link: /cssref/left/
+    - title: letter-spacing
+      link: /cssref/letter-spacing/
+    - title: line-height
+      link: /cssref/line-height/
+    - title: list-style-image
+      link: /cssref/list-style-image/
+    - title: list-style-position
+      link: /cssref/list-style-position/
+    - title: list-style-type
+      link: /cssref/list-style-type/
+    - title: list-style
+      link: /cssref/list-style/
+    - title: margin-bottom
+      link: /cssref/margin-bottom/
+    - title: margin-left
+      link: /cssref/margin-left/
+    - title: margin-right
+      link: /cssref/margin-right/
+    - title: margin-top
+      link: /cssref/margin-top/
+    - title: margin
+      link: /cssref/margin-left/
+    - title: max-height
+      link: /cssref/max-height/
+    - title: max-width
+      link: /cssref/max-width/
+    - title: min-height
+      link: /cssref/min-height/
+    - title: min-width
+      link: /cssref/min-width/
+    - title: mix-blend-mode
+      link: /cssref/mix-blend-mode/
+    - title: opacity
+      link: /cssref/opacity/
+    - title: order
+      link: /cssref/order/
+    - title: outline-color
+      link: /cssref/outline-color/
+    - title: outline-style
+      link: /cssref/outline-style/
+    - title: outline-width
+      link: /cssref/outline-width/
+    - title: outline
+      link: /cssref/outline/
+    - title: overflow-wrap
+      link: /cssref/overflow-wrap/
+    - title: overflow-x
+      link: /cssref/overflow-x/
+    - title: overflow-y
+      link: /cssref/overflow-y/
+    - title: overflow
+      link: /cssref/overflow/
+    - title: padding-bottom
+      link: /cssref/padding-bottom/
+    - title: padding-left
+      link: /cssref/padding-left/
+    - title: padding-right
+      link: /cssref/padding-right/
+    - title: padding-top
+      link: /cssref/padding-top/
+    - title: padding
+      link: /cssref/padding/
+    - title: pointer-events
+      link: /cssref/pointer-events/
+    - title: position
+      link: /cssref/position/
+    - title: resize
+      link: /cssref/resize/
+    - title: right
+      link: /cssref/right/
+    - title: text-align
+      link: /cssref/text-align/
+    - title: text-decoration
+      link: /cssref/text-decoration/
+    - title: text-indent
+      link: /cssref/text-indent/
+    - title: text-overflow
+      link: /cssref/text-overflow/
+    - title: text-shadow
+      link: /cssref/text-shadow/
+    - title: text-transform
+      link: /cssref/text-transform/
+    - title: top
+      link: /cssref/top/
+    - title: transform-origin
+      link: /cssref/transform-origin/
+    - title: transform
+      link: /cssref/transform/
+    - title: transition-delay
+      link: /cssref/transition-delay/
+    - title: transition-duration
+      link: /cssref/transition-duration/
+    - title: transition-property
+      link: /cssref/transition-property/
+    - title: transition-timing-function
+      link: /cssref/transition-timing-function/
+    - title: transition
+      link: /cssref/transition/
+    - title: vertical-align
+      link: /cssref/vertical-align/
+    - title: white-space
+      link: /cssref/white-space/
+    - title: width
+      link: /cssref/width/
+    - title: will-change
+      link: /cssref/will-change/
+    - title: word-break
+      link: /cssref/word-break/
+    - title: word-spacing
+      link: /cssref/word-spacing/
+    - title: z-index
+      link: /cssref/z-index/

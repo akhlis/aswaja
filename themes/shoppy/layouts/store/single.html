@@ -1,0 +1,112 @@
+{{ define "main" }}
+<main id="site-main" class="grid-content">
+    <div class="grid-wrapper grid-col-2">
+        <div class="grid--full breadcrumb">
+            <span><a href="{{ .Site.BaseURL }}"><i class="icon-home"></i>Home</a><i class="icon-angle-right"></i></span>{{ $baseUrl := .Site.BaseURL }} {{ range first 1 .Params.product }}
+            <span class="breadcrumb-model"><a class="breadcrumb-link" href="{{ $baseUrl }}{{ . | urlize }}">{{ . }}</a><i class="icon-angle-right"></i></span>{{ end }}
+            <span>{{ .Title }}</span>
+        </div>
+    </div>
+    <div class="product">
+        <div class="product-media">
+            <div class="slider-wrapper">
+                <div id="my-gallery" class="slider-for vanilla-zoom">
+                    {{ if .Params.images }} {{ range .Params.images }}
+                    <div class="slider-for__item">
+                        <img class="product__image small-preview" src="{{ . | relURL }}" alt="image slider" data-image-hover/>
+                    </div>
+                    {{ end }} {{ end }}
+                    <div class="zoomed-image"></div>
+                </div>
+                <div class="slider-nav">
+                    {{ if .Params.images }} {{ range .Params.images }}
+                    <div class="slider-nav__item">
+                        <img src="{{ . | relURL }}" alt="image slider" />
+                    </div>
+                    {{ end }} {{ end }}
+                </div>
+            </div>
+        </div>
+        <div class="product-info">
+            <h1 class="product-title">
+                <span class="product__name">{{ .Title }} </span>{{ if .Params.variants }}{{ range first 1 .Params.variants }}<span class="product__size">{{ .name }}</span>{{ end }}{{ end }}
+            </h1>
+            <div class="product-desc">
+                {{ if .Params.price }}
+                <h3 class="product-price product__price">{{ .Params.price }}</h3>{{ else }} {{ with .Params.size }} {{ range first 1 . }}
+                <h3 class="product-price product__price">{{ .price }}</h3>{{ end }} {{ end }} {{ end }}
+
+                {{ if .Params.variants }}
+                <div id="product-size" class="product-variants"><label><strong>Size</strong></label>: {{ range .Params.variants }}
+                    <button class="product-variant__button" data-price="{{ .price }}" data-size="{{ .size }}" data-weight="{{ .weight }}" data-quantity="{{ .quantity }}" value="{{ .name }}">{{ .name }}</button> {{ end }}
+                </div>{{ end }}
+
+                <div class="product-order">
+                    <div class="product-counter">
+                        <button class="product-counter__btn subtract-qty" data-action="KURANG_ITEM">&minus;</button>
+                        <span class="product-counter__qty product__qty">1</span>
+                        <button class="product-counter__btn add-qty" data-action="TAMBAH_ITEM">&plus;</button>
+                    </div>
+                    <div class="product-order__btn">
+                        <button class="wa-button accent-button wa-button--left" data-action="ADD_TO_CART"><svg xmlns="http://www.w3.org/2000/svg" width="13px" height="13px" viewBox="0 0 510 510" class="cart-trolly__icon">
+                                <path d="M153 408c-28.05 0-51 22.95-51 51s22.95 51 51 51 51-22.95 51-51-22.95-51-51-51zM0 0v51h51l91.8 193.8-35.7 61.2c-2.55 7.65-5.1 17.85-5.1 25.5 0 28.05 22.95 51 51 51h306v-51H163.2c-2.55 0-5.1-2.55-5.1-5.1v-2.551l22.95-43.35h188.7c20.4 0 35.7-10.2 43.35-25.5L504.9 89.25c5.1-5.1 5.1-7.65 5.1-12.75 0-15.3-10.2-25.5-25.5-25.5H107.1L84.15 0H0zm408 408c-28.05 0-51 22.95-51 51s22.95 51 51 51 51-22.95 51-51-22.95-51-51-51z" fill="#FFF"></path>
+                            </svg>
+                            <span>Beli Via Whatsapp</span>
+                        </button>
+                    </div>
+                    <div class="product-order__btn">
+                        <a href="https://api.whatsapp.com/send?phone=={{ with $.Site.Data.setting.user }}{{ .whatsapp }}{{ end }}&text=Assalamu%27alaikum%20kak%2C%20saya%20mau%20order%20{{ .Title }}%20ini%20apa%20stoknya%20masih%20ada%20ya%20kak%3F" target="_blank" class="wa-button"><svg aria-hidden="true" data-prefix="fab" data-icon="whatsapp" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="16px" height="16px" class="whatsapp_svg__svg-inline--fa whatsapp_svg__fa-whatsapp whatsapp_svg__fa-w-14 whatsapp_svg__fa-2x">
+                                <path fill="currentColor" d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"></path>
+                            </svg>
+                            <span>Tanya Stok Dulu</span>
+                        </a>
+                    </div>
+                </div>
+
+                {{ if .Params.color }}
+                <p class="product-color"><label><strong>Warna</strong></label>: {{ range .Params.color }}
+                    <span class="product-color__item">{{ . }}</span>{{ end }}</p>{{ end }}
+
+                <div class="product-meta">
+                    {{ if .Params.sku }}
+                    <div class="product-sku">SKU: <i class="icon-barcode"></i>
+                        <span class="product__sku">{{ .Params.sku }}</span>
+                    </div> {{ end }}
+                    {{ if .Params.stock}}
+                    <span class="product-stock stock-ready success-color"><i class="icon-ok"></i> Stok Tersedia</span>
+                    {{else}}
+                    <span class="product-stock stock-empty danger-color"><i class="icon-cancel"></i>Stok Habis</span> {{ end }}
+
+                    {{ $taxo := "brand" }}
+                    {{ range .Param $taxo }}
+                    {{ $name := . }}
+                    {{ with $.Site.GetPage (printf "/%s/%s" $taxo ($name | urlize)) }}
+                    <span id="{{ $taxo }}" class="product-brand"><i class="icon-tag-2"></i><a class="product__brand" href="{{ .Permalink }}">{{ $name }}</a></span>
+                    {{ end }}
+                    {{ end }}
+
+                </div>
+            </div>
+            {{ $taxo := "tags" }} {{ with .Param $taxo }}
+            <div class="product-tags">
+                <strong>Tag{{ if gt (len .) 1 }}s{{ end }}:</strong> {{ range $index, $director := . }} {{- if gt $index 0 }}, {{ end -}} {{ with $.Site.GetPage (printf "/%s/%s" $taxo $director) -}}
+                <a href="{{ .Permalink }}">{{ $director }}</a> {{- end -}} {{- end -}}
+            </div>
+            {{ end }} {{ partial "social-share.html" . }}
+        </div>
+    </div>
+    <article class="product-description">
+        <header class="card-grid__head is-center space--center">
+            <h3 class="card-grid__head-title"><span>Deskripsi Produk</span></h3>
+        </header>
+        <div class="page-list__content space--bottom">
+            {{ .Content }}
+        </div>
+    </article>
+
+    {{ partial "related-product.html" . }}
+
+
+
+</main>
+{{ end }}

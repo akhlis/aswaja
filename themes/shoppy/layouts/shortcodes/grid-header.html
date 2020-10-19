@@ -1,0 +1,7 @@
+<header class="col-span-1 lg:col-span-2">
+    {{ with .Get "headline"}}
+    <h2 id="{{ . | urlize }}" class="text-center font-body">{{ . }}</h2>{{ end }}
+    <div class="grid__description">
+        {{ .Inner | markdownify }}
+    </div>
+</header>

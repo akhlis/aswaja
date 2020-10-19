@@ -1,0 +1,47 @@
+slider:
+  - image: /images/yukata-banner.jpg
+    imageMobile: /images/amp-yukata.jpg
+  - image: /images/qadira-banner.jpg
+    imageMobile: /images/amp-montix.jpg
+  - image: /images/basic-banner.jpg
+    imageMobile: /images/amp-qadira.jpg
+sliderAmp:
+  - image: /images/amp-yukata.jpg
+    headline: 
+    tagline:
+  - image: /images/amp-qadira.jpg
+    headline:
+    tagline:
+  - image: /images/amp-montix.jpg
+    headline:
+    tagline:
+banner:
+  - image: /images/cf-banner.jpg
+    link: /camouflashion
+    title: Camouflashion
+  - image: /images/js-banner.jpg
+    link: /japan-street
+    title: Japan Street
+  - image: /images/yk-banner.jpg
+    link: /yukata
+    title: Yukata
+  - image: /images/mt-banner.jpg
+    link: /montix
+    title: Montix
+info:
+  - image: /images/yukata-collection.jpg
+    link: /yukata
+    headline: MOST POPULAR
+    title: Hijacket Yukata Collection
+  - image: /images/shaqila-collection.jpg
+    link: /produk/shaqila
+    headline: NEW SERIES
+    title: Hijacket Shaqila Collection
+introSite: true
+introTitle: Hijacket Original
+intro:
+  - text: Hijacket a jacket fashion special one for hijabers. Inspired from hijabers need to look closed and still modist. To keep such high standards and reasonable prices, we design and manufacture every single item ourselves, although we do like to collaborate with interesting and inspiring people.
+  - text: Alhamdulillah Hijacket have been used a few Around the World like Switzerland, Netherlands, Germany, Egypt, Turki, Brunei Darussalam, Singapore, Indonesia, Etc.
+featured: false
+featuredTitle: Produk Pilihan
+arrival: true

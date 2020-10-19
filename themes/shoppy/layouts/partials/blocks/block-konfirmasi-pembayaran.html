@@ -1,0 +1,110 @@
+<section class="grid-content block block__confirmasion">
+    <div class="grid-wrapper grid-col-2">
+        <div class="grid--full is-center">
+            <header class="grid-header">
+                <h3 class="grid-header__title">{{ safeHTML .Section.headline }}</h3>
+            </header>
+        </div>
+    </div>
+</section>
+<section class="grid-content block block__media-2">
+    <div class="grid-wrapper grid-col-2">
+        <div class="card-col-2">
+            <div class="confirmation-detail">
+                <p>Terima kasih sudah belanja di toko online kami.</p>
+                <p>Agar order Anda segera diproses, mohon langsung melakukan pembayaran sesuai dengan jumlah yang telah kami infokan lewat Whatsapp.</p>
+                <p>Setelah itu jangan lupa langsung melakukan konfirmasi pembayaran dengan cara masukkan semua data yang diperlukan pada form berikut ini. Kami akan memproses order Anda setelah bukti pembayaran kami terima.</p>
+                <p>Silahkan melakukan pembayaran dengan melakukan transfer ke salah satu rekening Bank berikut:</p>
+                <div class="confirmation-detail__box">
+                    {{ if .Section.rekening }}{{ range .Section.rekening }}
+                    <p class="confirmation-detail__rek"><b>{{ .bank }} ==> {{ .nomor }} An: {{ .name }}</b></p>
+                    {{ end }} {{ end }}
+                </div>
+                <p>Setelah itu silakan konfirmasi pembayaran Anda melalui SMS dengan format pesan seperti berikut:</p>
+                <div class="confirmation-detail__box">
+                    <p>Konfirmasi#Nama#NomorInvoice#NominalTransfer#NamaRekening#NomorRekening#BankTujuan</p>
+                    <p>Contoh: Konfirmasi#Luthfi#5462845#Rp.276.056#LuthfiMakin#37776789899#BankMandiri</p>
+                </div>
+                <p>Atau konfirmasi via WA disertai dengan bukti pembayaran Anda</p>
+                <div class="order-button space--bottom">
+                    <a class="button success-bg" href="https://api.whatsapp.com/send?phone={{ safeHTML .Section.whatsapp }}&text=KonfirmasiPembayaran#Nama#NomorInvoice#NominalTransfer#NamaRekening#BankTujuan" target="_blank"><i class="icon-whatsapp"></i>Konfirmasi Pembayaran</a>
+                </div>
+            </div>
+        </div>
+        <div class="card-col-2">
+            <div class="confirmation-form">
+                <form action="https://mailthis.to/{{ safeHTML .Section.email }}" method="POST" encType="multipart/form-data">
+                    <ul class="form-flex form-confirm">
+                        <li>
+                            <input type="hidden" name="_utf8" value="✓">
+                            <label for="name">Nama<span class="publii_must">*</span></label>
+                            <input type="text" id="first-name" name="Nama:" placeholder="Nama Anda" required="">
+                        </li>
+                        <li>
+                            <label for="name">Nominal</label>
+                            <input type="text" id="nominal" name="Nominal:" placeholder="Nominal yang Anda Transfer">
+                        </li>
+                        <li>
+                            <label for="name">Nama Rek.<span class="publii_must">*</span></label>
+                            <input type="text" id="nama-rekening" name="Nama Rekening:" placeholder="Nama pada Rekening Anda" required="">
+                        </li>
+                        <li>
+                            <label for="name">Nomor Rek.<span class="publii_must">*</span></label>
+                            <input type="text" id="provinsi" name="Nomor Rekening:" placeholder="Nomor pada Rekening Anda" required="">
+                        </li>
+                        <li>
+                            <label for="name">No. Invoice</label>
+                            <input type="text" id="kota" name="Invoice" placeholder="Nomor Invoice">
+                        </li>
+                        <li>
+                            <label for="name">Tujuan Tf.</label>
+                            <select class="form-group__input conf" id="rekening" name="Bank" required="" data-placeholder="Pilih No Rekening Tujuan" tabindex="1" aria-hidden="true">
+                                    <option value="">Pilih Bank Tujuan</option>
+                                    {{ if .Section.rekening }}{{ range .Section.rekening }}
+                                    <option value="{{ .bank }}">{{ .bank }} {{ .nomor }} a.n {{ .name }}</option>
+                                    {{ end }}  {{ end }}
+                                </select>
+                        </li>
+                        <li>
+                            <label for="name">Bukti Tf.</label>
+                            <input type="file" id="invoice" name="file" placeholder="Attachments (optional)">
+                        </li>
+                        <li>
+                            <label for="name">Catatan</label>
+                            <textarea rows="4" id="note" name="Catatan:" placeholder="Jika ada Informasi Tambahan"></textarea>
+                            <input type="hidden" name="_after" value="{{ $baseurl := .Site.BaseURL }}" />
+                            <input type="hidden" name="_honeypot" value="">
+                            <input type="hidden" name="_confirmation" value="">
+                        </li>
+                    </ul>
+                    <div class="tren-button space--center"><button class="button success-bg button--right" type="submit" value="Send"><i class="icon-ok icon--small"></i> Konfirmasi</button></div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="grid-content block block__media-3">
+    <div class="grid-wrapper grid-col-3">
+        <div class="card-col-3">
+            <div class="confirmation-step">
+                <span class="publii-step__icon"><i class="icon-mail"></i></span>
+                <h4>Step1. Cek Inbox Whatsapp Anda</h4>
+                <p>Kami telah mengirimkan detail order Anda dan informasi nomor rekening kami melalui Whatsapp yang Anda gunakan pada halaman order sebelumnya.</p>
+            </div>
+        </div>
+        <div class="card-col-3">
+            <div class="confirmation-step">
+                <span class="publii-step__icon"><i class="icon-credit-card"></i></span>
+                <h4>Step2. Segera Lakukan Pembayaran</h4>
+                <p>Segera lakukan pembayaran dalam jangka waktu maksimal 1x24 jam setelah Anda menerima konfirmasi lewat Whatsapp dari CS kami, jika Anda gagal melakukan pembayaran dalam 1x24 jam maka pesanan ini secara otomatis dibatalkan dan Anda harus melakukan order kembali.</p>
+            </div>
+        </div>
+        <div class="card-col-3">
+            <div class="confirmation-step">
+                <span class="publii-step__icon"><i class="icon-whatsapp"></i></span>
+                <h4>Step3. Konfirmasikan Pembayaran Anda</h4>
+                <p>Setelah melakukan pembayaran, segera konfirmasi pembayaran Anda melalui WA atau mengisi form konfirmasi diatas agar pesanan Anda dapat segera diproses dan dikirimkan ke rumah Anda secepatnya.</p>
+            </div>
+        </div>
+    </div>
+</section>

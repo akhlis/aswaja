@@ -1,0 +1,7 @@
+{{ define "main" }} 
+<main id="site-main" class="site-main">
+    <div class="main-content">
+        {{ range .Params.page_sections }} {{ partial (printf "blocks/block-%s.html" .block) (dict "Section" . "Page" $) }} {{ end }}
+    </div>
+</main>
+{{ end }}

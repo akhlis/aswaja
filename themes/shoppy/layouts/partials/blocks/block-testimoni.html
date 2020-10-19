@@ -1,0 +1,19 @@
+<section class="grid-content block block__testimoni">
+    <div class="grid-wrapper grid-col-2">
+        <div class="grid--full is-center">
+            <header class="grid-header">
+                <h3 class="grid-header__title">{{ safeHTML .Section.headline }}</h3>
+            </header>
+        </div>
+    </div>
+</section>
+<section class="grid-content block block__testimoni">
+    <div class="grid-wrapper grid-col-4">
+        {{ if .Section.testimoni }}{{ range .Section.testimoni }}
+        <div class="card-col-4">
+            <figure>
+                <img class="lazy" data-src="{{ . | relURL }}" alt="testimoni">
+            </figure>
+        </div>{{ end }} {{ end }}
+    </div>
+</section>

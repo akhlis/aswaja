@@ -1,0 +1,16 @@
+# Theme metadata
+name = "1950s"
+
+# Primary
+primary = "#EF525B"
+primary_light = "#FF6771"
+primary_dark = "#DA2536"
+title_text = "#454545"
+
+# Menu
+menu_bg = "#24C2CB"
+menu_hover_bg = "#00828B"
+menu_text = "#fff"
+menu_text_active = "#00828B"
+menu_text_hover = "#fff"
+menu_title = "#fff"

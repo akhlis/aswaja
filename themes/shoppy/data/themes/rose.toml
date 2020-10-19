@@ -1,0 +1,20 @@
+# Theme metadata
+name = "Rose"
+
+# Primary
+primary = "#EF525B"
+primary_light = "#FF6771"
+primary_dark = "#DA2536"
+title_text = "#454545"
+
+# Menu
+menu_bg = "#EF525B"
+menu_hover_bg = "#DA2536"
+menu_text = "#fff"
+menu_text_active = "#00828B"
+menu_text_hover = "#fff"
+menu_title = "#fff"
+
+#footer
+footer_widget_bg = "#EF525B"
+footer_bg = "#EF525B"

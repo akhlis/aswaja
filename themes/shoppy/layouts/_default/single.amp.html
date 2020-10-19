@@ -1,0 +1,38 @@
+{{ partial "header.amp.html" . }}
+
+<main id="site-main" class="site-main">
+    <div class="main-content main-bg">
+        <div class="content-area single-post single-post__wrapper">
+            <article class="post-article">
+                <div class="post-header__bg">
+                    <header class="post-header space--center is-center">
+                    
+
+                        <h2 class="post-title">{{ .Title }}</h2>
+
+                      
+
+                    </header>
+                </div>
+            
+                <div class="post-content">
+                    {{ .Content }}
+                </div>
+
+                <footer class="post-footer">
+                    <div class="post-footer__wrapper">
+               
+                   
+
+                    </div>
+
+                
+
+                </footer>
+            </article>
+        
+        </div>
+    </div>
+</main>
+
+{{ partial "footer.amp.html" . }}

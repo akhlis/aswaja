@@ -1,0 +1,166 @@
+/* Sidebar Area
+/* ---------------------------------------------------------- */
+
+@media (--mobile-screen) {
+    .docs__sidebar {
+        width: 280px;
+        height: calc(100vh - 63px);
+        transform: translateX(-110%);
+        transform-origin: left;
+        transition: all .3s ease-in-out 0s, visibility 0s linear .3s, z-index 0s linear .01s;
+        overflow: auto;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .23);
+    }
+
+    .docs__sidebar.is-display {
+        transform: translateX(0);
+        transition-delay: 0s, 0s, .3s;
+    }
+}
+
+@media (--desktop-screen) {
+    .docs__sidebar {
+        height: calc(100vh + var(--header-height)*-1 - 5px);
+        transition: border-color .3s;
+        overflow: auto;
+    }
+}
+
+.nav__box {
+    transform: translateX(-110%);
+    transform-origin: left;
+    transition: all .3s ease-in-out 0s, visibility 0s linear .3s, z-index 0s linear .01s;
+    overflow: auto;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .23);
+}
+
+.nav__box.is-display {
+    transform: translateX(0);
+    transition-delay: 0s, 0s, .3s;
+}
+
+/*! purgecss start ignore */
+.docs__nav::-webkit-scrollbar {
+    width: 5px;
+    position: fixed;
+    right: 0;
+}
+
+.docs__nav::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0);
+    transition: background-color 2s;
+}
+
+.docs__nav::-webkit-scrollbar-thumb:hover,
+.docs__nav:hover::-webkit-scrollbar-thumb {
+    @apply bg-gray-400;
+}
+
+/*! purgecss end ignore */
+
+.docs__nav-title {
+    &:first-of-type {
+        @apply border-t-0;
+    }
+}
+
+.docs__menu-item.is-active,
+.docs__menu-item:hover {
+    background: linear-gradient(270deg, hsla(0, 0%, 100%, .88), #fff 0, #fff 1%, hsla(0, 0%, 100%, .88) 11%, #00a672);
+}
+
+.docs__menu-item.is-active a,
+.docs__menu-item:hover a {
+    @apply text-white;
+}
+
+
+
+
+
+
+/*! purgecss start ignore */
+
+.finder-list.is-searching .finder-item {
+    display: none
+}
+
+.finder-list.is-searching .finder-item.is-highlighted:not(.is-hidden) {
+    display: block
+}
+
+.finder-list.is-searching .finder-item.is-selected {
+    display: block
+}
+
+.finder-item.is-hidden {
+    display: none
+}
+
+.finder-item.is-selected {
+    z-index: 1
+}
+
+.finder-item.is-selected .finder-item-link,
+.finder-item.is-selected .finder-item-link:hover {
+    background: #ff470f;
+    color: #fff
+}
+
+.finder-item-link {
+    transition: none
+}
+
+.finder-item-link .highlight {
+    background: #ffdd57;
+    color: #310736
+}
+
+label.light input {
+    cursor: pointer;
+    margin-right: 4px
+}
+
+.light--experimental {
+    background-color: #ffdd57;
+    color: #310736;
+    opacity: 1
+}
+
+.finder-item--meta .light--meta,
+.light--meta.is-active {
+    background-color: rgba(184, 107, 255, 0.29);
+    color: #333;
+    opacity: 1
+}
+
+.finder-item--inline .light--inline,
+.light--inline.is-active {
+    background-color: rgba(35, 209, 96, 0.29);
+    color: #333;
+    opacity: 1
+}
+
+.finder-item--block .light--block,
+.light--block.is-active {
+    background-color: rgba(50, 115, 220, 0.29);
+    color: #333;
+    opacity: 1
+}
+
+.finder-item--selfclosing .light--selfclosing,
+.light--selfclosing.is-active {
+    background-color: rgba(255, 69, 56, 0.29);
+    color: #333;
+    opacity: 1
+}
+
+@media (max-width: 799px) {
+
+    .finder-item-link .light--experimental {
+        display: none
+    }
+}
+
+
+/*! purgecss end ignore */

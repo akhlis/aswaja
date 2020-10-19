@@ -1,0 +1,358 @@
+- title: HTML5 Tutorial
+  items:
+    - title: HTML - HTML Dasar
+      link: /html
+    - title: HTML - Pengertian HTML
+      link: /html/pengertian-html/
+    - title: HTML - Teks Editor
+      link: /html/memilih-aplikasi-teks-editor-terbaik/
+    - title: HTML - Dasar
+      link: /html/html-dasar/
+    - title: HTML - Tag & Element
+      link: /html/mengenal-tag-dan-elemen-html/
+    - title: HTML - Atribut
+      link: /html/atribut-html/
+    - title: HTML - Tag Judul
+      link: /html/cara-membuat-judul-pada-html/
+    - title: HTML - Tag Paragraf
+      link: /html/cara-membuat-paragraf-pada-html/
+    - title: HTML - Style
+      link: /html/cara-memberi-style-pada-elemen-html/
+    - title: HTML - Format Teks
+      link: /html/cara-mengatur-format-penulisan-teks-pada-html/
+    - title: HTML - Format Teks Quote
+      link: /html/cara-membuat-quote-pada-html/
+    - title: HTML - Comment
+      link: /html/membuat-komentar-pada-html/
+    - title: HTML - Warna ?
+      link: /html/warna
+    - title: HTML - Menyisipkan CSS
+      link: /html/cara-menambahkan-css-pada-html/
+    - title: HTML - Link
+      link: /html/cara-membuat-link-pada-html/
+    - title: HTML - Menyisipkan Gambar
+      link: /html/cara-menambahkan-gambar-pada-html/
+    - title: HTML - Membuat Tabel
+      link: /html/cara-membuat-tabel-pada-elemen-html/
+    - title: HTML - Tag List
+      link: /html/cara-membuat-list-pada-html/
+    - title: HTML - Elemen Block & Inline
+      link: /html/block-dan-inline/
+    - title: HTML - Atribut Class
+      link: /html/atribut-class/
+    - title: HTML - Atribut Id ?
+      link: /html/atribut-id
+    - title: HTML - Tag Iframe
+      link: /html/mengenal-tag-iframe/
+    - title: HTML - Menyisipkan Javascript
+      link: /html/cara-menambahkan-javascript-pada-html/
+    - title: HTML - Menyisipkan File ?
+      link: /html/file-path
+    - title: HTML - Tag Head
+      link: /html/mengenal-tag-head/
+    - title: HTML - Layout ?
+      link: /html/layout
+    - title: HTML - Desain Responsive ?
+      link: /html/responsive
+    - title: HTML - Karakter Entity & Simbol ?
+      link: /html/entity
+    - title: HTML - Charset
+      link: /html/charset/
+    - title: HTML - URL Encode
+      link: /html/url-encode/
+    - title: HTML - Membuat Halaman Website
+      link: /html/cara-membuat-halaman-website/
+
+- title : HTML Form
+  items:
+    - title: HTML - Form
+      link: /html/form
+    - title: HTML - Form Element
+      link: /html/form-element
+    - title: HTML - Input Type
+      link: /html/input-type
+    - title: HTML - Atribut Input
+      link: /html/atribut-input
+
+- title : HTML5
+  items:
+    - title: HTML5 - Pengenalan
+      link: /html/html5
+    - title: HTML5 - Elemen Baru
+      link: /html/elemen-baru
+    - title: HTML5 - Semantic
+      link: /html/semantic
+    - title: HTML5 - Panduan Menulis Kode
+      link: /html/panduan
+      
+- title : Referensi HTML
+  items:
+    - title: HTML - Tag list
+      link: /element/
+    - title: HTML - Atribut
+      link: /html/atribut
+    - title: HTML - Event
+      link: /html/event
+    - title: HTML - Warna
+      link: /html/warna
+    - title: HTML - Canvas
+      link: /html/canvas
+    - title: HTML - Audio/Video
+      link: /html/audio-video
+    - title: HTML - Doctype
+      link: /html/doctype
+      
+- title : HTML Tags
+  items:
+    - title: <!-->
+      link: /element/comment/
+    - title: <!DOCTYPE>
+      link: /element/doctype/
+    - title: <a>
+      link: /element/a/
+    - title: <abbr>
+      link: /element/abbr/
+    - title: <acronym>
+      link: /html/acronym/
+    - title: <address>
+      link: /element/address/
+    - title: <applet>
+      link: /html/applet/
+    - title: <area>
+      link: /element/area/
+    - title: <article>
+      link: /element/article/
+    - title: <aside>
+      link: /element/aside/
+    - title: <audio>
+      link: /element/audio/
+    - title: <b>
+      link: /element/b/
+    - title: <base>
+      link: /element/base/
+    - title: <basefont>
+      link: /element/basefont/
+    - title: <bdi>
+      link: /element/bdi/
+    - title: <bdo>
+      link: /element/bdo/
+    - title: <big>
+      link: /element/big/
+    - title: <blockquote>
+      link: /element/blockquote/
+    - title: <body>
+      link: /element/body/
+    - title: <br>
+      link: /element/br/
+    - title: <button>
+      link: /element/button/
+    - title: <canvas>
+      link: /element/canvas/
+    - title: <caption>
+      link: /element/caption/
+    - title: <center>
+      link: /element/center/
+    - title: <cite>
+      link: /element/cite/
+    - title: <code>
+      link: /element/code/
+    - title: <col>
+      link: /element/col/
+    - title: <colgroup>
+      link: /element/colgroup/
+    - title: <data>
+      link: /element/data/
+    - title: <datalist>
+      link: /element/datalist/
+    - title: <dd>
+      link: /element/dd/
+    - title: <del>
+      link: /element/del/
+    - title: <details>
+      link: /element/details/
+    - title: <dfn>
+      link: /element/dfn/
+    - title: <dialog>
+      link: /element/dialog/
+    - title: <dir>
+      link: /element/dir/
+    - title: <div>
+      link: /element/div/
+    - title: <dl>
+      link: /element/dl/
+    - title: <dt>
+      link: /element/dt/
+    - title: <em>
+      link: /element/em/
+    - title: <embed>
+      link: /element/embed/
+    - title: <fieldset>
+      link: /element/fieldset/
+    - title: <figcaption>
+      link: /element/figcaption/
+    - title: <figure>
+      link: /element/figure/
+    - title: <font>
+      link: /element/font/
+    - title: <footer>
+      link: /element/footer/
+    - title: <form>
+      link: /element/form/
+    - title: <frame>
+      link: /element/frame/
+    - title: <frameset>
+      link: /element/frameset/
+    - title: <h1>
+      link: /element/h1/
+    - title: <h2>
+      link: /element/h2/
+    - title: <h3>
+      link: /element/h3/
+    - title: <h4>
+      link: /element/h4/
+    - title: <h5>
+      link: /element/h5/
+    - title: <h6>
+      link: /element/h6/
+    - title: <head>
+      link: /element/head/
+    - title: <header>
+      link: /element/header/
+    - title: <hgroup>
+      link: /element/hgroup/
+    - title: <hr>
+      link: /element/hr/
+    - title: <html>
+      link: /element/html/
+    - title: <i>
+      link: /element/i/
+    - title: <iframe>
+      link: /element/iframe/
+    - title: <img>
+      link: /element/img/
+    - title: <input>
+      link: /element/input/
+    - title: <ins>
+      link: /element/ins/
+    - title: <kbd>
+      link: /element/kbd/
+    - title: <label>
+      link: /element/label/
+    - title: <legend>
+      link: /element/legend/
+    - title: <li>
+      link: /element/li/
+    - title: <link>
+      link: /element/link/
+    - title: <main>
+      link: /element/main/
+    - title: <map>
+      link: /element/map/
+    - title: <mark>
+      link: /element/mark/
+    - title: <meta>
+      link: /element/meta/
+    - title: <meter>
+      link: /element/meter/
+    - title: <nav>
+      link: /element/nav/
+    - title: <noframes>
+      link: /element/noframes/
+    - title: <noscript>
+      link: /element/noscript/
+    - title: <object>
+      link: /element/object/
+    - title: <ol>
+      link: /element/ol/
+    - title: <optgroup>
+      link: /element/optgroup/
+    - title: <option>
+      link: /element/option/
+    - title: <output>
+      link: /element/output/
+    - title: <p>
+      link: /element/p/
+    - title: <param>
+      link: /element/param/
+    - title: <picture>
+      link: /element/picture/
+    - title: <pre>
+      link: /element/pre/
+    - title: <progress>
+      link: /element/progress/
+    - title: <q>
+      link: /element/q/
+    - title: <rp>
+      link: /element/rp/
+    - title: <rt>
+      link: /element/rt/
+    - title: <rtc>
+      link: /element/rtc/
+    - title: <ruby>
+      link: /element/ruby/
+    - title: <s>
+      link: /element/s/
+    - title: <samp>
+      link: /element/samp/
+    - title: <script>
+      link: /element/script/
+    - title: <section>
+      link: /element/section/
+    - title: <select>
+      link: /element/select/
+    - title: <small>
+      link: /element/small/
+    - title: <source>
+      link: /element/source/
+    - title: <span>
+      link: /element/span/
+    - title: <strike>
+      link: /element/strike/
+    - title: <strong>
+      link: /element/strong/
+    - title: <style>
+      link: /element/style/
+    - title: <sub>
+      link: /element/sub/
+    - title: <summary>
+      link: /element/summary/
+    - title: <sup>
+      link: /element/sup/
+    - title: <svg>
+      link: /element/svg/
+    - title: <table>
+      link: /element/table/
+    - title: <tbody>
+      link: /element/tbody/
+    - title: <td>
+      link: /element/td/
+    - title: <template>
+      link: /element/template/
+    - title: <textarea>
+      link: /element/textarea/
+    - title: <tfoot>
+      link: /element/tfoot/
+    - title: <th>
+      link: /element/th/
+    - title: <thead>
+      link: /element/thead/
+    - title: <time>
+      link: /element/time/
+    - title: <title>
+      link: /element/title/
+    - title: <tr>
+      link: /element/tr/
+    - title: <track>
+      link: /element/track/
+    - title: <tt>
+      link: /element/tt/
+    - title: <u>
+      link: /element/u/
+    - title: <ul>
+      link: /element/ul/
+    - title: <var>
+      link: /element/var/
+    - title: <video>
+      link: /element/video/
+    - title: <wbr>
+      link: /element/wbr/

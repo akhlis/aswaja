@@ -1,0 +1,70 @@
+<head>
+    <meta charset="utf-8" />
+    {{ hugo.Generator }}
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>{{ block "title" . }}{{ with .Title }}{{ . }} | {{ end }}{{ .Site.Title }}{{ end }}</title>
+    <meta name="author" content="{{ $.Site.Params.author }}">
+    <meta property="description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}" />
+    <link rel="shortcut icon" href="{{ "/" | absURL}}{{ $.Site.Params.favicon }}">
+    <link rel="canonical" href="{{ .Permalink }}">
+   
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Lato:wght@400;700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400&family=Mirza:wght@400;500&display=swap" rel="stylesheet">
+   
+    {{ if .Site.IsServer }}
+<!--    {{ $style := resources.Get "css/styles.css" | postCSS (dict "config" "./assets/css/dev/postcss.config.js" "inlineImports" true) }}-->
+    {{ $style := resources.Get "css/styles.css" | postCSS (dict "config" "./assets/css/postcss.config.js" "inlineImports" true) }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}">
+    {{ else }}
+    {{ $style := resources.Get "css/styles.css" | postCSS (dict "config" "./assets/css/postcss.config.js" "inlineImports" true) | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}">
+    {{ end }}
+    
+    {{ range .Site.Params.custom_css }}
+    <link rel="stylesheet" href="{{ "/css/" | absURL }}{{ . }}">{{ end }}
+    
+    {{ $scr := .Scratch }}
+    {{ $css := site.Data.assets.css }}
+    {{ $js := site.Data.assets.js }}
+    {{/* Attempt to load local vendor CSS, otherwise load from CDN. */}}
+    {{ $scr.Set "vendor_css_filename" "main.min.css" }}
+    {{ $scr.Set "vendor_js_filename" "main.min.js" }}
+    {{ if and (fileExists (printf "static/css/vendor/%s" ($scr.Get "vendor_css_filename"))) (fileExists (printf "static/js/vendor/%s" ($scr.Get "vendor_js_filename"))) }}
+    {{ $scr.Set "use_cdn" 0 }}
+    <link rel="stylesheet" href="{{ printf "/css/vendor/%s" ($scr.Get "vendor_css_filename") | relURL }}">
+    {{ else }}
+    {{ $scr.Set "use_cdn" 1 }}
+    
+    {{ printf "<script src=\"%s\" integrity=\"%s\" defer></script>" (printf $js.minisearch.url $js.minisearch.version) $js.minisearch.sri | safeHTML }}
+    
+    {{ printf "<script src=\"%s\" integrity=\"%s\" defer></script>" (printf $js.alpineJS.url $js.alpineJS.version) $js.alpineJS.sri | safeHTML }}
+
+    {{/* Load async scripts. */}}
+    {{ range $k, $v := site.Data.assets.js }}{{/* TODO: investigate why `where ... "async" true` does not work. */}}
+    {{ $load := $v.async }}
+
+    {{/* Only load MathJax if required. */}}
+    {{ if (eq $k "mathJax") | and (not (or $.Params.math site.Params.math)) }}
+    {{ $load = false }}
+    {{end}}
+
+    {{ if $load }}
+    {{ printf "<script src=\"%s\" integrity=\"%s\" crossorigin=\"anonymous\" async></script>" (printf $v.url $v.version) $v.sri | safeHTML }}
+    {{end}}
+    {{end}}
+
+    {{ end }}
+    
+    
+    {{ range .AlternativeOutputFormats }}
+    <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink | safeURL }}">
+    {{ end }}
+    {{$section := .Section}}
+    {{if or (eq $section "latihan") (eq $section "tryit")}}
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/prism.css">{{ end }}
+  
+</head>
+<body>{{ if $.Site.Params.googleTagManagerID }}<!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ $.Site.Params.googleTagManagerID }}"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>{{end}}<!-- End Google Tag Manager (noscript) -->

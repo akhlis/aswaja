@@ -1,0 +1,64 @@
+<div class="widget-footer__wrapper clearfix">
+    <div class="widget-footer__col">
+        {{ if isset .Site.Taxonomies "produk" }}
+        {{ if not (eq (len .Site.Taxonomies.produk) 0) }}
+        <section class="widget-footer">
+            <div class="widget-footer__cats">
+                <h4 class="widget-footer__title">Katalog Hijacket</h4>
+                <div class="widget-footer__cats-list" id="scrollbar">
+                    <ul class="widget-footer__list">
+                       {{ range $name, $items := .Site.Taxonomies.produk }}
+                        <li class="widget-footer__list-item"><a href="{{ "/" | absLangURL }}{{ $name | urlize | lower }}"  class="widget-footer__link">{{ $name | title }}</a></li>
+                        {{ end }}
+                    </ul>
+                </div>
+            </div>
+        </section>
+        {{ end }}
+        {{ end }}
+    </div>
+    <div class="widget-footer__col">
+        <div class="widget-footer footer-menu">{{ with $.Site.Data.theme }}
+            <h4 class="widget-footer__title">{{ .widgetTitle_1 }}</h4>{{ end }}
+            <nav class="nav-footer">
+                {{ with $.Site.Data.theme }}
+                <ul class="menu-footer">
+                    {{ range .widgetMenu_1 }}
+                    <li class="menu-footer__item"><a class="menu-footer__link" href="{{ $baseurl := .Site.BaseURL }}{{ .Permalink }}">{{ .name }}</a></li>
+                    {{ end }}
+                </ul>
+                {{ end }}
+            </nav>
+        </div>
+    </div>
+    <div class="widget-footer__col">
+        <div class="widget-footer footer-menu">{{ with $.Site.Data.theme }}
+            <h4 class="widget-footer__title">{{ .widgetTitle_2 }}</h4>{{ end }}
+            <nav class="nav-footer">
+                {{ with $.Site.Data.theme }}
+                <ul class="menu-footer">
+                    {{ range .widgetMenu_2 }}
+                    <li class="menu-footer__item"><a class="menu-footer__link" href="{{ $baseurl := .Site.BaseURL }}{{ .Permalink }}">{{ .name }}</a></li>
+                    {{ end }}
+                </ul>
+                {{ end }}
+            </nav>
+        </div>
+    </div>
+    <div class="widget-footer__col">
+       <div class="widget-footer widget-contact">{{ with $.Site.Data.theme }}
+            <h4 class="widget-footer__title">{{ .widgetTitle_3 }}</h4>{{ end }} {{ with $.Site.Data.theme }} {{ range .widgetText }}
+            <p>{{ .text }}</p>
+            {{ end }} {{ end }}
+        </div>
+        {{ if $.Site.Data.theme.socialWidget | default true }}
+        <div class="widget-footer store-social">
+            {{ with $.Site.Data.setting }}
+            <div class="social-links">
+                {{ range .social }}
+                <a class="social-icon social-icon__{{ .icon }}" href="{{ .Permalink }}"><i class="icon-{{ .icon }}"></i></a> {{ end }}
+            </div>
+            {{ end }}
+        </div>{{ end }} 
+    </div>
+</div>

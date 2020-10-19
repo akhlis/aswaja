@@ -1,0 +1,40 @@
+<section class="grid-content block block__media-3">
+    <div class="grid-wrapper grid-col-3">
+            <div class="card-col-3">
+                <a href="{{ .Section.image_1.link }}" onClick="fbq('track', 'CustomizeProduct')">
+                    <figure>
+                        <div class="banner-image__wrapper">
+                            <img class="lazyload lazy" data-src="{{ .Section.image_1.image | relURL }}" alt="{{ .Section.image_1.caption }}"> {{ if .Section.image_1.caption }}
+                            <figcaption>
+                                <h4><span>{{ .Section.image_1.caption }}</span></h4>
+                            </figcaption>{{ end }}
+                        </div>
+                    </figure>
+                </a>
+            </div>
+            <div class="card-col-3">
+                <a href="{{ .Section.image_2.link }}" onClick="fbq('track', 'CustomizeProduct')">
+                    <figure>
+                        <div class="banner-image__wrapper">
+                            <img class="lazyload lazy" data-src="{{ .Section.image_2.image | relURL }}" alt="{{ .Section.image_2.caption }}"> {{ if .Section.image_2.caption }}
+                            <figcaption>
+                                <h4><span>{{ .Section.image_2.caption }}</span></h4>
+                            </figcaption>{{ end }}
+                        </div>
+                    </figure>
+                </a>
+            </div>
+            <div class="card-col-3">
+                <a href="{{ .Section.image_3.link }}" onClick="fbq('track', 'CustomizeProduct')">
+                    <figure>
+                        <div class="banner-image__wrapper">
+                            <img class="lazyload lazy" data-src="{{ .Section.image_3.image | relURL }}" alt="{{ .Section.image_3.caption }}"> {{ if .Section.image_3.caption }}
+                            <figcaption>
+                                <h4><span>{{ .Section.image_3.caption }}</span></h4>
+                            </figcaption>{{ end }}
+                        </div>
+                    </figure>
+                </a>
+            </div>
+    </div>
+</section>

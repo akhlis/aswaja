@@ -1,0 +1,16 @@
+<!-- Author: Parsia Hakimian https://github.com/parsiya/Hugo-Shortcodes -->
+
+<aside class="mb-6 {{ .Get "class" }}">
+    <div class="mb-4"><span class="text-sm text-white bg-primary rounded-sm shadow-md py-1 px-2">Preview</span></div>
+    <div class="shadow-md rounded-b-lg">
+        <div
+            class="flex justify-start items-center bg-gray-100 border border-solid border-gray-300 rounded-t-lg border-b-0 pl-4 h-8">
+            <i class="block bg-red-400 w-2 h-2 rounded-full mr-2"></i>
+            <i class="block bg-amber-400 w-2 h-2 rounded-full mr-2"></i>
+            <i class="block bg-green-400 w-2 h-2 rounded-full"></i>
+        </div>
+        <div class="border border-solid border-gray-300 rounded-b-lg py-8 px-3 lg::py-6 lg:px-6">
+            {{ .Inner  }}
+        </div>
+    </div>
+</aside>

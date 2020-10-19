@@ -1,0 +1,49 @@
+---
+color_theme: default
+header: 'logo-top-center'
+navbar: true
+fixedMenu: true
+widgets:
+  widget_categories: false
+  widget_tags: false
+  widget_tagcloud: false
+  widget_subscribe: true
+  tags_counter: false
+widget:
+- template: widget-3-col
+  block: widget-3-col
+  col_1:
+    headline: Informasi
+    navigation:
+    - link_url: "#"
+      link_text: Syarat dan Ketentuan
+    - link_url: "#"
+      link_text: Tentang Kami
+    - link_url: "#"
+      link_text: Privacy
+    - link_url: "#"
+      link_text: Lokasi Toko
+  col_2:
+    headline: Bantuan
+    navigation:
+    - link_url: "/"
+      link_text: Langkah Pembelian
+    - link_url: "#"
+      link_text: Konfirmasi Pembayaran
+    - link_url: "#"
+      link_text: Cara Input Kode Voucher
+    - link_url: "#"
+      link_text: Gratis Ongkir
+  col_3:
+    headline: Kontak Kami
+    content: "<p>082324089982 • What'sApp</p><p>Bandung, Jawa Barat, Indonesia</p>"
+sidebar:
+- template: resent-post
+  block: resent-post
+  headline: "Artikel Terbaru"
+- template: widget-banner
+  block: widget-banner
+  banner:
+    image: "/images/scarf-baner-elzata-chacha.jpg"
+    link: "/camouflashion"
+    caption: ''

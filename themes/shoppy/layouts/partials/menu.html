@@ -1,0 +1,146 @@
+<header id="js-header" x-data="header()" class="site__header header border-b border-gray-200 {{ if .IsHome }}header__home relative lg:border-0 lg:z-20{{ end }}" x-on:scroll.window='atTop = (window.pageYOffset > 100) ? false : true;'>
+    <div class="transition-all duration-200 ease-in-out animate-fadeInDown z-50" :class="{ 'static py-4': atTop, 'fixed left-0 top-0 right-0 bg-white shadow-lg py-0': !atTop }">
+        <div class="container w-full max-w-screen-xl relative mx-auto {{ if .IsHome }}lg:px-16{{ end }}">
+            <div class="nav__wrapper grid grid-cols-8 lg:grid-cols-12 lg:grid-rows-auto items-center mt-4 lg:mt-0">
+
+                <div class="col-span-2 flex items-center lg:hidden pl-3">
+                    <button class="text-gray-600 hover:text-gray-700 cursor-pointer border-none focus:outline-none" :class="{ 'open': sideNav === true }" @click="sideNav = !sideNav">
+                        <svg class="transition duration-300 ease-in-out transform" width="22" height="24">
+                            <line class="stroke-current stroke-2 transition duration-300 ease-in-out transform svelte-1nq7v2e" id="top" x1="0" x2="22" y1="6" y2="6"></line>
+                            <line class="stroke-current stroke-2 transition duration-300 ease-in-out transform svelte-1nq7v2e" id="middle" x1="0" x2="18" y1="12" y2="12"></line>
+                            <line class="stroke-current stroke-2 transition duration-300 ease-in-out transform svelte-1nq7v2e" id="bottom" x1="0" x2="22" y1="18" y2="18"></line>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="nav__brand logo col-span-4 col-start-3 lg:col-span-2 lg:col-start-1">
+                    {{ with .Site.Params.logo }}
+                    <a class="nav__brand-link" href="{{ "/" | relLangURL }}">
+                        <img class="site-img mx-auto" src="{{ .url | absURL }}" alt="{{ $.Site.Title }}" width="{{ .width }}" height="{{ .height }}">
+                    </a>
+                    {{ end }}
+                </div>
+                <nav id="nav__menu--js" class="nav col-span-6 hidden lg:block {{ if .IsHome }}nav__menu--home{{ end }}">
+                    <ul class="nav__menu menu lg:flex list-none pl-0 mb-0">
+                        {{ $currentPage := . }} {{ range .Site.Menus.main }} {{ if .HasChildren }}
+                        <li class="has-submenu relative text-gray-700 hover:text-primary border-b border-solid border-gray-300 lg:border-0 py-3 px-3 mb-0 {{ if $currentPage.HasMenuCurrent " main " . }}active{{ end }}">
+                            <a class="menu-item__link text-current hover:no-underline flex items-center" href="#">{{ .Name }}</a>
+                            <ul class="submenu whitespace-no-wrap list-none bg-white absolute invisible opacity-0 z-10 last:pb-4 shadow-lg pl-0 py-2 mb-0" aria-hidden="true">
+                                {{ range .Children }}
+                                <li class="text-secondary hover:text-primary py-1 px-4 mb-0 {{ if $currentPage.IsMenuCurrent " main " . }}active{{ end }}">
+                                    <a class="text-sm text-current capitalize leading-none" href="{{ .URL }}">{{ .Name }}</a>
+                                </li>
+                                {{ end }}
+                            </ul>
+                        </li>
+                        {{ else }}
+                        <li class="text-gray-700 hover:text-primary border-b border-solid border-gray-300 lg:border-0 py-3 px-3 mb-0">
+                            <a class="hover:no-underline menu-item__link text-current capitalize {{ if $currentPage.IsMenuCurrent " main " . }}active{{ end }}" href="{{ .URL }}">{{ .Name }}</a>
+                        </li>
+                        {{ end }} {{ end }}
+                    </ul>
+                </nav>
+
+                <div class="nav__mobile nav__toggle relative cursor-pointer mr-4 z-60 lg:hidden">
+                    <span class="nav__toggle-item absolute w-6 h-2px bg-gray-800 before:empty-content before:absolute before:w-6 before:h-2px before:bg-gray-800 after:empty-content after:absolute after:w-6 after:h-2px after:bg-gray-800"></span>
+                </div>
+
+                <div class="col-span-4">
+                    {{ partial "nav_search" . }}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{$section := .Section}}
+    {{if not (or (eq $section "html") (eq $section "css") (eq $section "cssref") (eq $section "element"))}}
+    <div class="docs__nav nav__box w-20 h-screen bg-white absolute left-0 z-30">
+        <ul class="list-none pl-0 pt-4">
+            {{ range .Site.Params.nav }}
+            <li class="mb-0">
+                <a class="flex flex-col justify-center items-center text-gray-700 hover:text-green-AA400" href="/html/">
+                    <span class=" flex justify-center items-center w-12 h-12 border border-solid border-green-A400
+                                rounded-full">
+                        {{$icon := .icon }}
+                        {{ partial $icon (dict "class" "navbar__social-icon w-6 h-6 text-green-A400") }}
+                    </span>
+                    <span class="text-xs text-center h-12 pt-2 pb-3">{{ .Name }}</span>
+                </a>
+            </li>{{ end }}
+        </ul>
+    </div>{{ end }}
+
+    <div class="nav__mobile-sidebar bg-white absolute w-full min-h-screen p-0 overflow-x-hidden overflow-y-auto top-0 invisible opacity-0 z-50">
+        <ul class="flex flex-wrap justify-center items-center list-none pl-0 pt-16">
+            {{ range .Site.Params.menu }}
+            <li class="w-1/4 mb-0">
+                <a class="flex flex-col justify-center items-center text-gray-700 hover:text-green-AA400" href="/html/">
+                    <span class=" flex justify-center items-center w-12 h-12 border border-solid border-green-A400
+                        rounded-full">
+                        {{ partial .icon (dict "class" "menu__icon w-6 h-6 text-green-A400") }}
+                    </span>
+                    <span class="text-xs text-center h-12 pt-2 pb-3">{{ .Name }}</span>
+                </a>
+            </li>{{ end }}
+        </ul>
+        <!-- <ul class="nav__menu-item menu lg:flex lg:justify-end">
+
+            <li class="border-b border-solid border-gray-300 lg:border-0 py-1 px-4">
+                <a class=" menu-item__link text-gray-800 hover:text-teal-400" href="/">Beranda</a>
+            </li>
+
+            <li class="has-submenu relative border-b border-solid border-gray-300 lg:border-0 py-1 px-4">
+                <a class="menu-item__link text-gray-800 hover:text-teal-300" href="#">Katalog Produk</a>
+                <span class="submenu-button"></span>
+                <div class="nav__submenu-wrapper">
+                    <ul class="submenu whitespace-no-wrap lg:bg-gray-100 lg:absolute lg:invisible lg:opacity-0 lg:z-10 lg:last:pb-4"
+                        aria-hidden="true">
+
+                        <li
+                            class="border-b border-solid border-gray-300 last:border-0 lg:border-0 py-1 px-4 lg:pl-4 lg:hover:bg-gray-200 ">
+                            <a class="submenu-item__link text-gray-800" href="/avia">Avia</a>
+                        </li>
+
+                        <li
+                            class="border-b border-solid border-gray-300 last:border-0 lg:border-0 py-1 px-4 lg:pl-4 lg:hover:bg-gray-200 ">
+                            <a class="submenu-item__link text-gray-800" href="/basic">Basic</a>
+                        </li>
+
+                        <li
+                            class="border-b border-solid border-gray-300 last:border-0 lg:border-0 py-1 px-4 lg:pl-4 lg:hover:bg-gray-200 ">
+                            <a class="submenu-item__link text-gray-800" href="/beautix">Beautix</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </li>
+
+            <li class="has-submenu relative border-b border-solid border-gray-300 lg:border-0 py-1 px-4">
+                <a class="menu-item__link text-gray-800 hover:text-teal-300" href="#">Store</a>
+                <span class="submenu-button"></span>
+                <div class="nav__submenu-wrapper">
+                    <ul class="submenu whitespace-no-wrap lg:bg-gray-100 lg:absolute lg:invisible lg:opacity-0 lg:z-10 lg:last:pb-4"
+                        aria-hidden="true">
+
+                        <li
+                            class="border-b border-solid border-gray-300 last:border-0 lg:border-0 py-1 px-4 lg:pl-4 lg:hover:bg-gray-200 ">
+                            <a class="submenu-item__link text-gray-800" href="/claretta">Claretta</a>
+                        </li>
+
+                        <li
+                            class="border-b border-solid border-gray-300 last:border-0 lg:border-0 py-1 px-4 lg:pl-4 lg:hover:bg-gray-200 ">
+                            <a class="submenu-item__link text-gray-800" href="/elma">Elma</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </li>
+
+            <li class="border-b border-solid border-gray-300 lg:border-0 py-1 px-4">
+                <a class=" menu-item__link text-gray-800 hover:text-teal-400"
+                    href="/blog/tutorial-makeup-dengan-viva-cosmetics-di-bawah-50-ribu-tampil-menawan-enggak-harus-mahal">Viva</a>
+            </li>
+
+        </ul> -->
+    </div>
+</header>

@@ -1,0 +1,52 @@
+<div class="widget-store clearfix">
+    <div class="col-1-3">
+        <div class="store-info clearfix">
+            <div class="store-info__media">
+                {{ with $.Site.Data.theme.store_info }}
+                <img class="store-logo" src="{{ .logo | relURL }}" alt="{{ .nama }}"/>
+            </div>
+            <div class="store-body">
+                <p class="store-tagline">{{ .tagline }}</p>{{ end }}
+            </div>
+        </div>
+    </div>
+    <div class="col-1-3">
+        <div class="store-social">
+           <h4>Ikuti kami di sosial media</h4>
+            {{ with $.Site.Data.setting }}
+            <div class="store-social__links">
+                {{ range .social }}
+                <a class="store-social__icon store-social__icon-{{ .icon }}" href="{{ .url }}"><i class="icon-{{ .icon }}"></i></a>
+                {{ end }}
+            </div>
+            {{ end }}
+        </div>
+    </div>
+    <div class="col-1-3">
+            <div class="banks-support"> 
+                <h4>Pembayaran</h4>
+                <ul class="banks-list"> 
+                   {{ if $.Site.Data.theme.bank_support.bca | default true }}
+                    <li> <img alt="Bank BCA" src="{{ $baseurl := .Site.BaseURL }}/images/bank-bca.png"> </li>{{ end }}
+                    {{ if $.Site.Data.theme.bank_support.mandiri | default true }}
+                    <li> <img alt="Bank Mandiri" src="{{ $baseurl := .Site.BaseURL }}/images/bank-mandiri.png"> </li> {{ end }}
+                    {{ if $.Site.Data.theme.bank_support.bri | default true }}
+                    <li> <img alt="Bank BRI" src="{{ $baseurl := .Site.BaseURL }}/images/bank-bri.png"> </li> {{ end }}
+                    {{ if $.Site.Data.theme.bank_support.bni | default true }}
+                    <li> <img alt="Bank BNI" src="{{ $baseurl := .Site.BaseURL }}/images/bank-bni.png"> </li> {{ end }}
+                </ul> 
+            </div> 
+            <div class="courier-support"> 
+                <h4 class="space--top">Jasa Kurir</h4>
+                <ul class="banks-list"> 
+                   {{ if $.Site.Data.theme.courier_support.jne | default true }}
+                    <li> <img alt="Bank BCA" src="{{ $baseurl := .Site.BaseURL }}/images/jne.png"> </li>{{ end }}
+                    {{ if $.Site.Data.theme.courier_support.pos | default true }}
+                    <li> <img alt="Bank Mandiri" src="{{ $baseurl := .Site.BaseURL }}/images/pos.png"> </li> {{ end }}
+                    {{ if $.Site.Data.theme.courier_support.indah | default true }}
+                    <li> <img alt="Bank BRI" src="{{ $baseurl := .Site.BaseURL }}/images/indah.png"> </li> {{ end }}
+                </ul> 
+            </div>  
+        </div>
+    </div>
+</div>

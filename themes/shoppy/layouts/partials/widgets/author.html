@@ -1,0 +1,22 @@
+<section class="sidebar-widget widget-recent border border-t-0 border-solid border-gray-300 pb-4 mb-8">
+    <div class="widget-header text-center pt-2 border-t border-solid border-red-400 mb-6">
+        <h3 class="text-base font-body uppercase border-b border-solid border-gray-300 pb-2 mb-0">{{ T "author_title" }}</h3>
+    </div>
+    <div class="text-center px-4">
+        {{- with .Site.Author.avatar }}
+        <figure>
+            <img src="{{ . }}" alt="author" class="mb-4">
+        </figure>{{ end }}
+        <div class="author__bio">
+            {{- with .Site.Author.name }}
+            <a class="font-heading text-gray-600 capitalize" href="/{{ . }}">{{ . }}</a>{{ end }}
+            {{- with .Site.Author.bio }}
+            <p class="text-sm mb-6">{{ . }}</p>{{ end }}
+            {{- with .Site.Author.url }}
+            <div class="mb-3 text-center uppercase">
+                <a class="text-red-500 text-xs font-medium relative inline-block before:absolute before:empty-content before:border-b before:border-solid before:border-gray-400 before:w-full-40px before:top-50pr before:-left-20px before:z-10"
+                    href="{{ . }}"><span class="relative bg-white px-2 z-20">Lihat Profil</span></a>
+            </div>{{ end }}
+        </div>
+    </div>
+</section>

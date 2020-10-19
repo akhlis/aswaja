@@ -1,0 +1,27 @@
+{{ "<!-- JS Plugins -->" | safeHTML }}
+{{ range .Site.Params.plugins.js}}
+<script src="{{ .URL | absURL }}"></script>
+{{ end }}
+<!--
+<script src="{{ .Site.BaseURL }}js/lazyload.min.js"></script>
+<script src="{{ .Site.BaseURL }}js/tiny-slider.js"></script>
+<script type="module" src="{{ .Site.BaseURL }}js/cartState.js"></script>
+<script nomodule src="{{ .Site.BaseURL }}js/cart.js"></script>
+-->
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script> -->
+
+<script src="{{ .Site.BaseURL }}js/theme.min.js"></script>
+<!-- <script>
+    hljs.initHighlightingOnLoad();
+</script> -->
+
+{{ if (findRE "<pre" .Content 1) }}
+    <script src="{{ .Site.BaseURL }}plugins/copy-code.js"></script>
+{{ end }}
+
+
+<!-- <script src="{{ .Site.BaseURL }}plugins/finder.js"></script> -->
+<script src="{{ .Site.BaseURL }}plugins/main.js"></script>
+
+

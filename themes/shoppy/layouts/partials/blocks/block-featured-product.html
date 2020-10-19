@@ -1,0 +1,12 @@
+<section class="grid-content block block__new-product">
+    <div class="grid-wrapper">
+        <header class="grid-header is-center">
+            <h3 class="grid-header__title">{{ safeHTML .Section.headline }}</h3>
+        </header>
+    </div>
+</section>
+<section class="grid-content block block__new-product">
+    <div class="grid-wrapper grid-col-5">
+        {{ range where (where site.RegularPages "Type" "in" site.Params.mainStore) ".Params.featured" "==" true }} {{ partial "grid.html" . }} {{ end }}
+    </div>
+</section>

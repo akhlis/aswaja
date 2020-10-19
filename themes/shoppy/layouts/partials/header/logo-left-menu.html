@@ -1,0 +1,60 @@
+<header id="js-header" class="site-header header header--llm">{{ if $.Site.Data.theme.navbar | default true }}
+    <div class="navbar navbar-bg">
+        <div class="navbar-wrapper">
+            <div class="navbar-contact navbar-text">
+                {{ with $.Site.Data.setting.user }}
+                <span>CS WA <i class="icon-whatsapp"></i> {{ .whatsapp }}</span>
+                <span>| LINE @ {{ .line }}</span>{{ end }}
+            </div>
+            <div class="navbar-link">
+                {{ with $.Site.Data.setting }}
+                <span class="navbar-social navbar-text">
+                    {{ range .social }}
+                    <a class="navbar-social__icon navbar-social__icon-{{ .icon }}" href="{{ .url }}"><i class="icon-{{ .icon }}"></i></a>
+                    {{ end }}
+                </span> {{ end }}
+                <div class="navbar-cart">
+                    <button class="navbar-cart__button cart-popup">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="13px" height="13px" viewBox="0 0 510 510" class="cart-trolly__icon">
+                            <path d="M153 408c-28.05 0-51 22.95-51 51s22.95 51 51 51 51-22.95 51-51-22.95-51-51-51zM0 0v51h51l91.8 193.8-35.7 61.2c-2.55 7.65-5.1 17.85-5.1 25.5 0 28.05 22.95 51 51 51h306v-51H163.2c-2.55 0-5.1-2.55-5.1-5.1v-2.551l22.95-43.35h188.7c20.4 0 35.7-10.2 43.35-25.5L504.9 89.25c5.1-5.1 5.1-7.65 5.1-12.75 0-15.3-10.2-25.5-25.5-25.5H107.1L84.15 0H0zm408 408c-28.05 0-51 22.95-51 51s22.95 51 51 51 51-22.95 51-51-22.95-51-51-51z" fill="#FFF"></path>
+                        </svg>
+                        <span class="cart-box"></span>
+                    </button>
+                    <div class="cart-checkout">
+                        <div class="cart"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>{{ end }}
+
+    <div id="heading" class="heading header-bg">
+        <div class="nav-wrapper nav-default">{{ with .Site.Params.logo -}}
+            <a class="nav-brand site-link" href="{{ "/" | relLangURL }}"><img class="site-img" src="{{ .url | absURL }}" alt="{{ $.Site.Title }}" width="{{ .width }}" height="{{ .height }}"></a>{{ end }}
+
+            <div class="nav-mobile nav-toggle">
+                <span class="nav-toggle__item"></span><span class="nav-toggle__text">MENU</span>
+            </div>
+            <nav id="nav-menu--js" class="nav-menu">
+                <ul class='nav-menu__item menu'>
+                    {{ $currentPage := . }} {{ range .Site.Menus.main }} {{ if .HasChildren }}
+                    <li class="{{ if $currentPage.HasMenuCurrent " main " . }}active{{ end }} menu-item has-submenu">
+                        <a class="menu-item__link" href="#">{{ .Name }}</a>
+                        <ul class="submenu" aria-hidden="true">
+                            {{ range .Children }}
+                            <li class="{{ if $currentPage.IsMenuCurrent " main " . }}active{{ end }} submenu-item">
+                                <a class="submenu-item__link" href="{{ .URL }}">{{ .Name }}</a>
+                            </li>
+                            {{ end }}
+                        </ul>
+                    </li>
+                    {{ else }}
+                    <li class="menu-item">
+                        <a class="menu-item__link" href="{{ .URL }}">{{ .Name }}</a>
+                    </li>
+                    {{ end }} {{ end }}
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>

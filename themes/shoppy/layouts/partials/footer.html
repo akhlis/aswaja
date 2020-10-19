@@ -1,0 +1,63 @@
+{{$section := .Section}}
+{{if not (or ( eq $section "cssref") ( eq $section "element"))}}
+<footer class="site__footer footer footer-widget__bg">
+    {{ if $.Site.Params.footer_widget | default true }}
+    <div class="container w-full max-w-screen-xl mx-auto grid grid-cols-1 lg:grid-cols-6 gap-8 px-6 lg:px-12 my-12">
+        <div class="col-span-1 lg:col-span-2">
+            {{- $root := . }}
+            {{- with (default .Site.Params.footer.widgets_left .Params.widgets) -}}
+            {{- range $widget := . }}
+            {{- $p := printf "widgets/%s.html" $widget }}
+            <div class="col-span-1 lg:col-span-2">
+                {{- partial $p $root }}
+            </div>
+            {{- end }}
+            {{- else }}
+            <p class="sidebar__warning"><strong>{{ T "sidebar_warning" }}:</strong><br>{{ T "sidebar_recommendation" }}
+            </p>
+            {{- end }}
+        </div>
+        <div class="col-span-1 lg:col-span-2">
+            {{- $root := . }}
+            {{- with (default .Site.Params.footer.widgets_center .Params.widgets) -}}
+            {{- range $widget := . }}
+            {{- $p := printf "widgets/%s.html" $widget }}
+            <div class="col-span-1 lg:col-span-2">
+                {{- partial $p $root }}
+            </div>
+            {{- end }}
+            {{- else }}
+            <p class="sidebar__warning"><strong>{{ T "sidebar_warning" }}:</strong><br>{{ T "sidebar_recommendation" }}
+            </p>
+            {{- end }}
+        </div>
+        <div class="col-span-1 lg:col-span-2">
+            {{- $root := . }}
+            {{- with (default .Site.Params.footer.widgets_right .Params.widgets) -}}
+            {{- range $widget := . }}
+            {{- $p := printf "widgets/%s.html" $widget }}
+            <div class="col-span-1 lg:col-span-2">
+                {{- partial $p $root }}
+            </div>
+            {{- end }}
+            {{- else }}
+            <p class="sidebar__warning"><strong>{{ T "sidebar_warning" }}:</strong><br>{{ T "sidebar_recommendation" }}
+            </p>
+            {{- end }}
+        </div>
+    </div>{{ end }}
+    <div class="footer__copyright container w-full max-w-screen-xl mx-auto lg:px-12 mb-6">
+        {{ if $.Site.Copyright }}
+        <div class="footer__credit text-center pt-6 border-t border-solid border-gray-300 relative">
+            <span class="text-gray-500">&copy; Copyright {{ $.Site.Copyright }}</span>
+            <div class="footer__arrow fixed bottom-6 right-6">
+                <a href="#site-main" class="scroll-top border border-solid border-gray-300 inline-block py-1 px-2">
+                    {{ partial "svg/icon-arrow-up.svg" (dict "class" "w-4 h-4 inline-block text-gray-700 hover:text-red-400") }}
+                </a>
+            </div>
+        </div>{{ end }}
+    </div>
+</footer>{{ end }}
+{{ partial "site_js" . }}
+<!--{{ partial "js" . }}-->
+</body>

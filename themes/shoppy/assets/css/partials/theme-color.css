@@ -1,0 +1,224 @@
+/* Global
+/* ---------------------------------------------------------- */
+body {
+    color: var(--body-color);
+    background-color: var(--bg-primary);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.title {
+    color: var(--primary-text-color);
+}
+
+a,
+.invert:hover,
+.invert:active,
+.invert:focus,
+.title:hover,
+.title:active,
+.title:focus {
+    color: var(--primary-color)
+}
+
+a:hover,
+a:active,
+a:focus {
+    color: var(--primary-color-dark)
+}
+
+/* Header
+/* ---------------------------------------------------------- */
+
+.nav__mobile-sidebar {
+    background: var(--bg);
+}
+
+.nav__docs-wrapper {
+    background: #969696;
+
+    &.is-active {
+        background-image: -webkit-gradient(linear, left top, right top, from(#ff8a00), to(#e52e71));
+        background-image: linear-gradient(to right, #ff8a00, #e52e71)
+    }
+}
+
+.nav__docs-button {
+    background: var(--bg);
+
+    span {
+        color: var(--body-color);
+    }
+
+    svg {
+        color: var(--body-color);
+    }
+}
+
+.invert {
+    color: var(--secondary-text-color)
+}
+
+/* Header
+/* ---------------------------------------------------------- */
+
+.submenu li a:hover {
+    background: var(--bg-teritary)
+}
+
+.submenu li a,
+.submenu li a:visited {
+    color: var(--body-color)
+}
+
+.submenu li a:hover,
+.submenu li a:active {
+    color: var(--primary-color)
+}
+
+.submenu {
+    background: var(--bg-tertiary)
+}
+
+@media (--desktop-screen) {
+    .submenu {
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.25);
+        background: var(--bg-secondary);
+    }
+}
+
+
+
+/* Main Content
+/* ---------------------------------------------------------- */
+
+.site__content {
+    background-color: var(--bg);
+}
+
+.docs--bg {
+    background-color: var(--bg-light);
+}
+
+.post-card__link,
+.feed__link {
+    color: var(--primary-text-color);
+}
+
+.post-card__link:hover,
+.feed__link:hover {
+    color: var(--hovered-link-color)
+}
+
+.pagination-link {
+    color: var(--pagination-color);
+    border: 1px solid var(--pagination-color)
+}
+
+.related-post__link {
+    color: var(--primary-text-color)
+}
+
+.related-post__link:hover {
+    color: var(--hovered-link-color)
+}
+
+.pagination-link:active,
+.pagination-link:hover,
+.pagination-item--current a {
+    color: #fff;
+    background: var(--pagination-color)
+}
+
+/* Sidebar
+/* ---------------------------------------------------------- */
+
+@media (--mobile-screen) {
+    .docs__sidebar {
+        background: var(--main-bg);
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+
+        &:after {
+            background: linear-gradient(0deg, pink 10%, transparent);
+        }
+    }
+
+    .docs__nav-title {
+        color: var(--text-primary);
+        border-top: 1px solid var(--border-color-light);
+    }
+
+    .docs__menu-item {
+        &:hover {
+            background: var(--nav-sidebar-bg);
+        }
+
+        &.is-active {
+            background: var(--nav-sidebar-bg);
+        }
+    }
+
+    .docs__menu-link {
+        color: var(--text-secondary);
+
+        &:hover {
+            color: var(--primary-color);
+        }
+
+        &.active {
+            color: var(--light-text-color);
+        }
+    }
+}
+
+@media (--desktop-screen) {
+    .docs__sidebar {
+        background-color: var(--bg-primary);
+
+        &:before {
+            background-color: var(--bg-primary);
+        }
+
+        &:after {
+            background: linear-gradient(0deg, var(--bg-primary) 10%, transparent);
+        }
+    }
+
+    .docs__nav-title {
+        color: var(--body-color);
+        border-top: 1px solid var(--border-color);
+    }
+
+    .docs__menu-item {
+        &:hover {
+            background: var(--nav-sidebar-bg);
+        }
+
+        &.is-active {
+            background: var(--nav-sidebar-bg);
+        }
+    }
+
+    .docs__menu-link {
+        color: var(--body-color);
+
+        &:hover {
+            color: var(--light-text-color);
+        }
+
+        &.active {
+            color: var(--light-text-color);
+        }
+    }
+}
+
+/* Footer
+/* ---------------------------------------------------------- */
+.footer-copyright {
+    color: var(--footer-text);
+    background: var(--footer-bg)
+}

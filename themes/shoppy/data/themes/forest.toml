@@ -1,0 +1,32 @@
+# Theme metadata
+name = "Forest"
+
+# Primary
+primary = "#4caf50"
+primary_light = "#80e27e"
+primary_dark = "#087f23"
+title_text = "#454545"
+link_text = "#4caf50"
+link_hover_text = "#80e27e"
+
+# Menu
+menu_bg = "#fff"
+submenu_bg = "#f5f5f5"
+menu_hover_bg = "#087f23"
+menu_text = "#fff"
+menu_text_active = "#1b5e20"
+menu_text_hover = "#fff"
+menu_title = "#2b2b2b"
+navbar_bg = "#e2e2e2"
+navbar_text = "#5e5e5e"
+navbar_text_active = "#454545"
+navbar_text_hover = "#f05d61"
+
+#footer
+widget_bg = "#4caf50"
+widget_title = "#fff"
+widget_text = "#fff"
+widget_text_hover = "#fff"
+pagination = "#4caf50"
+footer_bg = "#4caf50"
+footer_text = "#fff"

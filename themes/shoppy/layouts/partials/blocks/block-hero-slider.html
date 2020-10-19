@@ -1,0 +1,42 @@
+<div class="block block__hero-slider site-banner cover-hero">
+    <div class="cover-hero">
+        <div class="slider">
+            <div class="slide">
+                <div class="slide__img">
+                    <picture>
+                        <source media="(min-width: 680px)" data-srcset="{{ .Section.image_1.image | relURL }}" />
+                        <source media="(min-width: 359px)" data-srcset="{{ .Section.image_1.imageMobile | relURL }}" />
+                        <img class="lazyload lazy" alt="{{ .Section.image_1.alt_text }}" data-src="{{ .Section.image_1.image | relURL }}" data-srcset="{{ .Section.image_1.imageMobile | relURL }} 400w, {{ .Section.image_1.image | relURL }} 800w">
+                    </picture>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide__img">
+                    <picture>
+                        <source media="(min-width: 680px)" data-srcset="{{ .Section.image_2.image | relURL }}" />
+                        <source media="(min-width: 359px)" data-srcset="{{ .Section.image_2.imageMobile | relURL }}" />
+                        <img class="lazyload lazy" alt="{{ .Section.image_2.alt_text }}" data-src="{{ .Section.image_2.image | relURL }}" data-srcset="{{ .Section.image_2.imageMobile | relURL }} 400w, {{ .Section.image_2.image | relURL }} 800w">
+                    </picture>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide__img">
+                    <picture>
+                        <source media="(min-width: 680px)" data-srcset="{{ .Section.image_3.image | relURL }}" />
+                        <source media="(min-width: 359px)" data-srcset="{{ .Section.image_3.imageMobile | relURL }}" />
+                        <img class="lazyload lazy" alt="{{ .Section.image_3.alt_text }}" data-src="{{ .Section.image_3.image | relURL }}" data-srcset="{{ .Section.image_3.imageMobile | relURL }} 400w, {{ .Section.image_3.image | relURL }} 800w">
+                    </picture>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide__img">
+                    <picture>
+                        <source media="(min-width: 680px)" data-srcset="{{ .Section.image_4.image | relURL }}" />
+                        <source media="(min-width: 359px)" data-srcset="{{ .Section.image_4.imageMobile | relURL }}" />
+                        <img class="lazyload lazy" alt="{{ .Section.image_4.alt_text }}" data-src="{{ .Section.image_4.image | relURL }}" data-srcset="{{ .Section.image_4.imageMobile | relURL }} 400w, {{ .Section.image_4.image | relURL }} 800w">
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

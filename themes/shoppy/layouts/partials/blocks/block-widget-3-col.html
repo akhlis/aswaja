@@ -1,0 +1,30 @@
+<section class="grid-content block block__widget-3-col footer-widget footer-widget__bg">
+    <div class="grid-wrapper grid-col-3">
+        <div class="card-col-3 widget-footer is-center">
+            <h4 class="widget-footer__title">{{ safeHTML .Section.col_1.headline }}</h4>
+            <nav class="nav-footer">
+                <ul class="menu-footer">
+                    {{ range .Section.col_1.navigation }}
+                    <li class="menu-footer__item"><a class="menu-footer__link" href="{{ .link_url }}">{{ .link_text }}</a></li>
+                    {{ end }}
+                </ul>
+            </nav>
+        </div>
+        <div class="card-col-3 widget-footer is-center">
+            <h4 class="widget-footer__title">{{ safeHTML .Section.col_2.headline }}</h4>
+            <nav class="nav-footer">
+                <ul class="menu-footer">
+                    {{ range .Section.col_2.navigation }}
+                    <li class="menu-footer__item"><a class="menu-footer__link" href="{{ .link_url }}">{{ .link_text }}</a></li>
+                    {{ end }}
+                </ul>
+            </nav>
+        </div>
+        <div class="card-col-3 widget-footer is-center">
+            <h4 class="widget-footer__title">{{ safeHTML .Section.col_3.headline }}</h4>
+            <div class="widget-footer__content">
+                {{ safeHTML .Section.col_3.content }}
+            </div>
+        </div>
+    </div>
+</section>

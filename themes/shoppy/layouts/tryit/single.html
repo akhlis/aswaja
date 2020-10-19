@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en{{ end }}">
+{{ partial "head" . }}
+
+<div class="action-field relative w-screen h-screen bg-white">
+    <div class="content-box absolute border-box w-full h-1/2 top-0 right-0">
+        <div class="pre__wrapper relative max-h-full overflow-y-auto">{{ .Content }}</div>
+        <div class="resizer horizontal absolute w-full h-2 right-0 bottom-0 cursor-n-resize bg-gray-400 z-50"></div>
+    </div>
+    <div class="content-box absolute border-box w-full h-1/2 bottom-0 right-0">
+        <div class="iframe__wrapper relative">
+            <iframe class="iframe w-full h-full absolute border-0 top-0 left-0" id="preview" allow="autoplay" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
+
+<style>
+    .content-box {
+        height: 50%;
+    }
+
+    .content-box pre {
+        min-height: 100%;
+        overflow-y: auto;
+        margin: 0;
+    }
+
+    .pre__wrapper {
+        height: 100%;
+        background: #2d2d2d;
+    }
+
+    .iframe__wrapper {
+        overflow: hidden;
+        /* padding-top: 56.25%; */
+        padding-top: 100%;
+    }
+</style>
+
+<script src="https://unpkg.com/interactjs@next"></script>
+{{ range .Site.Params.tryit.js}}
+<script src="{{ .URL | absURL }}"></script>
+{{ end }}
+
+</body>
+
+</html>

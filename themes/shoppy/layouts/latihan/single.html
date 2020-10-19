@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en{{ end }}">
+{{ partial "head" . }}
+
+{{ .Content }}
+
+
+<script src="https://unpkg.com/interactjs@next"></script>
+{{ range .Site.Params.codeku.js}}
+<script src="{{ .URL | absURL }}"></script>
+{{ end }}
+</body>
+</html>

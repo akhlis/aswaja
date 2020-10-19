@@ -1,0 +1,30 @@
+{{ $scr := .Scratch }}
+{{ $site := $scr.Get "site" }}
+{{/* Attempt to load color theme specified by user. */}}
+{{ $theme_index := .Site.Data.theme.color_theme | default "default" }}
+{{ if isset .Site.Data.themes $theme_index }}
+  {{ $theme := index .Site.Data.themes $theme_index }}
+  {{ $scr.Set "primary" $theme.primary }}
+  {{ $scr.Set "title_text" $theme.title_text }}
+  {{ $scr.Set "link_text" $theme.link_text }}
+  {{ $scr.Set "link_hover_text" $theme.link_hover_text }}
+  {{ $scr.Set "primary_light" $theme.primary_light }}
+  {{ $scr.Set "primary_dark" $theme.primary_dark }}
+  {{ $scr.Set "menu_bg" $theme.menu_bg }}
+  {{ $scr.Set "submenu_bg" $theme.submenu_bg }}
+  {{ $scr.Set "menu_hover_bg" $theme.menu_hover_bg }}
+  {{ $scr.Set "menu_text" $theme.menu_text }}
+  {{ $scr.Set "menu_text_active" $theme.menu_text_active }}
+  {{ $scr.Set "menu_text_hover" $theme.menu_text_hover }}
+  {{ $scr.Set "navbar_bg" $theme.navbar_bg }}
+  {{ $scr.Set "navbar_text" $theme.navbar_text }}
+  {{ $scr.Set "navbar_text_active" $theme.navbar_text_active }}
+  {{ $scr.Set "navbar_text_hover" $theme.navbar_text_hover }}
+  {{ $scr.Set "widget_bg" $theme.widget_bg }}
+  {{ $scr.Set "widget_title" $theme.widget_title }}
+  {{ $scr.Set "widget_text" $theme.widget_text }}
+  {{ $scr.Set "widget_text_hover" $theme.widget_text_hover }}
+  {{ $scr.Set "pagination" $theme.pagination }}
+  {{ $scr.Set "footer_bg" $theme.footer_bg }}
+  {{ $scr.Set "footer_text" $theme.footer_text }}
+{{ end }}

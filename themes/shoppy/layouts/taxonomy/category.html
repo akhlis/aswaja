@@ -1,0 +1,28 @@
+{{ define "main" }}
+<main id="site-main">
+    <div class="bg-gray-100 shadow-inner py-8">
+        <div class="container w-full max-w-screen-xl mx-auto lg:px-16">
+            <header class="text-center">
+                <h1 class="text-2xl uppercase text-gray-700">{{ .Title }}</h1>
+            </header>
+        </div>
+    </div>
+
+    <div class="posts__wrapper">
+        <div class="container w-full max-w-screen-xl mx-auto grid grid-cols-1 lg:grid-cols-7 gap-8 px-3 lg:px-12 my-12">
+            <div class="posts__wrapper col-span-1 lg:col-span-5">
+                <div class="posts__card">
+                    {{ range ( .Paginate (where .Data.Pages "Type" "in" site.Params.mainSections)).Pages }}
+                    {{ partial "post-card.html" . }}
+                    {{ end }}
+                </div>
+
+                {{ partial "pagination.html" . }}
+            </div>
+            <div class="sidebar__wrapper col-span-1 lg:col-span-2">
+                {{ partial "sidebar.html" . }}
+            </div>
+        </div>
+    </div>
+</main>
+{{ end }}

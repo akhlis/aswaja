@@ -1,0 +1,68 @@
+{{ $current_page := . }}
+{{ $highlight_active_link := site.Params.main_menu.highlight_active_link | default true }}
+<aside class="sidenav absolute w-full h-full bg-white shadow-lg z-50 lg:hidden" 
+       x-show="sideNav" 
+       @click.away="sideNav = false" 
+       x-transition:enter="transition duration-300 ease-out" 
+       x-transition:enter-start="opacity-0 transform -translate-x-full" 
+       x-transition:enter-end="opacity-100 transform translate-x-0" 
+       x-transition:leave="transition duration-300 ease-in" 
+       x-transition:leave-start="opacity-100 transform translate-x-0" 
+       x-transition:leave-end="opacity-0 transform -translate-x-full">
+    <nav id="menu" class="py-2">
+        <ul class="menu list-none bg-white pl-0 pb-6 mb-0" x-data="{ selectedMenu: null }">
+            {{ range $index, $e := site.Menus.main }}
+            {{ if .HasChildren }}
+            <li class="menu__item has-submenu relative text-gray-700 leading-none hover:text-primary hover:bg-gray-100 mb-0">
+                <button @click="selectedMenu !== {{ $index }} ? selectedMenu = {{ $index }} : selectedMenu = null" class="w-full flex items-center text-current cursor-pointer focus:outline-none py-2 px-6">
+                    {{- .Pre -}}<span>{{ .Name | safeHTML }}</span>{{- .Post -}}
+                    <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="angle-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="svg-inline--fa fa-angle-down fa-w-10 fa-2x w-4 h-4 fill-current text-current ml-2" :class="{ 'transition duration-300 ease-in-out transform -rotate-90': selectedMenu == {{ $index }} }"><path fill="currentColor" d="M151.5 347.8L3.5 201c-4.7-4.7-4.7-12.3 0-17l19.8-19.8c4.7-4.7 12.3-4.7 17 0L160 282.7l119.7-118.5c4.7-4.7 12.3-4.7 17 0l19.8 19.8c4.7 4.7 4.7 12.3 0 17l-148 146.8c-4.7 4.7-12.3 4.7-17 0z" class=""></path></svg>
+                </button>
+                <ul class="submenu relative whitespace-no-wrap bg-gray-100 list-none py-0 pl-0 my-2" 
+                    x-show="selectedMenu == {{ $index }}" 
+                    x-transition:enter="transition duration-300 ease-out origin-top" 
+                    x-transition:enter-start="opacity-0 transform scale-y-0" 
+                    x-transition:enter-end="opacity-100 transform scale-y-100" 
+                    x-transition:leave="transition duration-300 ease-in origin-top" 
+                    x-transition:leave-start="opacity-100 transform scale-y-100" 
+                    x-transition:leave-end="opacity-0 transform scale-y-0">
+                    {{ range .Children }}
+                    <li class="submenu__item mb-0">
+                        <a class="submenu-item__link block text-gray-700 hover:text-primary capitalize hover:bg-white leading-none py-2 px-8" href="{{ .URL | relLangURL }}" {{ if $.IsHome }} data-target="{{ .URL }}" {{ end }}>
+                            {{- .Pre -}}<span>{{ .Name | safeHTML }}</span>{{- .Post -}}
+                        </a>
+                    </li>
+                    {{ end }}
+                </ul>
+            </li>
+            {{ else }}
+
+            {{/* Set target for link. */}}
+            {{ $.Scratch.Set "target" "" }}
+            {{ if gt (len .URL) 4 }}
+            {{ if eq "http" (slicestr .URL 0 4) }}
+            {{ $.Scratch.Set "target" " target=\"_blank\" rel=\"noopener\"" }}
+            {{ end }}
+            {{ end }}
+
+            {{/* Get active page. */}}
+            {{ $is_link_in_current_path := in $current_page.RelPermalink .URL }}
+            {{ $is_widget_page := or $current_page.IsHome (eq $current_page.Type "widget_page") }}
+            {{ $hash := findRE "#(.+)" .URL }}
+            {{ $is_same_page := $is_link_in_current_path }}
+            {{ if gt (len $hash) 0 }}
+            {{ $hash = index $hash 0 }}
+            {{ $hash_removed := replace .URL $hash "" }}
+            {{ if eq (len $hash_removed) 0 }}
+            {{ $hash_removed = "/" }}{{/* Add robustness for `/#SECTION` or `#SECTION` in `menus.toml`. */}}
+            {{ end }}
+            {{ $is_same_page = eq (path.Dir $current_page.RelPermalink) (path.Dir ($hash_removed|relLangURL)) }}
+            {{ end }}
+            <li class="menu__item mb-0">
+                <a class="block hover:no-underline text-gray-700 hover:text-primary hover:bg-gray-100 leading-none py-2 px-6 {{if and $highlight_active_link $is_link_in_current_path }} active{{end}}" href="{{.URL | relLangURL}}" {{ if and $is_widget_page $is_same_page }} data-target="{{$hash}}" {{ end }}{{ ($.Scratch.Get "target") | safeHTMLAttr }}>{{- .Pre -}}<span>{{ .Name | safeHTML }}</span>{{- .Post -}}</a>
+            </li>
+            {{ end }}
+            {{ end }}
+        </ul>
+    </nav>
+</aside>

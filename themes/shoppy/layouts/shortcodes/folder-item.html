@@ -1,0 +1,25 @@
+<div>
+    <input class="folder__checkbox" {{ with .Get "id" }} id="n-{{.}}" {{ end }} type="checkbox" checked>
+    <label class="folder__label before:text-orange-200 before:mr-2 cursor-pointer" {{ with .Get "id" }} for="n-{{.}}"
+        {{ end }}>{{ with .Get "label" }}{{.}}{{ end }}</label>
+    <div class="folder__box hidden pl-6">
+        {{ with .Get "link-1" }}
+        <a class="folder__link block text-gray-600 hover:no-underline before:text-orange-400 before:mr-2" href="#link">{{.}}</a>{{ end }}
+        {{ with .Get "link-2" }}
+        <a class="folder__link block text-gray-600 hover:no-underline before:text-orange-400 before:mr-2" href="#link">{{.}}</a>{{ end }}
+        {{ with .Get "link-3" }}
+        <a class="folder__link block text-gray-600 hover:no-underline before:text-orange-400 before:mr-2" href="#link">{{.}}</a>{{ end }}
+        {{ with .Get "link-4" }}
+        <a class="folder__link block text-gray-600 hover:no-underline before:text-orange-400 before:mr-2" href="#link">{{.}}</a>{{ end }}
+        {{ with .Get "link-5" }}
+        <a class="folder__link block text-gray-600 hover:no-underline before:text-orange-400 before:mr-2" href="#link">{{.}}</a>{{ end }}
+        {{ with .Get "link-6" }}
+        <a class="folder__link block text-gray-600 hover:no-underline before:text-orange-400 before:mr-2" href="#link">{{.}}</a>{{ end }}
+        {{ with .Get "link-7" }}
+        <a class="folder__link block text-gray-600 hover:no-underline before:text-orange-400 before:mr-2" href="#link">{{.}}</a>{{ end }}
+        {{ with .Get "link-8" }}
+        <a class="folder__link block text-gray-600 hover:no-underline before:text-orange-400 before:mr-2" href="#link">{{.}}</a>{{ end }}
+
+        {{ .Inner  }}
+    </div>
+</div>

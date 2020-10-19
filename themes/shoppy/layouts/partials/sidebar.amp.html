@@ -1,0 +1,33 @@
+<aside class="sidebar">
+    {{ range $.Site.Data.theme.sidebar }}
+    {{ if eq .template "resent-post" }}
+    <section class="sidebar-widget">
+        <div class="widget-resent">
+            <div class="widget-header">
+                <h3 class="widget-title widget-title__line">{{ safeHTML .headline }}</h3>
+            </div>
+            {{ $recent_product_num := 6 }}
+            {{ range first $recent_product_num (where site.RegularPages "Type" "in" site.Params.mainSections) }}
+            <div class="widget-post">
+                {{ if .Params.thumbnail }}
+                <div class="widget-post__media">
+                    <amp-img class="widget-post__image" src="{{ .Params.thumbnail | relURL }}" alt="{{ .Title }}" width="1.33" height="1" layout="responsive">
+                    </amp-img>
+                </div>
+                {{ end }}
+                <div class="widget-post__body">
+                    <p class="widget-post__title">
+                        <a href="{{ .Permalink }}" class="widget-post__title-link title">{{ .Title }}</a>
+                    </p>
+                    <div class="widget-post__meta">
+                        <time
+                            class="widget-post__published">{{ with .Site.Params.dateFormat }}{{ $.Date.Format . }}{{ else }}{{ .Date.Format "02 January 2006" }}{{ end }}</time>
+                    </div>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </section>
+    {{ end }}
+    {{ end }}
+</aside>

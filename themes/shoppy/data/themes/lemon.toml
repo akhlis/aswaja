@@ -1,0 +1,20 @@
+# Theme metadata
+name = "Default"
+
+# Primary
+primary = "#f39c12"
+primary_light = "#ef931f"
+primary_dark = "#d67902"
+title_text = "#454545"
+
+# Menu
+menu_bg = "#f39c12"
+menu_hover_bg = "#ef931f"
+menu_text = "#fff"
+menu_text_active = "#fff"
+menu_text_hover = "#fff"
+menu_title = "#2b2b2b"
+
+#footer
+footer_widget_bg = "#f39c12"
+footer_bg = "#f39c12"

@@ -1,0 +1,11 @@
+<div class="post-title__wrapper space--top">
+    <div {{ with .Get "class" }}class="title-bg {{.}}"{{ end }}>
+        <section class="post-title__inner">
+            <h2 class="post-title-h1 light-text-color is-center {{.Get "text-weight"}}"><strong>{{.Get "text"}}</strong>{{.Get "title"}}</h2>
+            <div {{ with .Get "class" }}class="title-line {{.}}"{{ end }}></div>
+            <div class="post-media">
+                <amp-img src="{{.Get "src" }}" alt="{{.Get "alt"}}" width="{{.Get "width" }}" height="{{.Get "height" }}" layout="responsive"></amp-img>
+            </div>
+        </section>
+    </div>
+</div>

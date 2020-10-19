@@ -1,0 +1,95 @@
+[data-tooltip] {
+    @apply relative cursor-pointer;
+}
+
+[data-tooltip]:before,
+[data-tooltip-after]:after {
+    @apply rounded-sm text-xs text-white font-normal absolute opacity-0 py-4px px-2 text-center invisible;
+}
+
+[data-tooltip]:before,
+[data-tooltip-after]:after {
+    background-color: #333;
+    bottom: 100%;
+    content: attr(data-tooltip);
+    font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    left: 50%;
+    line-height: 1.2;
+    pointer-events: none;
+    transform: translateX(-50%) translateY(0);
+    transition-duration: 300ms;
+    transition-property: opacity, transform;
+    white-space: nowrap;
+}
+
+[data-tooltip-after]:after {
+    content: attr(data-tooltip-after)
+}
+
+[data-tooltip]:hover:before,
+[data-tooltip-after]:hover:after {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-4px);
+    visibility: visible
+}
+
+[data-tooltip].is-copied:before {
+    @apply bg-green-A400;
+}
+
+[data-tooltip].example__value:before {
+    content: "klik untuk menyalin kode"
+}
+
+[data-tooltip].example__value.is-copied:before {
+    content: "kode telah disalin"
+}
+
+[data-lang]:before {
+    @apply absolute top-0 left-0 text-2xs text-white py-2px px-3;
+}
+
+[data-lang]:before {
+    content: attr(data-lang);
+}
+
+@media (--phone-screen) {
+
+    [data-tooltip].button__clipboard:before,
+    [data-tooltip-after].button__clipboard:after {
+        transform: translateX(0) translateY(0);
+        left: auto;
+        right: 0;
+    }
+
+    [data-tooltip].button__clipboard:hover:before,
+    [data-tooltip-after].button__clipboard:hover:after {
+        transform: translateX(0) translateY(-4px);
+        left: auto;
+        right: 0;
+    }
+}
+
+/*! purgecss start ignore */
+
+[data-lang].language-html:before {
+    @apply bg-orange-500;
+}
+
+[data-lang].language-css:before {
+    @apply bg-blue-500;
+}
+
+[data-lang].language-js:before {
+    @apply bg-red-500;
+}
+
+[data-lang].language-bash:before {
+    @apply bg-green-500;
+}
+
+[data-lang].language-js:before {
+    content: "Javascript";
+}
+
+/*! purgecss end ignore */

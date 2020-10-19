@@ -1,0 +1,12 @@
+<header class="col-span-1 lg:col-span-2 xl:col-span-3">
+    <p class="mb-6">{{ with .Get "default"}}
+        <code class="property__default text-xs text-gray-700 inline-block bg-white py-3px px-2 align-top rounded-sm float-right" data-tooltip="Ini nilai default browser">{{.}}</code>{{ end }}
+        {{ with .Get "recommended"}}
+        <code class="property__recommended text-xs text-gray-700 inline-block bg-white py-3px px-2 align-top rounded-sm float-right" data-tooltip="Ini nilai yang disarankan">{{.}}</code>{{ end }}
+        {{ with .Get "value"}}
+        <code class="property__value text-xs text-gray-700 inline-block bg-yellow-400 cursor-pointer relative py-3px px-2 align-top rounded-sm" data-tooltip="Click to copy" data-clipboard-text="{{.}}">{{.}}</code>{{ end }}
+    </p>
+    <div class="property__description text-sm">
+        {{ .Inner | markdownify }}
+    </div>
+</header>

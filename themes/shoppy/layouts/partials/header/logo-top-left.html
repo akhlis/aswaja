@@ -1,0 +1,81 @@
+<header class="site-header header">{{ if $.Site.Data.theme.navbar | default true }}
+    <div class="navbar navbar-bg">
+        <div class="navbar-wrapper">
+            <div class="navbar-contact navbar-text">
+                {{ with $.Site.Data.setting.user }}
+                <span>CS WA <i class="icon-whatsapp"></i> {{ .whatsapp }}</span>
+                <span>| LINE @ {{ .line }}</span>{{ end }}
+            </div>
+            <div class="navbar-link navbar-text">
+                <a href="/konfirmasi-pembayaran" target="_blank">Konfirmasi Pembayaran</a> {{ with $.Site.Data.setting }}
+                <span class="navbar-social">
+                        {{ range .social }}
+                        <a class="navbar-social__icon navbar-social__icon-{{ .icon }}" href="{{ .url }}"><i class="icon-{{ .icon }}"></i></a>
+                        {{ end }}
+                        </span> {{ end }}
+            </div>
+        </div>
+    </div>{{ end }}
+    {{ if $.Site.Data.theme.fixedMenu | default true }}
+    <div id="heading--fixed" class="heading-fixed header-bg heading--sticky">
+        <div class="nav-wrapper--fixed">{{ with .Site.Params.logo }}
+            <a class="heading-brand--fixed site-link" href="{{ .Site.BaseURL }}"><img class="site-img" src="{{ .url | absURL }}" alt="{{ $.Site.Title }}" width="152" height="38"></a>{{ end }}
+
+            <nav class="nav-menu--fixed">
+                <ul class='nav-menu__item menu'>
+                    {{ $currentPage := . }} {{ range .Site.Menus.main }} {{ if .HasChildren }}
+                    <li class="{{ if $currentPage.HasMenuCurrent " main " . }}active{{ end }} menu-item">
+                        <a class="menu-item__link" href="#">{{ .Name }}</a>
+                        <ul class="submenu">
+                            {{ range .Children }}
+                            <li class="{{ if $currentPage.IsMenuCurrent " main " . }}active{{ end }} submenu-item">
+                                <a class="submenu-item__link" href="{{ .URL }}">{{ .Name }}</a>
+                            </li>
+                            {{ end }}
+                        </ul>
+                    </li>
+                    {{ else }}
+                    <li class="menu-item">
+                        <a class="menu-item__link" href="{{ .URL }}">{{ .Name }}</a>
+                    </li>
+                    {{ end }} {{ end }}
+                </ul>
+            </nav>
+        </div>
+    </div>{{ end }}
+    <div id="heading" class="heading header-bg">
+       <div class="logo--top logo--top-left">
+           {{ with .Site.Params.logo }}
+            <a class="nav-brand site-link" href="{{ .Site.BaseURL }}"><img class="site-img" src="{{ .url | absURL }}" alt="{{ $.Site.Title }}" width="{{ .width }}" height="{{ .height }}"></a>{{ end }}
+       </div>
+        <div class="nav-wrapper nav-logo--top-left">
+            <div class="nav-mobile nav-toggle">
+                <span class="nav-toggle__item"></span><span class="nav-toggle__text">MENU</span>
+            </div>
+            <nav class="nav-menu">
+                <ul class='nav-menu__item menu'>
+                    {{ $currentPage := . }} {{ range .Site.Menus.main }} {{ if .HasChildren }}
+                    <li class="{{ if $currentPage.HasMenuCurrent " main " . }}active{{ end }} menu-item">
+                        <a class="menu-item__link" href="#">{{ .Name }}</a>
+                        <ul class="submenu">
+                            {{ range .Children }}
+                            <li class="{{ if $currentPage.IsMenuCurrent " main " . }}active{{ end }} submenu-item">
+                                <a class="submenu-item__link" href="{{ .URL }}">{{ .Name }}</a>
+                            </li>
+                            {{ end }}
+                        </ul>
+                    </li>
+                    {{ else }}
+                    <li class="menu-item">
+                        <a class="menu-item__link" href="{{ .URL }}">{{ .Name }}</a>
+                    </li>
+                    {{ end }} {{ end }}
+                </ul>
+            </nav>
+            <div class="cart"></div>
+            <div class="troli"></div>
+            
+          
+        </div>
+    </div>
+</header>

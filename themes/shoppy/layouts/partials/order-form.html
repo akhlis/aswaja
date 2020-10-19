@@ -1,0 +1,208 @@
+<header class="card-grid__head is-center space--center">
+    <h3 class="card-grid__head-title"><span>Order Produk</span></h3>
+</header>
+<div class="order-form__wrapper space--center">
+    <div class="order-form__note">
+        <p><span class="danger-color">PENTING!</span> Mohon mengisi informasi Anda di bawah ini dengan teliti dan lengkap agar produk yang Anda beli dapat dikirimkan ke rumah Anda tanpa terkendala.</p>
+    </div>
+    <div class="order-form">
+        {{ if eq $.Site.Data.theme.form "formpree" }}
+        <form id="order" class="order" action="{{ with $.Site.Data.setting.user }}https://formspree.io/{{ .email }}{{ end }}" name="order" method="POST">
+            {{ else if eq $.Site.Data.theme.form "mailthis" }}
+            <form action="{{ with $.Site.Data.setting.user }}https://mailthis.to/{{ .email }}{{ end }}" method="POST" encType="multipart/form-data">
+                {{ else if eq $.Site.Data.theme.form "liveform" }}
+                <form id="order" class="order" action="https://liveformhq.com/form/{{ with $.Site.Data.theme }}{{ .liveFormOrderID }}{{ end }}" method="POST" accept-charset="utf-8">
+                    {{ else }}
+                    <form id="order" class="order" name="Order" method="POST" netlify>
+                        {{ end }}
+                        <div class="form-order">
+                            <div class="form-order__address">
+                                <ul class="form-flex form-address">
+                                    <li>
+                                        <input type="hidden" name="_utf8" value="✓">
+                                        <label for="first-name">Nama<span class="publii_must">*</span></label>
+                                        <input type="text" id="first-name" name="Nama:" placeholder="Nama Anda" required="">
+                                    </li>
+                                    <li>
+                                        <label for="email">Email</label>
+                                        <input type="email" id="email" name="Email:" placeholder="Alamat Email Anda">
+                                    </li>
+                                    <li>
+                                        <label for="phone">No. HP<span class="publii_must">*</span></label>
+                                        <input type="tel" id="phone" name="HP:" placeholder="No HP Anda" required="">
+                                    </li>
+                                    <li>
+                                        <label for="name">Provinsi<span class="publii_must">*</span></label>
+                                        <input type="text" id="provinsi" name="Provinsi" placeholder="Provinsi" required="">
+                                    </li>
+                                    <li>
+                                        <label for="name">Kab/Kota<span class="publii_must">*</span></label>
+                                        <input type="text" id="kota" name="Kota" placeholder="Kota" required="">
+                                    </li>
+                                    <li>
+                                        <label for="name">Kecamatan<span class="publii_must">*</span></label>
+                                        <input type="text" id="kecamatan" name="Kecamatan" placeholder="Kecamatan" required="">
+                                    </li>
+                                    <li>
+                                        <label for="name">Kelurahan<span class="publii_must">*</span></label>
+                                        <input type="text" id="kelurahan" name="Kelurahan" placeholder="Kelurahan" required="">
+                                    </li>
+                                    <li>
+                                        <label for="name">Alamat<span class="publii_must">*</span></label>
+                                        <textarea rows="4" id="alamat" name="Alamat:" placeholder="Alamat Lengkap" required=""></textarea>
+                                    </li>
+                                    <li>
+                                        <label for="name">Kode POS<span class="publii_must">*</span></label>
+                                        <input type="text" id="kode-pos" name="Kode POS" placeholder="Kode POS" required="">
+                                    </li>
+                                </ul>
+
+                                <div class="order-form__note">
+                                    <p><span class="danger-color">*)</span> Kolom harus diisi</p>
+                                </div>
+                            </div>
+                            <div class="form-order__product">
+                                <div class="form-product__box">
+                                    <div class="form-product form-product__name">
+
+                                        <label for="name">Produk</label>
+                                        <input type="text" class="form-product__name" id="nameItem" name="Nama Produk:" value="{{ .Title }}" readonly="readonly">
+
+                                    </div>{{ if .Params.berat }}
+                                    <div class="form-product form-product__weight">
+
+                                        <label for="name">Berat</label>
+                                        <div class="input-box">
+                                            <input type="text" class="form-group__input" id="weightItem" data-weight="{{ .Params.berat }}" value="0" readonly="readonly">{{ end }}
+                                            <span class="input-addon input-addon--right">gram </span>
+                                        </div>
+
+                                    </div>
+                                    <div class="form-product form-product__number">
+
+                                        <label for="name">Jumlah</label>
+                                        <div class="input-box">
+                                            <button type="button" class="remove_qty input-addon input-addon--left"> - </button>
+                                            <input class="form-group__input input_qty" type="text" value="1" id="total-item">
+                                            <button type="button" class="add_qty input-addon input-addon--right"> + </button>
+                                        </div>
+
+                                    </div>
+                                    <div class="form-product form-product__size">{{ if .Params.size }}
+
+                                        <label for="name">Pilih Ukuran</label>
+                                        <div class="input-box">
+                                            <select class="form-group__input select2-hidden-accessible" id="sizeItem" required="" data-placeholder="Pilih Ukuran" tabindex="1" aria-hidden="true">
+                                            {{ range .Params.size }}
+                                            <option value="{{ .price }}">{{ .name }}</option>
+                                            {{ end }}
+                                            </select>
+                                        </div>
+                                        {{ end }}
+                                    </div>
+                                    <div class="form-product form-product__price">
+
+                                        <label for="name">Harga</label>
+                                        <div class="input-box">
+                                            <span class="input-addon input-addon--left">Rp. </span>
+                                            <input type="text" class="form-group__input" id="priceItem" readonly="readonly">
+                                        </div>
+
+                                    </div>
+                                    <div class="form-ongkir form-product__check">
+
+                                        <label for="name">Ketik Nama Kecamatan untuk Cek Ongkir<span class="publii_must">#</span></label>
+                                        <input class="form-group__input awesomplete" type="text" id="kec" placeholder="Ketik Nama Kecamatan disini" required="" />
+
+                                    </div>
+                                    <div class="form-product form-product__shipping">
+
+                                        <label for="name">Tarif Ongkir</label>
+                                        <div class="input-box">
+                                            <span class="input-addon input-addon--left">Rp. </span>
+                                            <input type="hidden" class="form-group__input" id="ongkir" value="0" readonly="readonly">
+                                            <span class="form-group__input" id="price-ongkir"></span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="order-form__note ongkir-note">
+                                    <p><span class="danger-color">(#)</span> Ketik nama kecamatan dengan lengkap disertai tanda koma <span class="danger-color"><b>( , )</b></span> kemudian pastikan nama kabupaten sesuai dengan alamat tujuan Anda => Contoh: Subang, kab. Subang</p>
+                                </div>
+                                <div class="order-detail">
+                                    <div class="order-detail__head">
+                                        <h4 class="order-detail__title is-center">Rincian Order Anda</h4>
+                                    </div>
+                                    <div class="order-detail__body">
+                                        <div class="order-detail__box order-detail__name-item">
+                                            <label class="order-detail__label" for="name">Produk</label>
+                                            <div class="order-detail__input">
+                                                <span class="order-detail__addon-zero"> </span>
+                                                <input type="text" class="order-detail__input-detail" id="name-item" value="{{ .Title }}" readonly="readonly">
+                                            </div>
+                                        </div>
+                                        <div class="order-detail__box order-detail__total-item">
+                                            <label class="order-detail__label" for="name">Jumlah</label>
+                                            <div class="order-detail__input">
+                                                <span class="order-detail__addon-zero"> </span>
+                                                <input type="text" class="order-detail__input-detail" name="Jumlah:" id="total-items" value="0" readonly="readonly">
+                                            </div>
+                                        </div>
+                                        <div class="order-detail__box order-detail__size-item">
+                                            <label class="order-detail__label" for="name">Size</label>
+                                            <div class="order-detail__input">
+                                                <span class="order-detail__addon-zero"> </span>
+                                                <input type="text" class="order-detail__input-detail" name="Size:" id="size-item" value="0" readonly="readonly">
+                                                <input type="hidden" class="order-detail__input-detail" name="Harga:" id="price-item" value="0" readonly="readonly">
+                                            </div>
+                                        </div>
+                                        <div class="order-detail__box order-detail__subtotal">
+                                            <label class="order-detail__label" for="name">Subtotal</label>
+                                            <div class="order-detail__input">
+                                                <span class="order-detail__addon-zero"></span>
+                                                <input type="text" class="order-detail__input-detail" name="Subtotal:" id="subtotal" value="0" readonly="readonly">
+                                                <input type="hidden" class="order-detail__input-detail" name="Cek Ongkir:" id="text-shipping" value="0" readonly="readonly">
+                                                <input type="hidden" class="order-detail__input-detail" name="Tarif Ongkir:" id="price-shipping" value="0" readonly="readonly">
+                                            </div>
+                                        </div>
+                                        <div class="order-detail__box order-detail__total-weight qty-box">
+                                            <label class="order-detail__label" for="name">Total Berat</label>
+                                            <div class="order-detail__input">
+                                                <span class="order-detail__addon-zero"></span>
+                                                <input type="text" class="order-detail__input-detail" name="Total Berat:" value="0" id="total-weight" readonly="readonly">
+                                            </div>
+                                        </div>
+                                        <div class="order-detail__box order-detail__total-shipping">
+                                            <label class="order-detail__label" for="name">Total Ongkir</label>
+                                            <div class="order-detail__input">
+                                                <span class="order-detail__addon-zero"></span>
+                                                <input type="text" class="order-detail__input-detail" name="Total Ongkir:" id="total-shipping" value="0" readonly="readonly">
+                                                <input type="hidden" class="order-detail__input-detail" id="val-diskon" value="0" readonly="readonly">
+                                            </div>
+                                        </div>
+                                        <div class="order-detail__box order-detail__total-cost">
+                                            <label class="order-detail__label" for="name">Total Bayar</label>
+                                            <div class="order-detail__input">
+                                                <span class="order-detail__addon-zero"></span>
+                                                <input type="text" class="order-detail__input-detail" id="total-cost" name="Total Bayar:" value="0" readonly="readonly">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="order-info__checkout space--top">
+                                    <h3>Total Bayar: <span id="order-cart"></span></h3>
+                                    <p>Silakan tekan tombol PESAN SEKARANG untuk melanjutkan proses pemesanan barang.</p>
+                                </div>
+                            </div>
+                        </div>
+                        {{ if eq $.Site.Data.theme.form "formpree" }}
+                        <input type="hidden" name="_next" value="/konfirmasi-pembayaran" /> {{ else if eq $.Site.Data.theme.form "mailthis" }}
+                        <input type="hidden" name="_after" value="{{ .Site.BaseURL }}/konfirmasi-pembayaran" />
+                        <input type="hidden" name="_honeypot" value="">
+                        <input type="hidden" name="_confirmation" value=""> {{ else if eq $.Site.Data.theme.form "liveform" }}
+                        <input type="hidden" name="_redirect" value="https://hijacket.net/konfirmasi-pembayaran" /> {{ else }}
+                        <input type="hidden" name="_next" value="/konfirmasi-pembayaran" /> {{ end }}
+                        <div class="tren-button is-center space--center"><button class="button button--big success-bg" onClick="InitiateCheckout()" type="submit" value="Send">Pesan Sekarang</button></div>
+                    </form>
+    </div>
+</div>
