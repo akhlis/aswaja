@@ -24,10 +24,13 @@
                     <ul class="nav__menu menu lg:flex list-none pl-0 mb-0">
                         {{ $currentPage := . }} {{ range .Site.Menus.main }} {{ if .HasChildren }}
                         <li class="has-submenu relative text-gray-700 hover:text-primary border-b border-solid border-gray-300 lg:border-0 py-3 px-3 mb-0 {{ if $currentPage.HasMenuCurrent " main " . }}active{{ end }}">
-                            <a class="menu-item__link text-current hover:no-underline flex items-center" href="#">{{ .Name }}</a>
+                            <a class="menu-item__link text-current hover:no-underline flex items-center" href="#">
+								{{- .Pre -}}<span>{{ .Name | safeHTML }}</span>{{- .Post -}}
+								{{ partial "svg/icon-angle-down.svg" (dict "class" "w-4 h-4 fill-current text-current ml-2") }}
+							</a>
                             <ul class="submenu whitespace-no-wrap list-none bg-white absolute invisible opacity-0 z-10 last:pb-4 shadow-lg pl-0 py-2 mb-0" aria-hidden="true">
                                 {{ range .Children }}
-                                <li class="text-secondary hover:text-primary py-1 px-4 mb-0 {{ if $currentPage.IsMenuCurrent " main " . }}active{{ end }}">
+                                <li class="text-gray-700 hover:text-primary hover:bg-gray-100 py-1 px-4 mb-0 {{ if $currentPage.IsMenuCurrent " main " . }}active{{ end }}">
                                     <a class="text-sm text-current capitalize leading-none" href="{{ .URL }}">{{ .Name }}</a>
                                 </li>
                                 {{ end }}
@@ -83,64 +86,5 @@
                 </a>
             </li>{{ end }}
         </ul>
-        <!-- <ul class="nav__menu-item menu lg:flex lg:justify-end">
-
-            <li class="border-b border-solid border-gray-300 lg:border-0 py-1 px-4">
-                <a class=" menu-item__link text-gray-800 hover:text-teal-400" href="/">Beranda</a>
-            </li>
-
-            <li class="has-submenu relative border-b border-solid border-gray-300 lg:border-0 py-1 px-4">
-                <a class="menu-item__link text-gray-800 hover:text-teal-300" href="#">Katalog Produk</a>
-                <span class="submenu-button"></span>
-                <div class="nav__submenu-wrapper">
-                    <ul class="submenu whitespace-no-wrap lg:bg-gray-100 lg:absolute lg:invisible lg:opacity-0 lg:z-10 lg:last:pb-4"
-                        aria-hidden="true">
-
-                        <li
-                            class="border-b border-solid border-gray-300 last:border-0 lg:border-0 py-1 px-4 lg:pl-4 lg:hover:bg-gray-200 ">
-                            <a class="submenu-item__link text-gray-800" href="/avia">Avia</a>
-                        </li>
-
-                        <li
-                            class="border-b border-solid border-gray-300 last:border-0 lg:border-0 py-1 px-4 lg:pl-4 lg:hover:bg-gray-200 ">
-                            <a class="submenu-item__link text-gray-800" href="/basic">Basic</a>
-                        </li>
-
-                        <li
-                            class="border-b border-solid border-gray-300 last:border-0 lg:border-0 py-1 px-4 lg:pl-4 lg:hover:bg-gray-200 ">
-                            <a class="submenu-item__link text-gray-800" href="/beautix">Beautix</a>
-                        </li>
-
-                    </ul>
-                </div>
-            </li>
-
-            <li class="has-submenu relative border-b border-solid border-gray-300 lg:border-0 py-1 px-4">
-                <a class="menu-item__link text-gray-800 hover:text-teal-300" href="#">Store</a>
-                <span class="submenu-button"></span>
-                <div class="nav__submenu-wrapper">
-                    <ul class="submenu whitespace-no-wrap lg:bg-gray-100 lg:absolute lg:invisible lg:opacity-0 lg:z-10 lg:last:pb-4"
-                        aria-hidden="true">
-
-                        <li
-                            class="border-b border-solid border-gray-300 last:border-0 lg:border-0 py-1 px-4 lg:pl-4 lg:hover:bg-gray-200 ">
-                            <a class="submenu-item__link text-gray-800" href="/claretta">Claretta</a>
-                        </li>
-
-                        <li
-                            class="border-b border-solid border-gray-300 last:border-0 lg:border-0 py-1 px-4 lg:pl-4 lg:hover:bg-gray-200 ">
-                            <a class="submenu-item__link text-gray-800" href="/elma">Elma</a>
-                        </li>
-
-                    </ul>
-                </div>
-            </li>
-
-            <li class="border-b border-solid border-gray-300 lg:border-0 py-1 px-4">
-                <a class=" menu-item__link text-gray-800 hover:text-teal-400"
-                    href="/blog/tutorial-makeup-dengan-viva-cosmetics-di-bawah-50-ribu-tampil-menawan-enggak-harus-mahal">Viva</a>
-            </li>
-
-        </ul> -->
     </div>
 </header>

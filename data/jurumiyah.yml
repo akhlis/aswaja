@@ -1,0 +1,30 @@
+- title: CSS Tutorial
+  items:
+    - title: CSS - Tutorial CSS
+      link: /css
+    - title: CSS - Pengenalan
+      link: /css/pengenalan-css/
+    - title: CSS - Property & Value
+      link: /css/penjelasan-selector-property-dan-value-css/
+    - title: CSS - Selector
+      link: /css/penjelasan-selector-css/
+    - title: CSS - Color (Warna)
+      link: /css/color
+    - title: CSS - Background
+      link: /css/cara-membuat-background-dengan-css/
+    - title: CSS - Border (Garis Pembatas)
+      link: /css/cara-membuat-border-dengan-css/
+    - title: CSS - Margin (Batas Luar)
+      link: /css/pengertian-margin-css/
+    - title: CSS - Padding (Lapisan Elemen)
+      link: /css/pengertian-padding-css/
+    - title: CSS - Height/Width (Lebar & Tinggi)
+      link: /css/cara-mengatur-lebar-dan-tinggi-elemen/
+    - title: CSS - Box Model
+      link: /css/pengertian-box-model-css/
+- title : HTML Form
+  items:
+    - title: CSS - Form
+      link: /css/form
+    - title: CSS - Form Element
+      link: /css/form-element
