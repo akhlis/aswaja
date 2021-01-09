@@ -6,6 +6,7 @@ slug: mengenal-tag-iframe
 weight: 210
 authors:
 - akhlis
+thumbnail: /uploads/blog-10-2-465x290.jpg
 ---
 
 segera diupdate

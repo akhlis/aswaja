@@ -1,0 +1,28 @@
+{{ $section := .section }}
+<div
+  class="flex items-center{{ if eq $section.align "center" }} justify-center{{ end }}{{ if eq $section.align "right" }} justify-end{{ end }}">
+
+  {{ if $section.image }}
+  <div class="cell section__media{{ if eq $section.image_position "right" }} section__media--right{{ end }}">
+    <img src="{{ $section.image | relURL }}" alt="{{ $section.title }}" />
+  </div>
+  {{ end }}
+
+  <div class="cell section__body">
+    {{ if $section.title }}
+    <h1 class="section__title capitalize">{{ $section.title | humanize }}</h1>
+    {{ end }}
+    {{ if $section.subtitle }}
+    <div class="section__copy">
+      <p>{{ $section.subtitle }}</p>
+    </div>
+    {{ end }}
+    {{ if $section.actions }}
+    <div class="section__actions btn-group">
+      {{ $include_dict := dict "actions" $section.actions }}
+      {{ partial "section_actions.html" $include_dict }}
+    </div>
+    {{ end }}
+  </div>
+
+</div>

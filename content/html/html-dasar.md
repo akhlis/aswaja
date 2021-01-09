@@ -6,6 +6,7 @@ slug: html-dasar
 weight: 30
 authors:
 - akhlis
+thumbnail: /uploads/blog-10-2-465x290.jpg
 ---
 
 Sebelum mulai belajar HTML lebih lanjut, sebaiknya pahami dulu dasar-dasar yang harus diperhatikan dalam membuat dokumen HTML.

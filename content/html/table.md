@@ -6,6 +6,7 @@ slug: cara-membuat-tabel-pada-elemen-html
 weight: 160
 authors:
 - akhlis
+thumbnail: /uploads/blog-10-2-465x290.jpg
 ---
 
 Jika kamu berkunjung ke website yang mengulas tentang _review_ produk, biasanya kamu akan menjumpai tabel harga dan spesifikasi produk tersebut.

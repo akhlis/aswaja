@@ -1,0 +1,21 @@
+<div class="container w-full max-w-screen-xl mx-auto px-3 lg:px-0">
+    <div class="docs lg:grid lg:grid-cols-docs gap-4 lg:gap-16">
+        <div class="relative">
+            {{ partial "docs_nav.html" . }}
+        </div>
+        <div class="docs__content py-12" x-on:scroll.window="sticky = (window.pageYOffset > 80) ? true : false;">
+            <div class="grid grid-cols-12 gap-6 mb-6">
+                {{$section := .Params.design.section}}
+                {{ $paginator := .Paginate (where .Site.RegularPages "Section" $section) }}
+
+                {{ if gt $paginator.TotalPages 0 }}
+                {{ range $index, $page := $paginator.Pages.ByWeight }}
+                {{ $include_dict := dict "blog_page" $page "Site" $.Site }}
+                {{ partial "blog_feed_item.html" $include_dict }}
+                {{ end }}
+                {{ end }}
+            </div>
+            {{ partial "pagination.html" . }}
+        </div>
+    </div>
+</div>

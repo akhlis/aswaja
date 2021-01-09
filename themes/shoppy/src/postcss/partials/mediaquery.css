@@ -1,7 +1,0 @@
-@custom-media --large-desktop-screen all and (min-width: 75em);
-@custom-media --desktop-screen all and (min-width: 56.25em);
-@custom-media --mobile-screen all and (max-width: 56.1875em);
-@custom-media --tablet-screen all and (min-width: 37.5em) and (max-width: 56.1875em);
-@custom-media --phone-screen all and (max-width: 37.4375em);
-@custom-media --medium-phone-screen all and (min-width: 30em);
-@custom-media --small-phone-screen all and (min-width: 20em);

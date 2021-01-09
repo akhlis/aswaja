@@ -6,6 +6,10 @@ slug: atribut-class-dan-id
 weight: 190
 authors:
 - akhlis
+thumbnail: /uploads/blog-10-2-465x290.jpg
+design:
+  type: docs
+  section: html
 ---
 
 Proses pembuatan website biasanya dimulai dengan merancang prototipe desain web menggunakan software grafis seperti Adobe Photoshop, Sketch, atau Figma.

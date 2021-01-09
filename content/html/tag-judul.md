@@ -6,6 +6,7 @@ slug: cara-membuat-judul-pada-html
 weight: 60
 authors:
 - akhlis
+thumbnail: /uploads/blog-10-2-465x290.jpg
 ---
 
 Heading atau judul merupakan salah satu element penting dalam sebuah halaman website. Karena heading inilah yang biasanya pertama kali akan dilihat oleh pengunjung website.

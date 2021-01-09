@@ -1,0 +1,140 @@
+{{ $variants := .Params.variants }}
+{{ $variantsCount := len .Params.variants }}
+<div class="product__info col-span-12 lg:col-span-6 py-4 px-3 lg:px-4">
+    <h1 class="product__title text-xl lg:text-3xl text-primary mb-2">
+        <span class="product__name">{{ .Title }}</span>
+        <template x-if="product.variants.length > 1">
+            <span class="product__size" x-text="product.variants[activeVariant].size"></span>
+        </template>
+    </h1>
+
+    <div class="product__price-wrap flex items-center justify-between mb-3">
+        <h3 class="product__price font-medium lg:text-3xl mt-2 mb-0">
+            <template x-if="product.variants[activeVariant].discount">
+                <del class="text-lg text-gray-500 mr-4"
+                    x-text="localPrice(product.variants[activeVariant].price + product.variants[activeVariant].discount)"></del>
+            </template>
+            <span class="text-primary text-xl lg:text-2xl"
+                x-text="localPrice(product.variants[activeVariant].price)"></span></h3>
+    </div>
+
+    <div class="product__availability flex items-center mb-4">
+        <div class="product__sku">
+            <label class="w-16 inline-block">
+                <span class="text-gray-600">SKU</span>
+            </label>: {{ if .Params.sku }}
+            <span>{{ .Params.sku }}</span>{{ end }}
+        </div>
+        <div class="flex w-5px items-center ml-6 mr-3">
+            <span class="w-5px h-5px bg-gray-500 rounded-md"></span>
+        </div>
+        <div class="product__stock">
+            <span class="text-gray-600">Stok:</span>
+            <template x-if="product.variants[activeVariant].quantity === undefined">
+                <span class="text-gray-primary">Kosong</span>
+            </template>
+            <template x-if="product.variants[activeVariant].quantity >= 1">
+                <span class="text-gray-primary">Tersedia</span>
+            </template>
+        </div>
+    </div>
+    <div class="flex items-center border-b border-solid border-gray-200 pb-4 mb-12">
+        {{ if .Params.collections }}
+        <div class="product__color flex items-center">
+            <label class="w-16 inline-block">
+                <span class="text-gray-600">Category</span>
+            </label>: {{ range (.GetTerms "collections") }}
+            <a class="inline-block text-gray-700 capitalize hover:text-primary ml-1"
+                href="{{ .Permalink }}">{{ .LinkTitle }}</a>{{ end }}
+        </div>{{ end }}
+        <div class="flex w-5px items-center ml-6 mr-3">
+            <span class="w-5px h-5px bg-gray-500 rounded-md"></span>
+        </div>
+        {{ if .Params.tags }}
+        <div class="product__color flex items-center">
+            <span class="text-gray-600">Tag:</span>
+            {{ range (.GetTerms "tags") }}
+            <a class="inline-block text-gray-700 capitalize hover:text-primary ml-1"
+                href="{{ .Permalink }}">{{ .LinkTitle }}</a>{{ end }}
+        </div>{{ end }}
+    </div>
+
+    <!-- <div
+        class="product__discount inline-flex items-center relative text-xs text-white leading-none bg-primary py-6px px-3 mb-6 product-tag">
+        <span class="mr-2">Yeeeay... Kamu HEMAT</span>
+        <span class="mr-2" x-text="'-' + localPrice(product.variants[activeVariant].discount)"></span>
+        <span class="font-bold"
+            x-text="'(' + Math.round((product.variants[activeVariant].discount/product.variants[activeVariant].price) * 100) + ' %)'"></span>
+    </div> -->
+
+    {{ if .Params.color }}
+    <div class="product__color flex items-center mb-6">
+        <label class="w-16 inline-block">
+            <span class="text-gray-600">Warna</span>
+        </label>: {{ range (.GetTerms "color") }}
+        <a class="product__color-item inline-block text-gray-700 capitalize hover:text-primary ml-1"
+            href="{{ .Permalink }}">{{ .LinkTitle }}</a>{{ end }}
+    </div>{{ end }}
+
+    {{ if gt $variantsCount 1 }}
+    <div class="product__variant mb-6">
+        <label class="product__variant-label w-16 inline-block">
+            <span class="text-gray-600">Size</span>
+        </label>:
+        {{ range $index, $el := .Params.variants }}
+        <button
+            class="product__variant-button relative text-sm border border-solid border-gray-300 hover:border-primary focus:outline-none transition duration-75 ease-in-out py-3px px-3 mr-2"
+            x-on:click="activeVariant = {{ $index }}" :class="{ 
+        'text-primary border-primary before:empty-content before:absolute before:inline-block before:bottom-0 before:right-0 before:border-b-12 before:border-l-10 before:border-primary': activeVariant === {{ $index }},
+        'hover:text-primary': activeVariant !== {{ $index }}
+    }">
+            <span>{{ .size }}</span>
+        </button>
+        {{ end }}
+    </div>
+    {{ end }}
+
+    <div class="product__order flex flex-wrap items-center mb-3">
+        <div class="product__quantity flex items-center mr-6">
+            <div class="product__counter flex items-center text-gray-700 border border-solid border-gray-300 ml-1">
+                <div>
+                    <span class="product__counter-qty text-center focus:outline-none py-4 px-6" x-text="count"></span>
+                </div>
+                <div>
+                    <button
+                        class="product__counter-btn block focus:outline-none hover:bg-gray-100 border-b border-l border-solid border-gray-300 py-1px px-3"
+                        x-on:click="count++">&plus;</button>
+                    <button
+                        class="product__counter-btn block focus:outline-none border-l border-solid border-gray-300 py-1px px-3"
+                        x-on:click="count--" x-bind:disabled="count == 1" :class="{ 
+					'hover:text-red-300': count == 1,
+					'hover:bg-gray-100': count !== 1
+					}">&minus;</button>
+                </div>
+            </div>
+        </div>
+        <div class="product__order-btn">
+            <button
+                class="product__order-cart text-white leading-none flex focus:outline-none items-center border-0 rounded py-3 px-4 mr-3 lg:mr-4"
+                @click="addItem();save()" :class="{ 
+                'bg-gray-200 hover:bg-gray-300': product.variants[activeVariant].quantity === undefined,
+                'bg-tertiery hover:bg-secondary': product.variants[activeVariant].quantity > 0
+            }" :disabled="product.variants[activeVariant].quantity === undefined">
+                {{ partial "svg/shopping-cart.svg" (dict "class" "w-4 h-4 inline-block fill-current mr-2") }}
+                <span>Beli Sekarang</span>
+            </button>
+        </div>
+        <div class="product__order-btn">
+            <a x-bind:href="`https://api.whatsapp.com/send?phone==6285156514890&text=Assalamu%27alaikum%20kak%2C%20saya%20mau%20order%20${product.title}%20*${product.variants[activeVariant].size}*%20(harga:%20${localPrice(product.variants[activeVariant].price)})%20ini%20apa%20stoknya%20masih%20ada%20ya%20kak%3F`"
+                target="_blank" rel="noopener"
+                class="product__order-wa text-white leading-none no-underline flex focus:outline-none items-center border-0 rounded py-3 px-4"
+                :class="{ 
+                'bg-gray-200 hover:bg-gray-300': product.variants[activeVariant].quantity === undefined,
+                'bg-green-500 hover:bg-green-400': product.variants[activeVariant].quantity > 0
+            }">
+                {{ partial "svg/icon-whatsapp.svg" (dict "class" "w-4 h-4 inline-block fill-current mr-2") }}
+                <span>Beli via Whatsapp</span>
+            </a>
+        </div>
+    </div>
+</div>

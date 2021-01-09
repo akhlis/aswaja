@@ -1,0 +1,22 @@
+<div class="breadcrumb flex flex-wrap items-center text-sm text-gray-600 mb-4">
+    <a class="inline-flex items-center text-accent hover:text-primary" href="/">
+        {{ partial "svg/icon-home.svg" (dict "class" "w-4 h-4 inline-block fill-current mr-2") }}
+        <span>Home</span>
+    </a>
+    {{ if eq .Section "shop" }}
+    {{ partial "svg/icon-chevron-right.svg" (dict "class" "w-3 h-3 fill-current text-current mx-1") }}
+    <span class="breadcrumb__model">
+        <a class="text-accent hover:text-primary capitalize" href="/collections/">Collections</a>
+    </span>
+    {{ partial "svg/icon-chevron-right.svg" (dict "class" "w-3 h-3 fill-current text-current mx-1") }}
+    <span class="breadcrumb__model">
+        {{ if .Params.collections}}
+        {{ range (.GetTerms "collections") }}
+        <a class="text-accent hover:text-primary capitalize" href="{{ .Permalink }}">{{ .LinkTitle | humanize }}</a>
+        {{ end }}
+        {{ end }}
+    </span>
+    {{ end }}
+    {{ partial "svg/icon-chevron-right.svg" (dict "class" "w-3 h-3 fill-current text-current mx-1") }}
+    <span class="text-primary">{{ .Title }}</span>
+</div>

@@ -6,6 +6,7 @@ slug: cara-menambahkan-css-pada-html
 weight: 120
 authors:
 - akhlis
+thumbnail: /uploads/blog-10-2-465x290.jpg
 ---
 
 Dalam membuat website, HTML harus dibantu oleh CSS untuk mempercantik tampilan layoutnya.

@@ -1,6 +1,0 @@
-{{ if $.Site.Data.theme.social_share | default true }}
-<div class="share-button social-share">
-    <a class="social-share__icon fb-icon" href="https://www.facebook.com/sharer.php?u={{ .Permalink | html }}" target="_blank" rel="noopener"><i class="icon-facebook"></i></a>
-    <a class="social-share__icon tw-icon" href="https://twitter.com/intent/tweet?text={{ .Title | html }}&amp;url={{ .Permalink | html }}" target="_blank" rel="noopener"><i class="icon-twitter"></i></a>
-    <a class="social-share__icon wa-icon" href="whatsapp://send?text={{ .Permalink | html }}}" data-action="share/whatsapp/share" target="_blank" rel="noopener"><i class="icon-whatsapp"></i></a>
-</div>{{ end }}

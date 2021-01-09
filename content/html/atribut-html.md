@@ -6,6 +6,10 @@ slug: atribut-html
 weight: 50
 authors:
 - akhlis
+thumbnail: /uploads/blog-10-2-465x290.jpg
+design:
+  type: docs
+  section: html
 ---
 
 Atribut HTML adalah informasi tambahan yang diberikan pada sebuah element HTML yang diletakkan pada tag pembuka.

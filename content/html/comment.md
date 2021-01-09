@@ -6,6 +6,7 @@ slug: membuat-komentar-pada-html
 weight: 110
 authors:
 - akhlis
+thumbnail: /uploads/blog-10-2-465x290.jpg
 ---
 
 Setelah membaca judul di atas, saya harap kamu tidak gagal paham dengan memahaminya seperti cara membuat komentar di Facebook atau membuat kolom komentar di website portal berita.

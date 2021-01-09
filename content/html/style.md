@@ -6,6 +6,7 @@ slug: cara-memberi-style-pada-elemen-html
 weight: 80
 authors:
 - akhlis
+thumbnail: /uploads/blog-10-2-465x290.jpg
 ---
 
 Apa jadinya kalau membuat halaman website hanya menggunakan HTML saja?

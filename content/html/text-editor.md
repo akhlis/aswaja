@@ -6,6 +6,7 @@ slug: memilih-aplikasi-teks-editor-terbaik
 weight: 20
 authors:
 - akhlis
+thumbnail: /uploads/blog-10-2-465x290.jpg
 ---
 
 Apakah yang harus dipersiapkan sebelum belajar membuat website?

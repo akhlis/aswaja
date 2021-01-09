@@ -1,9 +1,0 @@
-<!DOCTYPE html>
-<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en{{ end }}">
-{{ partial "header" . }}
-{{$section := .Section}}
-<div class="site__content {{if or ( eq $section "html") ( eq $section "cssref") ( eq $section "element")}} docs--bg {{ end }}">
-    {{block "main" . }}{{ end }}
-</div>
-{{ partial "footer" . }}
-</html>

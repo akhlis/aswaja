@@ -1,0 +1,15 @@
+{{ define "content" }}
+<main id="site-main" class="site__main {{ if .Site.Params.header.sticky_nav }}pt-20{{ end }}">
+  <div class="container w-full max-w-screen-xl mx-auto px-3 lg:px-12 py-4">
+    {{ partial "breadcrumb.html" . }}
+    <div class="product bg-white grid grid-cols-12 lg:gap-8">
+      {{ partial "shop_media.html" . }}
+      {{ partial "shop_body.html" . }}
+    </div>
+    <div class="product__content col-span-12 bg-white py-8 px-3 lg:px-4 mb-6">
+      {{ partial "shop_content.html" . }}
+    </div>
+    {{ partial "shop_related.html" . }}
+  </div>
+</main>
+{{ end }}

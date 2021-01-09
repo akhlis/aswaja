@@ -6,6 +6,7 @@ slug: mengenal-warna-html
 weight: 111
 authors:
 - akhlis
+thumbnail: /uploads/blog-10-2-465x290.jpg
 ---
 
 Dalam web desain, pewarnaan pada HTML dilakukan dengan menggunakan kode.

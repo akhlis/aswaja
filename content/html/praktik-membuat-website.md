@@ -6,6 +6,7 @@ slug: cara-membuat-halaman-website
 weight: 300
 authors:
 - akhlis
+thumbnail: /uploads/blog-10-2-465x290.jpg
 ---
 
 Kebanyakan orang berpikir kalau belajar bahasa pemrograman web itu sulit.

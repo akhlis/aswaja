@@ -1,25 +1,29 @@
 {
-    "name": "vitoko",
+    "name": "hijacket",
     "version": "0.1.1",
-    "description": "Starter files for a Hugo theme with Tailwindcss",
+    "description": "Hijacket Official Store repository site",
     "main": "index.js",
-    "repository": "https://github.com/dirkolbrich/hugo-theme-tailwindcss-starter",
-    "author": "dirkolbrich <github@dirkolbrich.de>",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/akhlis/hijacket.git"
+	},
+    "author": "Akhlis <github@akhlis>",
     "license": "MIT",
     "scripts": {
         "start": "hugo --gc",
         "dev": "hugo server --disableFastRender"
     },
     "devDependencies": {
-        "@fullhuman/postcss-purgecss": "^3.0.0",
-        "autoprefixer": "^9.8.0",
-        "postcss": "^7.0.30",
-        "postcss-cli": "^7.1.1",
+        "autoprefixer": "^10.0.4",
+        "postcss": "^8.1.10",
+        "postcss-cli": "^8.3.1",
+        "postcss-purgecss": "^2.0.3",
         "postcss-import": "^12.0.1",
-        "postcss-nested": "^4.2.1",
-        "tailwindcss": "^1.8.10",
-        "tailwindcss-aspect-ratio": "^3.0.0",
-        "tailwindcss-pseudo-elements": "^1.1.2"
+        "postcss-nested": "^5.0.1",
+        "tailwindcss": "^2.0.1",
+        "@tailwindcss/typography": "^0.3.0",
+        "@tailwindcss/aspect-ratio": "^0.2.0",
+        "tailwindcss-pseudo-elements": "^1.4.1"
     },
     "browserslist": [
         "last 1 version",

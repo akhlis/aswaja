@@ -6,6 +6,10 @@ slug: block-dan-inline
 weight: 180
 authors:
 - akhlis
+thumbnail: /uploads/blog-10-2-465x290.jpg
+design:
+  type: docs
+  section: html
 ---
 
 Setiap elemen HTML memiliki nilai _display_ default yang tergantung dari tipe elemen itu sendiri.

@@ -6,6 +6,10 @@ slug: pengertian-html
 weight: 10
 authors:
 - akhlis
+thumbnail: /uploads/blog-10-2-465x290.jpg
+design:
+  type: docs
+  section: html
 ---
 
 Pernah kebayang ingin berkarir sebagai web developer?

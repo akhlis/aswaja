@@ -1,0 +1,114 @@
+.button__wa {
+    color: var(--light-text-color);
+    background: var(--wa-color);
+    padding: 8px 18px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.2;
+    border-radius: 8px;
+    cursor: pointer;
+    background-position: center;
+    transition: background 0.8s;
+
+    &:hover {
+        text-decoration: none;
+        color: var(--light-text-color);
+        background: #3ab956 radial-gradient(circle, transparent 1%, #3ab956 1%) center/15000%;
+    }
+
+    &:active {
+        background-color: var(--accent-bg);
+        background-size: 100%;
+        transition: background 0s;
+    }
+
+    & svg {
+        margin-right: 6px;
+        margin-bottom: 3px;
+    }
+}
+
+.button__wa--left {
+    margin-right: 10px;
+}
+
+.button__wa-mobile {
+    text-transform: uppercase;
+    color: var(--light-text-color);
+    width: 94%;
+    left: 3%;
+    bottom: 0.5em;
+    background: var(--wa-color);
+    position: fixed;
+    text-align: center;
+    border-radius: 4px;
+    padding: 0.75em 0.5em;
+    cursor: pointer;
+    z-index: 199;
+
+    &:hover {
+        text-decoration: none;
+        color: var(--light-text-color);
+        background: #3ab956 radial-gradient(circle, transparent 1%, #3ab956 1%) center/15000%;
+    }
+
+    &:active {
+        background-color: var(--accent-bg);
+        background-size: 100%;
+        transition: background 0s;
+    }
+
+    & svg {
+        margin-right: 6px;
+        margin-bottom: 3px;
+    }
+}
+
+.button__cart {
+    color: var(--secondary-text-color);
+    background: transparent;
+    cursor: pointer;
+    
+    &:hover {
+        color: var(--accent-color);
+    }
+}
+
+.button__cart-info {
+    line-height: 20px;
+}
+
+.button--accent {
+    background: var(--link-color);
+
+    &:hover {
+        background: #3bba95 radial-gradient(circle, transparent 1%, #3bba95 1%) center/15000%;
+    }
+}
+
+.disabledButton {
+    background-color: #d8d8d8;
+    transition: background 0s;
+    
+    
+    &:active {
+        transition: background 0s;
+    }
+
+    &:hover {
+        background-color: #d8d8d8;
+    }
+}
+
+.inCartButton {
+    background-color: #d8d8d8;
+    transition: background 0s;
+    
+    &:active {
+        transition: background 0s;
+    }
+
+    &:hover {
+        background-color: #d8d8d8;
+    }
+}

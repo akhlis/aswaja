@@ -1,0 +1,55 @@
+/* Post Footer
+/* ---------------------------------------------------------- */
+
+.prev-post,
+.next-post {
+    font-weight: 500;
+    color: var(--secondary-text-color);
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.social-share__icon {
+    display: inline-block;
+    text-align: center;
+    color: var(--primary-text-color);
+    min-width: 2.4rem;
+
+    &:hover {
+        color: var(--lightgrey-text-color);
+        text-decoration: none;
+    }
+}
+
+/*post navigation*/
+
+.post-nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1.5em;
+    margin-bottom: 2em;
+}
+
+.prev-post,
+.next-post {
+    font-weight: bold;
+
+    &:hover {
+        color: var(--hovered-link-color);
+    }
+}
+
+@media (--small-screen) {
+    .post-footer {
+        flex-direction: column;
+        padding: 0 0 1.5em;
+    }
+    .post-footer-tags {
+        margin-bottom: 1.5em;
+    }
+    .social-profiles-icon:last-child {
+        margin-right: 0;
+    }
+}

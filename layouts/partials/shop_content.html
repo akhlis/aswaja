@@ -1,0 +1,134 @@
+<div x-data="{ tab: window.location.hash ? window.location.hash.substring(1) : 'description' }" id="tab_wrapper">
+    <!-- The tabs navigation -->
+    <nav class="border-b border-solid border-gray-300 mb-8">
+        <a class="inline-block leading-none py-2 px-2"
+            :class="{ 'text-primary border-primary border-b-2 border-solid active': tab === 'description', 'text-gray-700 border-b-0': tab !== 'description' }"
+            @click.prevent="tab = 'description'; window.location.hash = 'description'" href="#">Description</a>
+        <a class="inline-block leading-none py-2 px-2"
+            :class="{ 'text-primary border-primary border-b-2 border-solid active': tab === 'reviews', 'text-gray-700 border-b-0': tab !== 'reviews' }"
+            @click.prevent="tab = 'reviews'; window.location.hash = 'reviews'" href="#">Specification</a>
+    </nav>
+    <!-- The tabs content -->
+    <div x-show="tab === 'description'">
+        <div class="product__content max-w-screen-md mx-auto text-sm text-gray-700">
+            {{ .Content }}
+        </div>
+        <div class="max-w-screen-md mx-auto text-sm text-gray-700">
+            {{ if .Params.galleries }}
+            {{range .Params.galleries }}
+            <div class="bg-white mb-6">
+                <img class="product__image blur-up lazyload" data-src="{{ .image | relURL }}" alt="hijacket">
+            </div>
+            {{ end }}
+            {{ end }}
+        </div>
+    </div>
+    <div x-show="tab === 'reviews'">
+        <table class="table-data-sheet">
+            <tbody>
+                {{ if isset .Params "seri" }}
+                <tr class="odd">
+                    <td>Seri</td>
+                    <td>{{ .Params.seri }}</td>
+                </tr>
+                {{ end }}
+                {{ if isset .Params "material" }}
+                <tr class="odd">
+                    <td>Material</td>
+                    <td>{{ .Params.material }}</td>
+                </tr>
+                {{ end }}
+                {{ if isset .Params "ukuran" }}
+                <tr class="odd">
+                    <td>Ukuran</td>
+                    <td>{{ .Params.ukuran }}</td>
+                </tr>
+                {{ end }}
+                {{ if isset .Params "jumlah_warna" }}
+                <tr class="odd">
+                    <td>Jumlah Warna</td>
+                    <td>{{ .Params.jumlah_warna }}</td>
+                </tr>
+                {{ end }}
+                {{ if isset .Params "warna_utama" }}
+                <tr class="odd">
+                    <td>Warna Utama</td>
+                    <td class="capitalize">{{ .Params.warna_utama }}</td>
+                </tr>
+                {{ end }}
+                {{ if isset .Params "warna_tambahan" }}
+                <tr class="odd">
+                    <td>Warna Tambahan</td>
+                    <td class="capitalize">{{ .Params.warna_tambahan }}</td>
+                </tr>
+                {{ end }}
+                {{ if isset .Params "gender" }}
+                <tr class="odd">
+                    <td>Gender</td>
+                    <td class="capitalize">{{ .Params.gender }}</td>
+                </tr>
+                {{ end }}
+                {{ if isset .Params "kantong" }}
+                <tr class="odd">
+                    <td>Kantong</td>
+                    <td class="capitalize">{{ .Params.kantong }}</td>
+                </tr>
+                {{ end }}
+                {{ if isset .Params "zipper" }}
+                <tr class="odd">
+                    <td>Zipper</td>
+                    <td class="capitalize">{{ .Params.zipper }}</td>
+                </tr>
+                {{ end }}
+                {{ if isset .Params "hoodie" }}
+                <tr class="odd">
+                    <td>Hoodie</td>
+                    <td class="capitalize">{{ .Params.hoodie }}</td>
+                </tr>
+                {{ end }}
+                {{ if isset .Params "sablon" }}
+                <tr class="odd">
+                    <td>Sablon</td>
+                    <td class="capitalize">{{ .Params.sablon }}</td>
+                </tr>
+                {{ end }}
+                {{ if isset .Params "bordir" }}
+                <tr class="odd">
+                    <td>Border</td>
+                    <td class="capitalize">{{ .Params.bordir }}</td>
+                </tr>
+                {{ end }}
+                {{ if isset .Params "kancing" }}
+                <tr class="odd">
+                    <td>Kancing</td>
+                    <td class="capitalize">{{ .Params.kancing }}</td>
+                </tr>
+                {{ end }}
+                {{ if isset .Params "finger" }}
+                <tr class="odd">
+                    <td>Finger</td>
+                    <td class="capitalize">{{ .Params.finger }}</td>
+                </tr>
+                {{ end }}
+                {{ if isset .Params "furing" }}
+                <tr class="odd">
+                    <td>Furing</td>
+                    <td class="capitalize">{{ .Params.furing }}</td>
+                </tr>
+                {{ end }}
+                {{ if isset .Params "tali_kerut" }}
+                <tr class="odd">
+                    <td>Tali Kerut</td>
+                    <td class="capitalize">{{ .Params.tali_kerut }}</td>
+                </tr>
+                {{ end }}
+                {{ if isset .Params "tema_design" }}
+                <tr class="odd">
+                    <td>Tema Design</td>
+                    <td class="capitalize">{{ .Params.tema_design }}</td>
+                </tr>
+                {{ end }}
+            </tbody>
+        </table>
+    </div>
+</div>

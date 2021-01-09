@@ -1,0 +1,224 @@
+/*------------------------------------------------------------------
+Project:		Hijacket Theme
+Version:		1.0.0
+Last change: 	09/01/2020
+-------------------------------------------------------------------*/
+
+@tailwind base;
+@tailwind components;
+/* purgecss start ignore */
+@import "partials/splide.min.css";
+/* purgecss end ignore */
+@tailwind utilities;
+@import "partials/header.css";
+@import "site.css";
+
+.content-stretch {
+    align-content: stretch;
+}
+
+.self-baseline {
+    align-self: baseline;
+}
+
+.border-groove {
+    border-style: groove;
+}
+
+.post-card__img.lazyloaded {
+    opacity: 1;
+}
+
+.post-card__img.lazyloaded:hover {
+    opacity: 0.84;
+}
+
+.product-tag:before {
+    position: absolute;
+    top: 0;
+    right: -7px;
+    display: inline-block;
+    content: "";
+    border-top: 12px solid #ff9800;
+    border-bottom: 12px solid #ff9800;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+}
+.product__variant-button:before {
+    border-left-color: transparent;
+}
+
+.border-tag:before {
+    position: absolute;
+    top: 0;
+    right: -7px;
+    display: inline-block;
+    content: "";
+    border-top: 12px solid #ff9800;
+    border-bottom: 12px solid #ff9800;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+}
+
+[x-cloak] { display: none; } 
+
+.selected-courier:before {
+    text-align: center;
+    content: "✓";
+    color:  hsl(0, 0%, 100%);
+    background-color: #f57224;
+  }
+figcaption h4 {
+    background-color: rgba(0,0,0,0.5);
+    box-sizing: border-box;
+    transition: background .17s ease;
+}
+
+.product__slider-item {
+	width: 100%;
+	margin-right: -100%;
+	opacity: 0;
+	transform: translate(-100%);
+	transition: 200ms ease-in-out;
+
+	img {
+		display: block;
+		width: 100%;
+	}
+}
+.product__slider-item.selected {
+	transform: translateX(0);
+	opacity: 1;
+}
+.product__slider-item.selected~.product__slider-item {
+	transform: translateX(100%);
+}
+.arrow--left {
+	top: calc(50% - 1.2rem);
+}
+.arrow--right {
+	top: calc(50% - 1.2rem);
+}
+.product__slide-btn {
+	img {
+		filter: grayscale(100%);
+	}
+
+	&:hover img {
+		filter: grayscale(0%);
+	}
+}
+.product__slide-btn.selected img {
+	filter: grayscale(0%);
+	transform: scale(1.10);
+}
+.blur-up {
+    filter: blur(5px);
+    transition: filter 1s;
+}
+/* purgecss start ignore */
+.blur-up.lazyloaded {
+    filter: blur(0);
+}
+
+.splide__arrow svg {
+	@apply fill-current;
+}
+
+.splide__pagination__page.is-active {
+	@apply transform scale-150 rounded-full;
+}
+
+.splide__slide.is-active .bounce-left-3 {
+	@apply animate-leftright-3;
+}
+
+.splide__slide.is-active .bounce-left-4 {
+	@apply animate-leftright-4;
+}
+
+.splide__slide.is-active .bounce-left-5 {
+	@apply animate-leftright-5;
+}
+/* purgecss end ignore */
+/* section styles */
+.feature__icon svg {
+    @apply block w-full fill-current;
+}
+
+.banner__header:after {
+    transition: all 0.3s ease-out;
+}
+
+.banner__box:hover .banner__header:after {
+    @apply w-full;
+}
+
+/*! purgecss start ignore */
+.docs__nav::-webkit-scrollbar {
+    width: 5px;
+    position: fixed;
+    right: 0;
+}
+
+.docs__nav::-webkit-scrollbar-thumb {
+    @apply bg-gray-300;
+    transition: background-color 2s;
+}
+
+/*! purgecss end ignore */
+
+
+.text-arabic,
+.text-matan,
+.text-sarah,
+.text-khat,
+.text-pegon {
+    direction: rtl;
+}
+
+.text-arabic,
+.text-matan {
+    @apply font-arabic font-medium text-xl text-gray-800 leading-tallest mb-6;
+}
+
+.text-sarah {
+    @apply font-body font-medium text-xl text-gray-800 leading-tallest mb-6;
+}
+
+.text-khat {
+    @apply font-arabic font-bold text-xl text-gray-800 text-center leading-tallest mb-6;
+}
+
+.text-pegon {
+    @apply font-body text-base not-italic text-gray-700 absolute w-56 top-12 transform -rotate-15;
+}
+
+@screen lg {
+	.text-khat,
+	.text-arabic,
+	.text-matan {
+		@apply text-2xl;
+	}
+	
+	.text-sarah {
+		@apply text-2xl;
+	}
+}
+
+.text-rujuk {
+    @apply inline-block text-xs text-red-500 absolute top-0 w-4 right-4 border border-solid border-red-500 rounded-full py-2 px-2;
+}
+
+.text-sup,
+.text-sub {
+    @apply text-xs text-red-500 absolute w-4 -right-2;
+}
+
+.text-sup {
+    @apply top-1;
+}
+
+.text-sub {
+    @apply top-6;
+}

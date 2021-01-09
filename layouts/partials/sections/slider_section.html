@@ -1,0 +1,27 @@
+{{ $section := .section }}
+{{ with $section.slides }}
+<div x-ref="splidejs" id="image-slider" class="splide group" x-data="slider()" x-init='splide()'>
+    <div class="splide__track">
+        <ul class="splide__list">
+            {{ range . }}
+            <li class="splide__slide relative">
+                <div class="relative aspect-w-16 aspect-h-9">
+                    {{ $include_dict := dict "image" .image "alt_text" .alt_text "Site" $.Site }}
+                    {{ partial "functions/get_image.html" $include_dict }}
+                </div>
+                <div class="absolute w-full h-full left-0 top-0 flex items-center align-center z-30">
+                    <div class="container w-full max-w-screen-xl mx-auto px-3 lg:px-12">
+                        <header class="lg:w-1/2 relative">
+                            <h2 class="font-semibold text-3xl bounce-left-3">{{ .title | safeHTML }}</h2>
+                            <h4 class="bounce-left-4 mb-6">{{ .subtitle | safeHTML }}</h4>
+                            <a class="inline-block text-gray-900 font-semibold uppercase transition duration-300 ease-in-out hover:text-white hover:bg-lightaccent border-2 border-solid border-gray-900 hover:border-lightaccent bounce-left-5 py-2 px-3"
+                                href="{{ .button_link }}" tabindex="-1">{{ .button_text }}</a>
+                        </header>
+                    </div>
+                </div>
+            </li>
+            {{ end }}
+        </ul>
+    </div>
+</div>
+{{ end }}

@@ -6,6 +6,7 @@ slug: cara-menambahkan-gambar-pada-html
 weight: 150
 authors:
 - akhlis
+thumbnail: /uploads/blog-10-2-465x290.jpg
 ---
 
 Salah satu elemen penting yang bisa meningkatkan ketertarikan pengunjung pada website yaitu dengan menggunakan gambar.

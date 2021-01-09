@@ -6,6 +6,15 @@ slug: nahwu
 weight: 192
 authors:
 - akhlis
+sections:
+  - type: hero_section
+    template: hero_section
+    title: Jurumiyyah
+    align: center
+  - type: content_section
+    template: content_section
+    title: Jurumiyyah
+layout: advanced
 ---
 
 <p class="text-khat">بسم الله الرحمن الرحيم</p>

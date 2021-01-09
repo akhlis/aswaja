@@ -6,6 +6,7 @@ slug: cara-mengatur-format-penulisan-teks-pada-html
 weight: 90
 authors:
 - akhlis
+thumbnail: /uploads/blog-10-2-465x290.jpg
 ---
 
 Apa yang akan kamu lakukan jika menjumpai sebuah artikel di internet yang format penulisan teksnya tidak rapi?

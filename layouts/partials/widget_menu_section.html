@@ -1,0 +1,13 @@
+{{ $section := .section }}
+<div class="widget widget_section">
+    <nav class="nav-footer">
+        <ul class="menu-footer list-none pl-0">
+          {{ range $action := $section.links }}
+          <li class="menu-footer__item text-gray-50 leading-none hover:text-white mb-3">
+            {{ $include_dict := dict "action" $action }}
+            {{ partial "action.html" $include_dict }}
+          </li>
+          {{ end }}
+        </ul>
+      </nav>
+</div>

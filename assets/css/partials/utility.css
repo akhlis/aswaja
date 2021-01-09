@@ -1,0 +1,159 @@
+.success-color {
+    color: var(--success-color);
+}
+
+.danger-color {
+    color: var(--danger-color);
+}
+
+.success-bg {
+    background: var(--success-color);
+
+    &:hover {
+        background: #3ab956;
+    }
+}
+
+.button-bg {
+    background: #828694;
+
+    &:hover {
+        background: #bbbcbf;
+    }
+}
+
+.accent-bg {
+    background: var(--accent-color);
+
+    &:hover {
+        background: var(--hovered-accent-color);
+    }
+}
+
+.danger-bg {
+    background: var(--danger-color);
+}
+
+.warning-color {
+    color: #F1C40F;
+}
+
+.warning-bg {
+    background: #ff8c00;
+
+    &:hover {
+        background: var(--link-color);
+    }
+}
+
+.orange-bg {
+    background: #ff8c00;
+}
+.lightblue-bg {
+    background: #BBD8E6;
+}
+.darkblue-bg {
+    background: #27323A;
+}
+
+
+.light-text-color,
+.light-text-color p {
+    color: var(--light-text-color);
+}
+
+.main-bg {
+    background: var(--main-bg);
+}
+
+.body--light-bg {
+    background: var(--body-light-bg);
+}
+
+.body--dark-bg {
+    background: var(--body-dark-bg);
+}
+
+.space--top {
+    padding-top: 2em;
+}
+
+.space--center {
+    padding: 2em 0;
+}
+
+.space--bottom {
+    padding-bottom: 2em;
+}
+
+.no-space {
+    margin: 0;
+}
+
+.cover-image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+}
+
+.is-cover-fixed {
+    position: relative;
+    background-attachment: fixed;
+}
+
+.is-fixed-content {
+    position: relative;
+    z-index: 9;
+}
+
+.cover-mask {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: radial-gradient(rgba(37, 38, 50, 0.67), rgba(37, 38, 50, 0.92));
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.15);
+    transition: visibility 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    z-index: 1;
+}
+
+.is-center {
+    text-align: center;
+}
+
+.button {
+    font-size: 1.7rem;
+    color: var(--light-text-color);
+    padding: 8px 18px;
+    text-transform: uppercase;
+    border-radius: 8px;
+
+    &:hover {
+        text-decoration: none;
+        color: var(--light-text-color);
+    }
+
+    & i {
+        margin-right: 6px;
+    }
+}
+
+.button--small {
+    font-size: 1.4rem;
+    padding: 6px 12px;
+    color: var(--light-text-color);
+    text-transform: uppercase;
+    margin-right: 6px;
+    border-radius: 8px;
+
+    &:hover {
+        text-decoration: none;
+        color: var(--light-text-color);
+    }
+
+    & i {
+        margin-right: 6px;
+    }
+}

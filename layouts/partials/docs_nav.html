@@ -1,0 +1,53 @@
+<!-- sidebar start -->
+<aside class="docs__nav lg:border-r lg:border-solid lg:border-gray-100"
+    :class="{ 'sticky w-260px h-screen left-0 top-20 bg-white overflow-auto py-0': sticky }">
+    {{ $currentPage := . }}
+    {{$section := .Section}}
+    {{$cssref := "cssref"}}
+    {{$html := "html"}}
+    {{$css := "css"}}
+    {{$htmlref := "element"}}
+    {{$datacss := $.Site.Data.cssref}}
+    {{$datahtml := $.Site.Data.htmlref}}
+
+    {{if or (eq $section $css) (eq $section $cssref) }}
+    {{ range $datacss }}
+    <header class="docs__nav-title tracking-wide border-t border-solid border-gray-100 first:border-0 py-6 pl-4">
+        <h3 class="text-xl uppercase">{{ .title }}</h3>
+    </header>
+    {{ if .items }}
+    <ul class="docs__nav-menu docs__menu list-none p-0 m-0">
+        {{ range .items }}
+        {{ $menu_item_url := .link | relLangURL }}
+        {{ $page_url := $currentPage.RelPermalink | relLangURL }}
+        <li class="docs__menu-item {{ if eq $menu_item_url $page_url }} is-active {{ end }} py-2px px-4">
+            <a class="docs__menu-link text-sm text-gray-800 hover:no-underline hover:text-white focus:text-white {{ if eq $menu_item_url $page_url }}active text-white{{ end }}"
+                href="{{ .link }}">{{ .title }}</a>
+        </li>
+        {{ end }}
+    </ul>
+    {{ end }}
+    {{ end }}
+    {{ end }}
+
+    {{if or (eq $section $html) (eq $section $htmlref) }}
+    {{ range $datahtml }}
+    <header class="docs__nav-title tracking-wide border-t border-solid border-gray-100 first:border-0 py-6 pl-4">
+        <h3 class="text-xl uppercase mb-0">{{ .title }}</h3>
+    </header>
+    {{ if .items }}
+    <ul class="docs__nav-menu docs__menu list-none p-0 mb-6">
+        {{ range .items }}
+        {{ $menu_item_url := .link | relLangURL }}
+        {{ $page_url := $currentPage.RelPermalink | relLangURL }}
+        <li
+            class="docs__menu-item {{ if eq $menu_item_url $page_url }}is-active text-white from-green-400 {{ end }}text-gray-700 hover:text-white transition duration-300 ease-in-out bg-gradient-to-r hover:from-green-400 py-2px px-4">
+            <a class="docs__menu-link{{ if eq $menu_item_url $page_url }} active{{ end }} text-sm text-current hover:no-underline focus:text-white"
+                href="{{ .link }}">{{ .title }}</a>
+        </li>
+        {{ end }}
+    </ul>
+    {{ end }}
+    {{ end }}
+    {{ end }}
+</aside>

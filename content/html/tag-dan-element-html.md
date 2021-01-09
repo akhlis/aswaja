@@ -6,6 +6,7 @@ slug: mengenal-tag-dan-elemen-html
 weight: 40
 authors:
 - akhlis
+thumbnail: /uploads/blog-10-2-465x290.jpg
 ---
 
 Dalam penulisan kode HTML, ada 3 hal utama yang harus kamu pahami agar tidak bingung saat mulai membuat halaman website. 

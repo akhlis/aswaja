@@ -6,6 +6,7 @@ slug: cara-menambahkan-javascript-pada-html
 weight: 220
 authors:
 - akhlis
+thumbnail: /uploads/blog-10-2-465x290.jpg
 ---
 
 Segera diupdate

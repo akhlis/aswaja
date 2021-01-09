@@ -6,6 +6,7 @@ slug: cara-membuat-list-pada-html
 weight: 170
 authors:
 - akhlis
+thumbnail: /uploads/blog-10-2-465x290.jpg
 ---
 
 Dalam menyampaikan informasi yang berbentuk tulisan, pasti diperlukan format penulisan yang tepat agar mudah dipahami oleh pembaca.

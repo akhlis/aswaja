@@ -6,6 +6,7 @@ slug: cara-membuat-paragraf-pada-html
 weight: 70
 authors:
 - akhlis
+thumbnail: /uploads/blog-10-2-465x290.jpg
 ---
 
 Pada tutorial sebelumnya sudah dibahas cara membuat judul konten artikel pada halaman website.

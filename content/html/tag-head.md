@@ -6,6 +6,7 @@ slug: mengenal-tag-head
 weight: 240
 authors:
 - akhlis
+thumbnail: /uploads/blog-10-2-465x290.jpg
 ---
 
 segera diupdate

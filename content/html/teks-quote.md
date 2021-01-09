@@ -6,6 +6,7 @@ slug: cara-membuat-quote-pada-html
 weight: 100
 authors:
 - akhlis
+thumbnail: /uploads/blog-10-2-465x290.jpg
 ---
 
 Pernahkah kamu menulis sebuah artikel kemudian mencantumkan kalimat yang kamu ambil dari sumber referensi lain?

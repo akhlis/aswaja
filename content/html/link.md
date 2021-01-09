@@ -6,6 +6,7 @@ slug: cara-membuat-link-pada-html
 weight: 140
 authors:
 - akhlis
+thumbnail: /uploads/blog-10-2-465x290.jpg
 ---
 
 Hampir semua halaman website pasti terdapat link atau hyperlink.
