@@ -151,9 +151,12 @@ module.exports = {
 				...theme('spacing'),
 				...negative(theme('spacing')),
 			}),
-			lineHeight: {
+            lineHeight: {
                 tall: '3',
                 tallest: '3.5',
+                12: '3rem',
+                14: '3.5rem',
+                16: '4rem',
             },
 			listStyleType: {
 				circle: 'circle',

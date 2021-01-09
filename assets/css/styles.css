@@ -198,11 +198,11 @@ figcaption h4 {
 	.text-khat,
 	.text-arabic,
 	.text-matan {
-		@apply text-2xl;
+		@apply text-2xl leading-tallest;
 	}
 	
 	.text-sarah {
-		@apply text-2xl;
+		@apply text-2xl leading-tallest;
 	}
 }
 
