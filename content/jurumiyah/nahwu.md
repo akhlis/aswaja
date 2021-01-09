@@ -7,413 +7,2373 @@ weight: 192
 authors:
 - akhlis
 sections:
-  - type: hero_section
-    template: hero_section
-    title: Jurumiyyah
-    align: center
-  - type: content_section
-    template: content_section
-    title: Jurumiyyah
+- type: arabic_section
+  template: arabic_section
+  title: بسم الله الرحمن الرحيم
+- type: arabic_section
+  template: arabic_section
+  content:
+  - matan: الحمدُ
+    sarah: ''
+    makna: سكابيهاني فوجي
+    makna_class: ''
+    text_sup: م
+    text_sub: ''
+    text_rujuk: ''
+  - matan: للهِ
+    sarah: ''
+    makna: تتف كدوي الله
+    makna_class: ''
+    text_sup: ل
+    text_sub: ''
+    text_rujuk: ''
+  - matan: الَّذِى
+    sarah: ''
+    makna: ذات
+    makna_class: ''
+    text_sup: بد
+    text_sub: ''
+    text_rujuk: ٢
+  - matan: رفعَ
+    sarah: ''
+    makna: ڠلوهوراكن ڤا ألذى
+    makna_class: ''
+    text_sup: ن
+    text_sub: ''
+    text_rujuk: ''
+  - matan: أهل طاعتهِ
+    sarah: ''
+    makna: ''
+    makna_class: ''
+    text_sup: مف
+    text_sub: ''
+    text_rujuk: ''
+  - matan: بفضلِهِ
+    sarah: ''
+    makna: كانوڬراهاني ألذى
+    makna_class: ''
+    text_sup: مط
+    text_sub: ''
+    text_rujuk: ''
+  - matan: وخفضَ
+    sarah: ''
+    makna: ڠاصاراكن ڤا ألذى
+    makna_class: ''
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: أهل المعصيةِ
+    sarah: ''
+    makna: أهلي ماكسييات
+    makna_class: ''
+    text_sup: مف
+    text_sub: ''
+    text_rujuk: ''
+  - matan: والغَفَلَةِ
+    sarah: ''
+    makna: ووڠ كڠ لالي
+    makna_class: ''
+    text_sup: ''
+    text_sub: ج
+    text_rujuk: ''
+  - matan: بِعَدْ لِهِ
+    sarah: ''
+    makna: سيڤات ڠاديلي الله
+    makna_class: ''
+    text_sup: مط
+    text_sub: ''
+    text_rujuk: ''
+  - matan: والصلاةُ والسلامُ
+    sarah: ''
+    makna: ''
+    makna_class: ''
+    text_sup: م
+    text_sub: ''
+    text_rujuk: ''
+  - matan: على مَن
+    sarah: ''
+    makna: تتف إڠاتاسي ووڠ
+    makna_class: ''
+    text_sup: خ
+    text_sub: ''
+    text_rujuk: ''
+  - matan: نصبهُ
+    sarah: ''
+    makna: ماساڠ إڠ ووڠ
+    makna_class: ''
+    text_sup: ن
+    text_sub: ''
+    text_rujuk: ''
+  - matan: اللهُ
+    sarah: ''
+    makna: ''
+    makna_class: ''
+    text_sup: فا
+    text_sub: ''
+    text_rujuk: ''
+  - matan: للرسالَةِ
+    sarah: ''
+    makna: دادي أوتوسان
+    makna_class: ''
+    text_sup: ''
+    text_sub: ع
+    text_rujuk: ''
+  - matan: العامة
+    sarah: ''
+    makna: كاڠ ڠوموم
+    makna_class: ''
+    text_sup: ن
+    text_sub: ''
+    text_rujuk: ''
+  - matan: وعلى آلهِ وصحبهِ
+    sarah: ''
+    makna: ''
+    makna_class: ''
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: الذينَ
+    sarah: ''
+    makna: ''
+    makna_class: ''
+    text_sup: بد
+    text_sub: ''
+    text_rujuk: ''
+  - matan: تابعوه
+    sarah: ''
+    makna: كاڠ انوت سافا الذين اڠ من
+    makna_class: ''
+    text_sup: ن
+    text_sub: ''
+    text_rujuk: ''
+  - matan: حزبًا
+    sarah: ''
+    makna: تيڠكاه فراڠ
+    makna_class: ''
+    text_sup: ظ
+    text_sub: ''
+    text_rujuk: ''
+  - matan: وسلمًا
+    sarah: ''
+    makna: تيڠكاه سلامت
+    makna_class: ''
+    text_sup: ظ
+    text_sub: ''
+    text_rujuk: ''
+  - matan: مع امتلاء قلوبهم
+    sarah: ''
+    makna: كباءى ج اتينى الذين
+    makna_class: ''
+    text_sup: مع
+    text_sub: ''
+    text_rujuk: ''
+  - matan: بالمحبَّةِ
+    sarah: ''
+    makna: دمن
+    makna_class: ''
+    text_sup: مط
+    text_sub: ''
+    text_rujuk: ''
+  - matan: التامةِ
+    sarah: ''
+    makna: سامفورنا
+    makna_class: ''
+    text_sup: ن
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ", أمابعدُ :"
+    sarah: ''
+    makna: ''
+    makna_class: ''
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+- type: arabic_section
+  template: arabic_section
+  title: بـاب الكلام
+- type: arabic_section
+  template: arabic_section
+  content:
+  - matan: الْكَلاَمُ
+    sarah: ''
+    makna: ''
+    makna_class: right-12
+    text_sup: م
+    text_sub: ''
+    text_rujuk: ''
+  - matan: هُوَ
+    sarah: ''
+    makna: ياكلام
+    makna_class: right-0
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: اللَّفْظُ
+    sarah: ''
+    makna: ''
+    makna_class: right-12
+    text_sup: خ
+    text_sub: ''
+    text_rujuk: ''
+  - matan: الْمُرَكَّبُ
+    sarah: ''
+    makna: دين سوسون
+    makna_class: right-0
+    text_sup: ن
+    text_sub: ''
+    text_rujuk: ''
+  - matan: الْمُفِيْدُ
+    sarah: ''
+    makna: اويه فايداه
+    makna_class: right-0
+    text_sup: ن
+    text_sub: ''
+    text_rujuk: ''
+  - matan: بِالْوَضْعِ
+    sarah: ''
+    makna: سىسىلهانى بوڠصا عراب
+    makna_class: right-0
+    text_sup: ظ
+    text_sub: ''
+    text_rujuk: ''
+- type: arabic_section
+  template: arabic_section
+  content:
+  - matan: ''
+    sarah: "<strong>{الكلام}</strong>"
+    makna: ''
+    makna_class: ''
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: بفتحِ الكافِ
+    makna: "...دين وچا"
+    makna_class: right-12
+    text_sup: مط
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: لغةً
+    makna: "..."
+    makna_class: right-12
+    text_sup: ظُ
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: كل ما
+    makna: ''
+    makna_class: right-12
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: أَفَدَ
+    makna: كڠ مائيداهي افا ما
+    makna_class: right-0
+    text_sup: ن
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: من كتابةٍ
+    makna: توليسان
+    makna_class: right-10
+    text_sup: با
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: او إشارةٍ
+    makna: اوتاوا...
+    makna_class: right-4
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: او عقدٍ
+    makna: اوتاوا بوندلاني تاڠان
+    makna_class: right-4
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: او نصبٍ
+    makna: فاساڠان
+    makna_class: right-4
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: او لسانِ حالٍ.
+    makna: تيڠكاه كڠ نودوهاكن ليسان
+    makna_class: right-2
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: واصطلاحًا
+    makna: ''
+    makna_class: right-12
+    text_sup: ظ
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: ما
+    makna: فركارا
+    makna_class: right-0
+    text_sup: خ
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: َرْكِبُ
+    makna: كڠ دين سوسون افا ما
+    makna_class: right-4
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: من كلمتَينِ
+    makna: كاليماۃ لورو
+    makna_class: right-4
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: وأفادَ
+    makna: أويه فاٸداه افا ما
+    makna_class: right-0
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: كَزَيْدٌ
+    makna: ''
+    makna_class: right-0
+    text_sup: م
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: قَائِمٌ,
+    makna: ووڠ كڠ عادك
+    makna_class: right-2
+    text_sup: خ
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: فانه
+    makna: ''
+    makna_class: right-12
+    text_sup: ج
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: تُرُكِّبُ
+    makna: دين سوسون أفا ما
+    makna_class: right-0
+    text_sup: خ
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: من كلمتَيْنِ
+    makna: "..."
+    makna_class: right-12
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: الأولى
+    makna: "..."
+    makna_class: right-12
+    text_sup: م
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: زيدٌ
+    makna: لفظ...
+    makna_class: right-12
+    text_sup: خ
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: والثانيةُ
+    makna: كڠ كافيڠ ...
+    makna_class: right-0
+    text_sup: م
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: قائمٌ,
+    makna: لفظ...
+    makna_class: right-0
+    text_sup: خ
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: وأفد
+    makna: أويه فاٸداه افا ...
+    makna_class: right-0
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: ثبوتَ القيامِ
+    makna: تتفى ڠادك
+    makna_class: right-6
+    text_sup: مف
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: لزيدٍ.
+    makna: "..."
+    makna_class: right-2
+    text_sup: ما
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: والكلامُ
+    makna: كڠ أران...
+    makna_class: right-0
+    text_sup: م
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: عند الفقهاءِ
+    makna: موڠڬوهى ج علمٲ فقه
+    makna_class: right-2
+    text_sup: ظ
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: كل ما
+    makna: "..."
+    makna_class: right-2
+    text_sup: خ
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: أبطلَ
+    makna: كڠ باتالاكن افا ما
+    makna_class: right-2
+    text_sup: ن
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: الصلاة
+    makna: "..."
+    makna_class: right-2
+    text_sup: مف
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: من حرفٍ
+    makna: "..."
+    makna_class: right-2
+    text_sup: با
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: مُفْهِمٍ
+    makna: ماهاماكن
+    makna_class: right-2
+    text_sup: ن
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: َقِ,
+    makna: عركصاها سيرا
+    makna_class: right-0
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: او حرفينِ
+    makna: ساكيڠ راڠ حوروف
+    makna_class: right-4
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: وان لم يفد
+    makna: سناجان أوراماهاماكن افا حرفين
+    makna_class: right-4
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: كَلَمْ,
+    makna: كايا حرف لم
+    makna_class: right-4
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: وعند المتكلمينَ
+    makna: ج علمأ كلام
+    makna_class: right-4
+    text_sup: ظ
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: عبارةٌ
+    makna: تتمبوڠان
+    makna_class: right-4
+    text_sup: خ
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: عن المعنى
+    makna: ''
+    makna_class: right-4
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: القديمِ
+    makna: كڠ ديڠين
+    makna_class: right-4
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: القائمِ
+    makna: كڠ جومنڠ
+    makna_class: right-4
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: بذاتهِ تعالى,
+    makna: ''
+    makna_class: right-4
+    text_sup: مط
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: وعند الأصوليينَ
+    makna: ج علمأ أصول فقه
+    makna_class: right-4
+    text_sup: ظ
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: هو
+    makna: كلام
+    makna_class: right-4
+    text_sup: م
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: اللفظ
+    makna: "..."
+    makna_class: right-4
+    text_sup: خ
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: لمنزُّل
+    makna: كڠ دين توروناكن
+    makna_class: right-4
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: على محمدٍ
+    makna: ''
+    makna_class: right-4
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: صلى الله عليه وسلم
+    makna: ''
+    makna_class: right-4
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: للإعجازِ
+    makna: عافساكن موسوه
+    makna_class: right-4
+    text_sup: ''
+    text_sub: ع
+    text_rujuk: ''
+  - matan: ''
+    sarah: بأقصرِ سورةٍ
+    makna: لوويه چندق٢قى سورۃ
+    makna_class: right-4
+    text_sup: مط
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: منهُ
+    makna: "..."
+    makna_class: right-4
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: المتعبَّدِ
+    makna: كڠ دين ڳاوى ڠيباداه
+    makna_class: right-4
+    text_sup: ن
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: بتلاوتِهِ
+    makna: ماچا إڠ لفظ...
+    makna_class: right-4
+    text_sup: مط
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: "<strong>{اللفظ}</strong>"
+    makna: ''
+    makna_class: right-4
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: معناهُ
+    makna: ''
+    makna_class: right-4
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: لغةً
+    makna: "..."
+    makna_class: right-4
+    text_sup: ظ
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: الطرحُ
+    makna: بوواڠ
+    makna_class: right-4
+    text_sup: خ
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: والرمى
+    makna: تكسى بوواڠ
+    makna_class: right-4
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: تقول
+    makna: عوچاف سيرا
+    makna_class: right-4
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: لفظت
+    makna: عطاأكن
+    makna_class: right-4
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: الرحَى
+    makna: ڮيليڠان
+    makna_class: right-4
+    text_sup: ف
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: الدقيقَ
+    makna: ڮلفوڠ
+    makna_class: right-4
+    text_sup: مف
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: ولفظ
+    makna: ڠٓلٓفٓه
+    makna_class: right-4
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: فلان
+    makna: ''
+    makna_class: right-4
+    text_sup: فا
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: النَّواةَ
+    makna: ايسى كورما
+    makna_class: right-4
+    text_sup: مف
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: إذا رماها.
+    makna: بوواڠ سافا...
+    makna_class: right-4
+    text_sup: ظ
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: واصطلاحًا
+    makna: ''
+    makna_class: right-4
+    text_sup: ظ
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: هو
+    makna: لفظ
+    makna_class: right-4
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: الصوْتُ
+    makna: سووارا
+    makna_class: right-4
+    text_sup: خ
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: المشتمِلُ
+    makna: كڠ ممووات
+    makna_class: right-4
+    text_sup: ن
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: على بعض الحروف
+    makna: ستڠاه ج حرف
+    makna_class: right-4
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: الهجائيةِ
+    makna: كڠ بوڠصا هجاٸيۃ
+    makna_class: right-4
+    text_sup: ن
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: التى
+    makna: حرف
+    makna_class: right-4
+    text_sup: بد
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: اوَّلُها
+    makna: كاويتانى التى
+    makna_class: right-4
+    text_sup: ن م
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: الألفُ
+    makna: حرف
+    makna_class: right-4
+    text_sup: خ
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: وآخرها
+    makna: أخرى ألتى
+    makna_class: right-4
+    text_sup: م
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: الياءُ
+    makna: حرف يٲ
+    makna_class: right-4
+    text_sup: خ
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: مثاله زيدٌ
+    makna: چونتونى لفظ
+    makna_class: right-4
+    text_sup: م
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: "<strong>{المركب}</strong>"
+    makna: ''
+    makna_class: right-4
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: من كلمتَيْنِ
+    makna: ''
+    makna_class: right-4
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: فأكثَرَ
+    makna: لوويه أكيه
+    makna_class: right-4
+    text_sup: ج
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: تركيبًا
+    makna: سوسونان
+    makna_class: right-4
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: اسنادِيًا,
+    makna: كڠ بوڠصا
+    makna_class: right-4
+    text_sup: ن
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: بخلافِ الإضافِى
+    makna: بيدانى تركب كڠ دين إضافاكن
+    makna_class: right-4
+    text_sup: مط
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: كعبدِ اللهِ
+    makna: كايا لفظ...
+    makna_class: right-4
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: ولمزجى
+    makna: بيدانى تركب
+    makna_class: right-4
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: كَبَعْلَبَكَ
+    makna: كايا لفظ...
+    makna_class: right-4
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: والتوصِيفى
+    makna: ''
+    makna_class: right-4
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: "<strong>{المفيد}</strong>"
+    makna: ''
+    makna_class: right-4
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: اى المفهمُ
+    makna: كڠ أويه فاهام
+    makna_class: right-4
+    text_sup: ن
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: معنًى
+    makna: ''
+    makna_class: right-4
+    text_sup: مف
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: يحسُنُ
+    makna: كڠ باڮوسى
+    makna_class: right-4
+    text_sup: ن
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: السكوتُ
+    makna: معنى متكلم
+    makna_class: right-4
+    text_sup: ف
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: عليه
+    makna: إيڠاتاسى معنى
+    makna_class: right-4
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: بحيثُ لا يبقَى
+    makna: آندى ڮون أورا تتف
+    makna_class: right-4
+    text_sup: ظ
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: للسامعِ
+    makna: ووڠ كڠ عروڠو
+    makna_class: right-4
+    text_sup: ''
+    text_sub: ل
+    text_rujuk: ''
+  - matan: ''
+    sarah: انتظارِ مقيد به,
+    makna: عنطى٢لفظ كڠ ڮيناوى ...
+    makna_class: right-4
+    text_sup: ف
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: فلا يضر
+    makna: اورا باهايانى
+    makna_class: right-4
+    text_sup: ج
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: احتياجُهُ
+    makna: بوتوهى سامع
+    makna_class: right-4
+    text_sup: ن
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: الى المتعالقاتِ
+    makna: فركارا كڠ هوبوڠان
+    makna_class: right-4
+    text_sup: ما
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: من المفاعيل
+    makna: ''
+    makna_class: right-4
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: "<strong>{بالوضع}</strong>"
+    makna: ''
+    makna_class: right-4
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: يعنى
+    makna: ''
+    makna_class: right-4
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: العربى
+    makna: إڠ كلام عرب
+    makna_class: right-4
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: خرج
+    makna: كجابا
+    makna_class: right-4
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: به
+    makna: ''
+    makna_class: right-4
+    text_sup: مط
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: كلام التركِ
+    makna: ''
+    makna_class: right-4
+    text_sup: ف
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: والتكرورِ
+    makna: أوموڠانى ووڠ
+    makna_class: right-4
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: وكلام الهُنُودِ
+    makna: أوموڠانى ووڠ هيندييا
+    makna_class: right-4
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: ممّا
+    makna: ساكيڠ كلام
+    makna_class: right-4
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: ليس
+    makna: كڠ أورا أنا افا ما
+    makna_class: right-4
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: بعربىّ,
+    makna: بوڠصا كلام عرب
+    makna_class: right-4
+    text_sup: خ
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: ويصحُ
+    makna: صح
+    makna_class: right-4
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: ان يَفَسَّرَ
+    makna: ينطا دين تفسيرى
+    makna_class: right-4
+    text_sup: ف
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: الوضعُ
+    makna: داووه ...
+    makna_class: right-4
+    text_sup: ف
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: بالقصدِ
+    makna: معنى مچا
+    makna_class: right-4
+    text_sup: مط
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: فيدخلُ
+    makna: مانچيڠ
+    makna_class: right-4
+    text_sup: ج
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: كلام التركِ
+    makna: ووڠ توركى
+    makna_class: right-4
+    text_sup: ف
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: والتكرورِ
+    makna: ووڠ ...
+    makna_class: right-4
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: ونحوه,
+    makna: سفادانى كلام
+    makna_class: right-4
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: فإنه
+    makna: "... كلام ترك"
+    makna_class: right-4
+    text_sup: ج
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: يسمى
+    makna: دين أرانى افا كلام
+    makna_class: right-4
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: كلاما
+    makna: ''
+    makna_class: right-4
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: لوجود القصد
+    makna: "... دين سجا"
+    makna_class: right-4
+    text_sup: ''
+    text_sub: ع
+    text_rujuk: ''
+  - matan: ''
+    sarah: فيه.
+    makna: كلام ترك الخ
+    makna_class: right-4
+    text_sup: ظ
+    text_sub: ''
+    text_rujuk: ''
+- type: arabic_section
+  template: arabic_section
+  content:
+  - matan: وَأَقْسَامُهُ
+    sarah: ''
+    makna: فاندومانى كلام
+    makna_class: right-0
+    text_sup: م
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ثَلاَثَةٌ
+    sarah: ''
+    makna: ٣
+    makna_class: right-0
+    text_sup: خ
+    text_sub: ''
+    text_rujuk: ''
+  - matan: اِسْمٌ
+    sarah: ''
+    makna: ''
+    makna_class: right-0
+    text_sup: بد
+    text_sub: ''
+    text_rujuk: ''
+  - matan: وَفِعْلٌ
+    sarah: ''
+    makna: ''
+    makna_class: right-0
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: وَحَرْفٌ
+    sarah: ''
+    makna: ''
+    makna_class: right-0
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: جَاءَ
+    sarah: ''
+    makna: كڠ تكا افا حرف
+    makna_class: right-0
+    text_sup: ن
+    text_sub: ''
+    text_rujuk: ''
+  - matan: لِمَعْنَى
+    sarah: ''
+    makna: نودوهاكن معنى
+    makna_class: right-0
+    text_sup: ع
+    text_sub: ''
+    text_rujuk: ''
+- type: arabic_section
+  template: arabic_section
+  content:
+  - matan: ''
+    sarah: "<strong>{اسم} </strong>"
+    makna: ''
+    makna_class: right-0
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: معناهُ
+    makna: ''
+    makna_class: right-0
+    text_sup: م
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: اصطلاحًا
+    makna: معنى ...
+    makna_class: right-0
+    text_sup: ظ
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: كلمةٌ
+    makna: ''
+    makna_class: right-0
+    text_sup: خ
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: دلت
+    makna: كڠ نودوهاكن افا كلمه
+    makna_class: right-0
+    text_sup: ن
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: على معنًى
+    makna: ''
+    makna_class: right-0
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: فى نفسها
+    makna: كاهانانى كلمه
+    makna_class: right-0
+    text_sup: ظ
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: ولم تقتَرِنْ
+    makna: اورا ببارڠان افا كلمه
+    makna_class: right-0
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: بزمانٍ
+    makna: موڠصا
+    makna_class: right-0
+    text_sup: مط
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: وضعًا
+    makna: أسال سومٓلٓهى
+    makna_class: right-0
+    text_sup: ظ
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: كزيد.
+    makna: ''
+    makna_class: right-0
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: وحكمه
+    makna: حوكومى إسم
+    makna_class: right-0
+    text_sup: م
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: الإعرابُ
+    makna: ''
+    makna_class: right-0
+    text_sup: خ
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: وما
+    makna: ''
+    makna_class: right-0
+    text_sup: م
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: جاء
+    makna: كڠ تكا افا ما
+    makna_class: right-0
+    text_sup: ن
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: منه
+    makna: ''
+    makna_class: right-0
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: مبنيًا
+    makna: مبنى
+    makna_class: right-0
+    text_sup: حا
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: فهو
+    makna: ما
+    makna_class: right-0
+    text_sup: خ ج م
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: على
+    makna: ''
+    makna_class: right-0
+    text_sup: خ
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: خِلاَفِ الأصلِ
+    makna: نتفى إيڠاتاسى نولايانى حوكوم أسال
+    makna_class: right-0
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: "<strong>{فعل} </strong>"
+    makna: ''
+    makna_class: right-0
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: معناه
+    makna: ''
+    makna_class: right-0
+    text_sup: م
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: لغة
+    makna: معنى ...
+    makna_class: right-0
+    text_sup: ظ
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: الحدثُ
+    makna: فڠڮاوييان
+    makna_class: right-0
+    text_sup: خ
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: كالضربِ
+    makna: كايا لفظ ...
+    makna_class: right-0
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: والقتلِ,
+    makna: لفظ قتل (ماتنى)
+    makna_class: right-0
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: واصطلاحًا
+    makna: ''
+    makna_class: right-0
+    text_sup: ظ
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: كلمة
+    makna: ''
+    makna_class: right-0
+    text_sup: خ
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: دلت
+    makna: كڠ نودوهاكن افا كلمه
+    makna_class: right-0
+    text_sup: ن
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: على معنًى
+    makna: ''
+    makna_class: right-0
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: فى نفسها
+    makna: كاهانانى كلمه
+    makna_class: right-0
+    text_sup: ظ
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: مقترنَةً
+    makna: كڠ ببارڠان
+    makna_class: right-0
+    text_sup: حا
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: بأحد الأزمنة
+    makna: سالاه سيجينى ج زمن
+    makna_class: right-0
+    text_sup: مط
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: الثلاثة
+    makna: كڠ تلو
+    makna_class: right-0
+    text_sup: ن
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: وضعًا,
+    makna: أسال سومٓلٓهى
+    makna_class: right-0
+    text_sup: ظ
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: وذلك
+    makna: "... چونتونى فعل"
+    makna_class: right-0
+    text_sup: م
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: كقامَ
+    makna: كايا لفظ ...
+    makna_class: right-0
+    text_sup: خ
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: فإنه
+    makna: قام
+    makna_class: right-0
+    text_sup: ج
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: كلمة
+    makna: ''
+    makna_class: right-0
+    text_sup: خ
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: دلت
+    makna: كڠ نودوهاكن افا كلمه
+    makna_class: right-0
+    text_sup: ن
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: على معنًى
+    makna: ''
+    makna_class: right-0
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: فى نفسها
+    makna: كاهانانى كلمه
+    makna_class: right-0
+    text_sup: ظ
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: وهو
+    makna: معنى
+    makna_class: right-0
+    text_sup: م
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: القيامُ,
+    makna: ''
+    makna_class: right-0
+    text_sup: خ
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: والقترنتْ
+    makna: ببارعان افا كلمه
+    makna_class: right-0
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: بزمانِ الماضِى,
+    makna: ''
+    makna_class: right-0
+    text_sup: مط
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: ويضرِب
+    makna: ''
+    makna_class: right-0
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: فإنه
+    makna: ستوهونى يضرب
+    makna_class: right-0
+    text_sup: ج
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: كلمةّ
+    makna: ''
+    makna_class: right-0
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: دلت
+    makna: كڠ نودوهاكٓن افا كلمه
+    makna_class: right-0
+    text_sup: ن
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: على معنًى
+    makna: إيڠاتاسى معنى
+    makna_class: right-0
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: فى نفسها
+    makna: كاهانانى كلمه
+    makna_class: right-0
+    text_sup: ظ
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: وهو
+    makna: ''
+    makna_class: right-0
+    text_sup: م
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: الضربُ
+    makna: ''
+    makna_class: right-0
+    text_sup: خ
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: واقترنتْ
+    makna: ببارڠان افا ...
+    makna_class: right-0
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: بزمان الحال
+    makna: زامان سأ ناليكو
+    makna_class: right-0
+    text_sup: مط
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: والاستقبالِ,
+    makna: زامان كڠ أرٓف تٓكو
+    makna_class: right-0
+    text_sup: مط
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: واضرب
+    makna: ''
+    makna_class: right-0
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: فإنه
+    makna: ''
+    makna_class: right-0
+    text_sup: ج
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: كلمة
+    makna: ''
+    makna_class: right-0
+    text_sup: خ
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: دلت
+    makna: ''
+    makna_class: right-0
+    text_sup: ن
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: على معنًى
+    makna: ''
+    makna_class: right-0
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: فى نفسها
+    makna: ''
+    makna_class: right-0
+    text_sup: ظ
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: وهو
+    makna: ''
+    makna_class: right-0
+    text_sup: م
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: الضربُ,
+    makna: ''
+    makna_class: right-0
+    text_sup: خ
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: واقترنَتْ
+    makna: ببارڠان افا كلمه
+    makna_class: right-0
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: بزمان الحل,
+    makna: ''
+    makna_class: right-0
+    text_sup: مط
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: وحكمه
+    makna: حكمى فعل
+    makna_class: right-0
+    text_sup: م
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: البناء
+    makna: بنأ مبنى
+    makna_class: right-0
+    text_sup: خ
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: وما
+    makna: ''
+    makna_class: right-0
+    text_sup: م
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: جاء
+    makna: كڠ تڬا
+    makna_class: right-0
+    text_sup: ن
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: منه
+    makna: ساكيڠ فعل
+    makna_class: right-0
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: معربا
+    makna: ''
+    makna_class: right-0
+    text_sup: حا
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: فهو
+    makna: ما
+    makna_class: right-0
+    text_sup: خ ج م
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: على
+    makna: ''
+    makna_class: right-0
+    text_sup: خ
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: خلاف الأصل
+    makna: نتفى إيڠاتاسى حكم أسال
+    makna_class: right-0
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: "<strong>{حرف} </strong>"
+    makna: ''
+    makna_class: right-0
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: فمعناه
+    makna: ماكنانى حرف
+    makna_class: right-0
+    text_sup: ج م
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: لغة
+    makna: معنى ...
+    makna_class: right-0
+    text_sup: ظ
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: الطرف
+    makna: فيڠڬير
+    makna_class: right-0
+    text_sup: خ
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: بفتح الراء,
+    makna: دين واچا ...
+    makna_class: right-0
+    text_sup: مط
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: وأما
+    makna: ''
+    makna_class: right-0
+    text_sup: م
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: معناه
+    makna: معنى حرف
+    makna_class: right-0
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: اصطلاحا
+    makna: ''
+    makna_class: right-0
+    text_sup: ظ
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: هو
+    makna: معناه
+    makna_class: right-0
+    text_sup: خ ج م
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: كلمة
+    makna: ''
+    makna_class: right-0
+    text_sup: خ
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: دلت
+    makna: كڠ نودوهاكن افا كلمۃ
+    makna_class: right-0
+    text_sup: ن
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: على معنى
+    makna: ''
+    makna_class: right-0
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: فى غيرها
+    makna: لييانى كلمۃ
+    makna_class: right-0
+    text_sup: ظ
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: ولم تقترن
+    makna: أورا ببارڠان افا كلمۃ
+    makna_class: right-0
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: بزمان
+    makna: موڠصا
+    makna_class: right-0
+    text_sup: مط
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: كمن
+    makna: كايا حرف من
+    makna_class: right-0
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: بكسر الميم,
+    makna: دين واچا كاسراه ميمى
+    makna_class: right-0
+    text_sup: مط
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: فإنها
+    makna: ستوهونى مِن
+    makna_class: right-0
+    text_sup: ج
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: كلمة
+    makna: ''
+    makna_class: right-0
+    text_sup: خ
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: دلت
+    makna: كڠ نودوهاكن افا كلمۃ
+    makna_class: right-0
+    text_sup: ن
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: على معنى
+    makna: ''
+    makna_class: right-0
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: فى غيرها
+    makna: لييانى كلمۃ
+    makna_class: right-0
+    text_sup: ظ
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: وهو
+    makna: معنى ...
+    makna_class: right-0
+    text_sup: م
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: الابتداء
+    makna: كاويتان
+    makna_class: right-0
+    text_sup: خ
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: مثلا,
+    makna: أوفامانى
+    makna_class: right-0
+    text_sup: مط
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: وهذا
+    makna: الإبتدأ
+    makna_class: right-0
+    text_sup: م
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: لا يفهم
+    makna: أورا بيصا دين ڤاهام افا هذا
+    makna_class: right-0
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: منها
+    makna: ساكيڠ مِن
+    makna_class: right-0
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: إلا بانضمامها
+    makna: أڠيڠ كلوان كومفولى مِن
+    makna_class: right-0
+    text_sup: مط
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: إلى غيرها
+    makna: لييانى مِن
+    makna_class: right-0
+    text_sup: ما
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: وحكمه
+    makna: حكمى حرف
+    makna_class: right-0
+    text_sup: م
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: البناء
+    makna: بنأ مبنى
+    makna_class: right-0
+    text_sup: خ
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: "<strong>{جاء لمعنى} </strong>"
+    makna: ''
+    makna_class: right-0
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: اى وضع
+    makna: دين سٓلٓهاكٓن افا حرف
+    makna_class: right-0
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: يدل
+    makna: سوفايا نودوهاكن افا حرف
+    makna_class: right-0
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: على المعنى
+    makna: ''
+    makna_class: right-0
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: كمن
+    makna: كايا مِن
+    makna_class: right-0
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: فإنها
+    makna: ''
+    makna_class: right-0
+    text_sup: ج
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: تدل
+    makna: نودوهاكن افا مِن
+    makna_class: right-0
+    text_sup: خ
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: على المعنى
+    makna: ''
+    makna_class: right-0
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: وهو
+    makna: ألمعنى
+    makna_class: right-0
+    text_sup: م
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: الابتداء.
+    makna: كاويتان
+    makna_class: right-0
+    text_sup: خ
+    text_sub: ''
+    text_rujuk: ''
+- type: arabic_section
+  template: arabic_section
+  content:
+  - matan: فَالْإِسْمُ
+    sarah: ''
+    makna: ''
+    makna_class: ''
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: يُعْرَفُ
+    sarah: ''
+    makna: ''
+    makna_class: ''
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: بِالْخَفْضِ
+    sarah: ''
+    makna: ''
+    makna_class: ''
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: وَالْتَّنْوِيْنِ
+    sarah: ''
+    makna: ''
+    makna_class: ''
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: وَدُخُوْلِ الْأَلِفِ
+    sarah: ''
+    makna: ''
+    makna_class: ''
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: وَالَّامِ
+    sarah: ''
+    makna: ''
+    makna_class: ''
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: وَحُرُوْفِ الْخَفْضِ
+    sarah: ''
+    makna: ''
+    makna_class: ''
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: وَهِىَ
+    sarah: ''
+    makna: ''
+    makna_class: ''
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: مِنْ
+    sarah: ''
+    makna: ''
+    makna_class: ''
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: وَاِلٰى
+    sarah: ''
+    makna: ''
+    makna_class: ''
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: وَعَنْ
+    sarah: ''
+    makna: ''
+    makna_class: ''
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: وَعَلٰى
+    sarah: ''
+    makna: ''
+    makna_class: ''
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: وَفِي
+    sarah: ''
+    makna: ''
+    makna_class: ''
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: وَرُبَّ
+    sarah: ''
+    makna: ''
+    makna_class: ''
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: وَالْبَاءُ
+    sarah: ''
+    makna: ''
+    makna_class: ''
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: وَالْكَافُ
+    sarah: ''
+    makna: ''
+    makna_class: ''
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: وَالَّامُ
+    sarah: ''
+    makna: ''
+    makna_class: ''
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: وَحُرُوْفِ الْقَسَمِ
+    sarah: ''
+    makna: ''
+    makna_class: ''
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: وَهِيَ
+    sarah: ''
+    makna: ''
+    makna_class: ''
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: الْوَاوُ
+    sarah: ''
+    makna: ''
+    makna_class: ''
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: وَالْبَاءُ
+    sarah: ''
+    makna: ''
+    makna_class: ''
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: وَالتَّاءُ.
+    sarah: ''
+    makna: ''
+    makna_class: ''
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+- type: arabic_section
+  template: arabic_section
+  content:
+  - matan: ''
+    sarah: "<strong>{بالخفض} </strong>"
+    makna: ''
+    makna_class: ''
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: معناه
+    makna: ''
+    makna_class: ''
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: لغة
+    makna: ''
+    makna_class: ''
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: التذلّل
+    makna: ''
+    makna_class: ''
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: والخضوع,
+    makna: ''
+    makna_class: ''
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: واصطلاحا
+    makna: ''
+    makna_class: ''
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: عبارة
+    makna: ''
+    makna_class: ''
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: عن الكسرة
+    makna: ''
+    makna_class: ''
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: وما
+    makna: ''
+    makna_class: ''
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: ناب
+    makna: ''
+    makna_class: ''
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: عنها
+    makna: ''
+    makna_class: ''
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: التى
+    makna: ''
+    makna_class: ''
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: تحدث
+    makna: ''
+    makna_class: ''
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: عند دخول عامل الخفض
+    makna: ''
+    makna_class: ''
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: كقولك
+    makna: ''
+    makna_class: ''
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: بسم الله الرحمن الرحيم
+    makna: ''
+    makna_class: ''
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: "<strong>{التنوين} </strong>"
+    makna: ''
+    makna_class: ''
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: وهو
+    makna: ''
+    makna_class: ''
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: التصويت,
+    makna: ''
+    makna_class: ''
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: واصطلاحا
+    makna: ''
+    makna_class: ''
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: نون
+    makna: ''
+    makna_class: ''
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: ساكنة
+    makna: ''
+    makna_class: ''
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: زائدة
+    makna: ''
+    makna_class: ''
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: تتبع
+    makna: ''
+    makna_class: ''
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: آخر الاسم
+    makna: ''
+    makna_class: ''
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: لفظا
+    makna: ''
+    makna_class: ''
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: وتفارقه
+    makna: ''
+    makna_class: ''
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: خطّا
+    makna: ''
+    makna_class: ''
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
+  - matan: ''
+    sarah: لغير توكيد
+    makna: ''
+    makna_class: ''
+    text_sup: ''
+    text_sub: ''
+    text_rujuk: ''
 layout: advanced
 ---
-
-<p class="text-khat">بسم الله الرحمن الرحيم</p>
-
-<p class="text-matan">
-    <span class="relative"><i class="text-pegon -right-2">سكابيهاني فوجي</i><sup class="text-sup">م</sup>الحمدُ </span>
-    <span class="relative"><i class="text-pegon right-4">تتف كدوي الله</i><sup class="text-sup">خ</sup><sup class="text-sub">ل</sup>للهِ </span>
-    <span class="relative"><i class="text-pegon right-6">ذات</i><i class="text-rujuk">٢</i><sup class="text-sup">بد</sup>الَّذِى </span>
-    <span class="relative"><i class="text-pegon right-6">ڠلوهوراكن ڤا ألذى</i><sup class="text-sup">ن</sup> رفعَ</span>
-    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup">مف</sup>أهل طاعتهِ </span>
-    <span class="relative"><i class="text-pegon right-12">كانوڬراهاني ألذى</i><sup class="text-sup">مط</sup>بفضلِهِ </span>
-    <span class="relative"><i class="text-pegon right-12">ڠاصاراكن ڤا ألذى</i>وخفضَ </span>
-    <span class="relative"><i class="text-pegon right-12">أهلي ماكسييات</i><sup class="text-sup">مف</sup>أهل المعصيةِ </span>
-    <span class="relative"><i class="text-pegon right-12">ووڠ كڠ لالي</i><sub class="text-sub">ج</sub>والغَفَلَةِ</span>
-    <span class="relative"><i class="text-pegon right-12">سيڤات ڠاديلي الله</i><sup class="text-sup">مط</sup>بِعَدْ لِهِ </span>
-    <span class="relative"><i class="text-pegon right-12"></i><sup class="text-sup">م</sup>والصلاةُ والسلامُ </span>
-    <span class="relative"><i class="text-pegon right-12">تتف إڠاتاسي ووڠ</i><sup class="text-sup">خ</sup>على مَن </span>
-    <span class="relative"><i class="text-pegon right-12">ماساڠ إڠ ووڠ</i><sup class="text-sup">ن</sup>نصبهُ </span>
-    <span class="relative"><i class="text-pegon right-12"></i><sup class="text-sup">فا</sup>اللهُ </span>
-    <span class="relative"><i class="text-pegon right-12">دادي أوتوسان</i><sub class="text-sub">ع</sub>للرسالَةِ </span>
-    <span class="relative"><i class="text-pegon right-12">كاڠ ڠوموم</i><sup class="text-sup">ن</sup>العامة  </span>
-    <span class="relative">وعلى آلهِ وصحبهِ </span>
-    <span class="relative"><i class="text-pegon right-12"></i><sup class="text-sup">بد</sup>الذينَ </span>
-    <span class="relative"><i class="text-pegon right-12">كاڠ انوت سافا الذين اڠ من</i><sup class="text-sup">ن</sup>تابعوه </span>
-    <span class="relative"><i class="text-pegon right-12">تيڠكاه فراڠ</i><sup class="text-sup">ظ</sup>حزبًا </span>
-    <span class="relative"><i class="text-pegon right-12">تيڠكاه سلامت</i><sup class="text-sup">ظ</sup>وسلمًا </span>
-    <span class="relative"><i class="text-pegon right-12">كباءى ج اتينى الذين</i><sup class="text-sup">مع</sup>مع امتلاء قلوبهم </span>
-    <span class="relative"><i class="text-pegon right-12">دمن</i><sup class="text-sup">مط</sup>بالمحبَّةِ </span>
-    <span class="relative"><i class="text-pegon right-12">سامفورنا</i><sup class="text-sup">ن</sup>التامةِ </span>
-    <span class="relative">, أمابعدُ :</span>
-</p>
-
-<p class="text-khat">بـاب الكلام</p>
-
-<p class="text-matan">
-    <span class="relative"><i class="text-pegon right-12"></i><sup class="text-sup">م</sup>الْكَلاَمُ </span>
-    <span class="relative"><i class="text-pegon right-0">ياكلام</i>هُوَ </span>
-    <span class="relative"><i class="text-pegon right-12"></i><sup class="text-sup">خ</sup>اللَّفْظُ </span>
-    <span class="relative"><i class="text-pegon right-0">دين سوسون</i><sup class="text-sup">ن</sup>الْمُرَكَّبُ </span>
-    <span class="relative"><i class="text-pegon right-0">اويه فايداه</i><sup class="text-sup">ن</sup>الْمُفِيْدُ </span>
-    <span class="relative"><i class="text-pegon right-0">سىسىلهانى بوڠصا عراب</i><sup class="text-sup">ظ</sup>بِالْوَضْعِ</span>
-</p>
-
-<p class="text-sarah">
-    <span class="relative"><strong>{الكلام}</strong></span>
-    <span class="relative"><i class="text-pegon right-12">...دين وچا</i><sup class="text-sup">مط</sup>بفتحِ الكافِ </span>
-    <span class="relative"><i class="text-pegon right-12">...</i><sup class="text-sup">ظُ</sup>لغةً </span>
-    <span class="relative"><i class="text-pegon right-12"></i>كل ما </span>
-    <span class="relative"><i class="text-pegon right-0">كڠ مائيداهي افا ما</i><sup class="text-sup">ن</sup>أَفَدَ </span>
-    <span class="relative"><i class="text-pegon right-10">توليسان</i><sup class="text-sup">با</sup>من كتابةٍ </span>
-    <span class="relative"><i class="text-pegon right-4">اوتاوا...</i>او إشارةٍ </span>
-    <span class="relative"><i class="text-pegon right-4">اوتاوا بوندلاني تاڠان</i>او عقدٍ </span>
-    <span class="relative"><i class="text-pegon right-4">فاساڠان</i>او نصبٍ </span>
-    <span class="relative"><i class="text-pegon right-2">تيڠكاه كڠ نودوهاكن ليسان</i>او لسانِ حالٍ.</span>
-    <span class="relative"><i class="text-pegon right-12"></i><sup class="text-sup">ظ</sup>واصطلاحًا </span>
-    <span class="relative"><i class="text-pegon right-0">فركارا</i><sup class="text-sup">خ</sup>ما </span>
-    <span class="relative"><i class="text-pegon right-4">كڠ دين سوسون افا ما</i>تَرْكِبُ </span>
-    <span class="relative"><i class="text-pegon right-4">كاليماۃ لورو</i>من كلمتَينِ </span>
-    <span class="relative"><i class="text-pegon right-0">أويه فاٸداه افا ما</i>وأفادَ </span>
-    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup">م</sup>كَزَيْدٌ </span>
-    <span class="relative"><i class="text-pegon right-2">ووڠ كڠ عادك</i><sup class="text-sup">خ</sup>قَائِمٌ, </span>
-    <span class="relative"><i class="text-pegon right-12"></i><sup class="text-sup">ج</sup>فانه </span>
-    <span class="relative"><i class="text-pegon right-0">دين سوسون أفا ما</i><sup class="text-sup">خ</sup>تُرُكِّبُ </span>
-    <span class="relative"><i class="text-pegon right-12">...</i>من كلمتَيْنِ </span>
-    <span class="relative"><i class="text-pegon right-12">...</i><sup class="text-sup">م</sup>الأولى </span>
-    <span class="relative"><i class="text-pegon right-12">لفظ...</i><sup class="text-sup">خ</sup>زيدٌ </span>
-    <span class="relative"><i class="text-pegon right-0">كڠ كافيڠ ...</i><sup class="text-sup">م</sup>والثانيةُ </span>
-    <span class="relative"><i class="text-pegon right-0">لفظ...</i><sup class="text-sup">خ</sup>قائمٌ, </span>
-    <span class="relative"><i class="text-pegon right-0">أويه فاٸداه افا ...</i>وأفد </span>
-    <span class="relative"><i class="text-pegon right-6">تتفى ڠادك</i><sup class="text-sup">مف</sup>ثبوتَ القيامِ </span>
-    <span class="relative"><i class="text-pegon right-2">...</i><sup class="text-sup">ما</sup>لزيدٍ. </span>
-    <span class="relative"><i class="text-pegon right-0">كڠ أران...</i><sup class="text-sup">م</sup>والكلامُ </span>
-    <span class="relative"><i class="text-pegon right-2">موڠڬوهى ج علمٲ فقه</i><sup class="text-sup">ظ</sup>عند الفقهاءِ </span>
-    <span class="relative"><i class="text-pegon right-2">...</i><sup class="text-sup">خ</sup>كل ما </span>
-    <span class="relative"><i class="text-pegon right-2">كڠ باتالاكن افا ما</i><sup class="text-sup">ن</sup>أبطلَ </span>
-    <span class="relative"><i class="text-pegon right-2">...</i><sup class="text-sup">مف</sup>الصلاة </span>
-    <span class="relative"><i class="text-pegon right-2">...</i><sup class="text-sup">با</sup>من حرفٍ </span>
-    <span class="relative"><i class="text-pegon right-2">ماهاماكن</i><sup class="text-sup">ن</sup>مُفْهِمٍ </span>
-    <span class="relative"><i class="text-pegon right-0">عركصاها سيرا</i>كَقِ, </span>
-    <span class="relative"><i class="text-pegon right-4">ساكيڠ راڠ حوروف</i>او حرفينِ </span>
-    <span class="relative"><i class="text-pegon right-4">سناجان أوراماهاماكن افا حرفين</i>وان لم يفد </span>
-    <span class="relative"><i class="text-pegon right-4">كايا حرف لم</i>كَلَمْ, </span>
-    <span class="relative"><i class="text-pegon right-4">ج علمأ كلام</i><sup class="text-sup">ظ</sup>وعند المتكلمينَ </span>
-    <span class="relative"><i class="text-pegon right-4">تتمبوڠان</i><sup class="text-sup">خ</sup>عبارةٌ </span>
-    <span class="relative"><i class="text-pegon right-4"></i>عن المعنى </span>
-    <span class="relative"><i class="text-pegon right-4">كڠ ديڠين</i>القديمِ </span>
-    <span class="relative"><i class="text-pegon right-4">كڠ جومنڠ</i>القائمِ </span>
-    <span class="relative"><i class="text-pegon right-4"></i><sup class="text-sup">مط</sup>بذاتهِ تعالى, </span>
-    <span class="relative"><i class="text-pegon right-4">ج علمأ أصول فقه</i><sup class="text-sup">ظ</sup>وعند الأصوليينَ </span>
-    <span class="relative"><i class="text-pegon right-4">كلام</i><sup class="text-sup">م</sup>هو </span>
-    <span class="relative"><i class="text-pegon right-4">...</i><sup class="text-sup">خ</sup>اللفظ </span>
-    <span class="relative"><i class="text-pegon right-4">كڠ دين توروناكن</i>المنزُّل </span>
-    <span class="relative"><i class="text-pegon right-4"></i>على محمدٍ </span>
-    <span class="relative"><i class="text-pegon right-4"></i>صلى الله عليه وسلم </span>
-    <span class="relative"><i class="text-pegon right-4">عافساكن موسوه</i><sub class="text-sub">ع</sub>للإعجازِ </span>
-    <span class="relative"><i class="text-pegon right-4">لوويه چندق٢قى سورۃ</i><sup class="text-sup">مط</sup>بأقصرِ سورةٍ </span>
-    <span class="relative"><i class="text-pegon right-4">...</i>منهُ </span>
-    <span class="relative"><i class="text-pegon right-4">كڠ دين ڳاوى ڠيباداه</i><sup class="text-sup">ن</sup>المتعبَّدِ </span>
-    <span class="relative"><i class="text-pegon right-4">ماچا إڠ لفظ...</i><sup class="text-sup">مط</sup>بتلاوتِهِ </span>
-    <span class="relative"><i class="text-pegon right-4"></i>{اللفظ} </span>
-    <span class="relative"><i class="text-pegon right-4"></i>معناهُ </span>
-    <span class="relative"><i class="text-pegon right-4">...</i><sup class="text-sup">ظ</sup>لغةً </span>
-    <span class="relative"><i class="text-pegon right-4">بوواڠ</i><sup class="text-sup">خ</sup>الطرحُ </span>
-    <span class="relative"><i class="text-pegon right-4">تكسى بوواڠ</i>والرمى </span>
-    <span class="relative"><i class="text-pegon right-4">عوچاف سيرا</i>تقول </span>
-    <span class="relative"><i class="text-pegon right-4">عطاأكن</i>لفظت </span>
-    <span class="relative"><i class="text-pegon right-4">ڮيليڠان</i><sup class="text-sup">ف</sup>الرحَى </span>
-    <span class="relative"><i class="text-pegon right-4">ڮلفوڠ</i><sup class="text-sup">مف</sup>الدقيقَ </span>
-    <span class="relative"><i class="text-pegon right-4">ڠٓلٓفٓه</i>ولفظ </span>
-    <span class="relative"><i class="text-pegon right-4"></i><sup class="text-sup">فا</sup>فلان </span>
-    <span class="relative"><i class="text-pegon right-4">ايسى كورما</i><sup class="text-sup">مف</sup>النَّواةَ </span>
-    <span class="relative"><i class="text-pegon right-4">بوواڠ سافا...</i><sup class="text-sup">ظ</sup>إذا رماها. </span>
-    <span class="relative"><i class="text-pegon right-4"></i><sup class="text-sup">ظ</sup>واصطلاحًا </span>
-    <span class="relative"><i class="text-pegon right-4">لفظ</i>هو </span>
-    <span class="relative"><i class="text-pegon right-4">سووارا</i><sup class="text-sup">خ</sup>الصوْتُ </span>
-    <span class="relative"><i class="text-pegon right-4">كڠ ممووات</i><sup class="text-sup">ن</sup>المشتمِلُ </span>
-    <span class="relative"><i class="text-pegon right-4">ستڠاه ج حرف</i>على بعض الحروف </span>
-    <span class="relative"><i class="text-pegon right-4">كڠ بوڠصا هجاٸيۃ</i><sup class="text-sup">ن</sup>الهجائيةِ </span>
-    <span class="relative"><i class="text-pegon right-4">حرف</i><sup class="text-sup">بد</sup>التى </span>
-    <span class="relative"><i class="text-pegon right-4">كاويتانى التى</i><sup class="text-sup">ن م</sup>اوَّلُها </span>
-    <span class="relative"><i class="text-pegon right-4">حرف</i><sup class="text-sup">خ</sup>الألفُ </span>
-    <span class="relative"><i class="text-pegon right-4">أخرى ألتى</i><sup class="text-sup">م</sup>وآخرها </span>
-    <span class="relative"><i class="text-pegon right-4">حرف يٲ</i><sup class="text-sup">خ</sup>الياءُ </span>
-    <span class="relative"><i class="text-pegon right-4">چونتونى لفظ</i><sup class="text-sup">م</sup>مثاله زيدٌ </span>
-    <span class="relative"><i class="text-pegon right-4"></i>{المركب} </span>
-    <span class="relative"><i class="text-pegon right-4"></i>من كلمتَيْنِ </span>
-    <span class="relative"><i class="text-pegon right-4">لوويه أكيه</i><sup class="text-sup">ج</sup>فأكثَرَ </span>
-    <span class="relative"><i class="text-pegon right-4">سوسونان</i><sup class="text-sup">مط</sup>تركيبًا </span>
-    <span class="relative"><i class="text-pegon right-4">كڠ بوڠصا</i><sup class="text-sup">ن</sup>اسنادِيًا, </span>
-    <span class="relative"><i class="text-pegon right-4">بيدانى تركب كڠ دين إضافاكن</i><sup class="text-sup">مط</sup>بخلافِ الإضافِى </span>
-    <span class="relative"><i class="text-pegon right-4">كايا لفظ...</i>كعبدِ اللهِ </span>
-    <span class="relative"><i class="text-pegon right-4">بيدانى تركب</i>ولمزجى </span>
-    <span class="relative"><i class="text-pegon right-4">كايا لفظ...</i>كَبَعْلَبَكَ </span>
-    <span class="relative"><i class="text-pegon right-4"></i>والتوصِيفى </span>
-    <span class="relative"><i class="text-pegon right-4"></i>{المفيد} </span>
-    <span class="relative"><i class="text-pegon right-4">كڠ أويه فاهام</i><sup class="text-sup">ن</sup>اى المفهمُ </span>
-    <span class="relative"><i class="text-pegon right-4"></i><sup class="text-sup">مف</sup>معنًى </span>
-    <span class="relative"><i class="text-pegon right-4">كڠ باڮوسى</i><sup class="text-sup">ن</sup>يحسُنُ </span>
-    <span class="relative"><i class="text-pegon right-4">معنى متكلم</i><sup class="text-sup">ف</sup>السكوتُ </span>
-    <span class="relative"><i class="text-pegon right-4">إيڠاتاسى معنى</i>عليه </span>
-    <span class="relative"><i class="text-pegon right-4">آندى ڮون أورا تتف</i><sup class="text-sup">ظ</sup>بحيثُ لا يبقَى </span>
-    <span class="relative"><i class="text-pegon right-4">ووڠ كڠ عروڠو</i><sub class="text-sub">ل</sub>للسامعِ </span>
-    <span class="relative"><i class="text-pegon right-4">عنطى٢لفظ كڠ ڮيناوى ...</i><sup class="text-sup">ف</sup>انتظارِ مقيد به, </span>
-    <span class="relative"><i class="text-pegon right-4">اورا باهايانى</i><sup class="text-sup">ج</sup>فلا يضر </span>
-    <span class="relative"><i class="text-pegon right-4">بوتوهى سامع</i><sup class="text-sup">ن</sup>احتياجُهُ </span>
-    <span class="relative"><i class="text-pegon right-4">فركارا كڠ هوبوڠان</i><sup class="text-sup">ما</sup>الى المتعالقاتِ </span>
-    <span class="relative"><i class="text-pegon right-4"></i>من المفاعيل </span>
-    <span class="relative"><i class="text-pegon right-4"></i>{بالوضع} </span>
-    <span class="relative"><i class="text-pegon right-4"></i>يعنى </span>
-    <span class="relative"><i class="text-pegon right-4">إڠ كلام عرب</i>العربى </span>
-    <span class="relative"><i class="text-pegon right-4">كجابا</i>خرج </span>
-    <span class="relative"><i class="text-pegon right-4"></i><sup class="text-sup">مط</sup>به </span>
-    <span class="relative"><i class="text-pegon right-4"></i><sup class="text-sup">ف</sup>كلام التركِ </span>
-    <span class="relative"><i class="text-pegon right-4">أوموڠانى ووڠ</i>والتكرورِ </span>
-    <span class="relative"><i class="text-pegon right-4">أوموڠانى ووڠ هيندييا</i>وكلام الهُنُودِ </span>
-    <span class="relative"><i class="text-pegon right-4">ساكيڠ كلام</i>ممّا </span>
-    <span class="relative"><i class="text-pegon right-4">كڠ أورا أنا افا ما</i>ليس </span>
-    <span class="relative"><i class="text-pegon right-4">بوڠصا كلام عرب</i><sup class="text-sup">خ</sup>بعربىّ, </span>
-    <span class="relative"><i class="text-pegon right-4">صح</i>ويصحُ </span>
-    <span class="relative"><i class="text-pegon right-4">ينطا دين تفسيرى</i><sup class="text-sup">ف</sup>ان يَفَسَّرَ </span>
-    <span class="relative"><i class="text-pegon right-4">داووه ...</i><sup class="text-sup">ف</sup>الوضعُ </span>
-    <span class="relative"><i class="text-pegon right-4">معنى مچا</i><sup class="text-sup">مط</sup>بالقصدِ </span>
-    <span class="relative"><i class="text-pegon right-4">مانچيڠ</i><sup class="text-sup">ج</sup>فيدخلُ </span>
-    <span class="relative"><i class="text-pegon right-4">ووڠ توركى</i><sup class="text-sup">ف</sup>كلام التركِ </span>
-    <span class="relative"><i class="text-pegon right-4">ووڠ ...</i>والتكرورِ </span>
-    <span class="relative"><i class="text-pegon right-4">سفادانى كلام</i>ونحوه, </span>
-    <span class="relative"><i class="text-pegon right-4">... كلام ترك</i><sup class="text-sup">ج</sup>فإنه </span>
-    <span class="relative"><i class="text-pegon right-4">دين أرانى افا كلام</i>يسمى </span>
-    <span class="relative"><i class="text-pegon right-4"></i>كلاما </span>
-    <span class="relative"><i class="text-pegon right-4">... دين سجا</i><sub class="text-sub">ع</sub>لوجود القصد </span>
-    <span class="relative"><i class="text-pegon right-4">كلام ترك الخ</i><sup class="text-sup">ظ</sup>فيه.</span>
-</p>
-
-<p class="text-matan">
-    <span class="relative"><i class="text-pegon right-0">فاندومانى كلام</i><sup class="text-sup">م</sup>وَأَقْسَامُهُ </span>
-    <span class="relative"><i class="text-pegon right-0">٣</i><sup class="text-sup">خ</sup>ثَلاَثَةٌ </span>
-    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup">بد</sup>اِسْمٌ </span>
-    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>وَفِعْلٌ </span>
-    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>وَحَرْفٌ </span>
-    <span class="relative"><i class="text-pegon right-0">كڠ تكا افا حرف</i><sup class="text-sup">ن</sup>جَاءَ </span>
-    <span class="relative"><i class="text-pegon right-0">نودوهاكن معنى</i><sub class="text-sub">ع</sub>لِمَعْنَى</span>
-</p>
-
-<p class="text-sarah">
-	<span class="relative"><strong>{اسم} </strong></span>
-    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup">م</sup>معناهُ </span>
-    <span class="relative"><i class="text-pegon right-0">معنى ...</i><sup class="text-sup">ظ</sup>اصطلاحًا </span>
-    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup">خ</sup>كلمةٌ </span>
-    <span class="relative"><i class="text-pegon right-0">كڠ نودوهاكن افا كلمه</i><sup class="text-sup">ن</sup>دلت </span>
-    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>على معنًى </span>
-    <span class="relative"><i class="text-pegon right-0">كاهانانى كلمه</i><sup class="text-sup">ظ</sup>فى نفسها </span>
-    <span class="relative"><i class="text-pegon right-0">اورا ببارڠان افا كلمه</i><sup class="text-sup"></sup>ولم تقتَرِنْ </span>
-    <span class="relative"><i class="text-pegon right-0">موڠصا</i><sup class="text-sup">مط</sup>بزمانٍ </span>
-    <span class="relative"><i class="text-pegon right-0">أسال سومٓلٓهى</i><sup class="text-sup">ظ</sup>وضعًا </span>
-    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>كزيد. </span>
-    <span class="relative"><i class="text-pegon right-0">حوكومى إسم</i><sup class="text-sup">م</sup>وحكمه </span>
-    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup">خ</sup>الإعرابُ </span>
-    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup">م</sup>وما </span>
-    <span class="relative"><i class="text-pegon right-0">كڠ تكا افا ما</i><sup class="text-sup">ن</sup>جاء </span>
-    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>منه </span>
-    <span class="relative"><i class="text-pegon right-0">مبنى</i><sup class="text-sup">حا</sup>مبنيًا </span>
-    <span class="relative"><i class="text-pegon right-0">ما</i><sup class="text-sup">خ ج م</sup>فهو </span>
-    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup">خ</sup>على </span>
-    <span class="relative"><i class="text-pegon right-0">نتفى إيڠاتاسى نولايانى حوكوم أسال</i><sup class="text-sup"></sup>خِلاَفِ الأصلِ </span>
-	<span class="relative"><strong>{فعل} </strong></span>
-    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup">م</sup>معناه </span>
-    <span class="relative"><i class="text-pegon right-0">معنى ...</i><sup class="text-sup">ظ</sup>لغة </span>
-    <span class="relative"><i class="text-pegon right-0">فڠڮاوييان</i><sup class="text-sup">خ</sup>الحدثُ </span>
-    <span class="relative"><i class="text-pegon right-0">كايا لفظ ...</i><sup class="text-sup"></sup>كالضربِ </span>
-    <span class="relative"><i class="text-pegon right-0">لفظ قتل (ماتنى)</i><sup class="text-sup"></sup>والقتلِ,</span>
-    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup">ظ</sup>واصطلاحًا </span>
-    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup">خ</sup>كلمة </span>
-    <span class="relative"><i class="text-pegon right-0">كڠ نودوهاكن افا كلمه</i><sup class="text-sup">ن</sup>دلت </span>
-    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>على معنًى </span>
-    <span class="relative"><i class="text-pegon right-0">كاهانانى كلمه</i><sup class="text-sup">ظ</sup>فى نفسها </span>
-    <span class="relative"><i class="text-pegon right-0">كڠ ببارڠان</i><sup class="text-sup">حا</sup>مقترنَةً </span>
-    <span class="relative"><i class="text-pegon right-0">سالاه سيجينى ج زمن</i><sup class="text-sup">مط</sup>بأحد الأزمنة </span>
-    <span class="relative"><i class="text-pegon right-0">كڠ تلو</i><sup class="text-sup">ن</sup>الثلاثة </span>
-    <span class="relative"><i class="text-pegon right-0">أسال سومٓلٓهى</i><sup class="text-sup">ظ</sup>وضعًا, </span>
-    <span class="relative"><i class="text-pegon right-0">... چونتونى فعل</i><sup class="text-sup">م</sup>وذلك </span>
-    <span class="relative"><i class="text-pegon right-0">كايا لفظ ...</i><sup class="text-sup">خ</sup>كقامَ </span>
-    <span class="relative"><i class="text-pegon right-0">قام</i><sup class="text-sup">ج</sup>فإنه </span>
-    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup">خ</sup>كلمة </span>
-    <span class="relative"><i class="text-pegon right-0">كڠ نودوهاكن افا كلمه</i><sup class="text-sup">ن</sup>دلت </span>
-    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>على معنًى </span>
-    <span class="relative"><i class="text-pegon right-0">كاهانانى كلمه</i><sup class="text-sup">ظ</sup>فى نفسها </span>
-    <span class="relative"><i class="text-pegon right-0">معنى</i><sup class="text-sup">م</sup>وهو </span>
-    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup">خ</sup>القيامُ, </span>
-    <span class="relative"><i class="text-pegon right-0">ببارعان افا كلمه</i><sup class="text-sup"></sup>والقترنتْ </span>
-    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup">مط</sup>بزمانِ الماضِى, </span>
-    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>ويضرِب </span>
-    <span class="relative"><i class="text-pegon right-0">ستوهونى يضرب</i><sup class="text-sup">ج</sup>فإنه </span>
-    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>كلمةّ </span>
-    <span class="relative"><i class="text-pegon right-0">كڠ نودوهاكٓن افا كلمه</i><sup class="text-sup">ن</sup>دلت </span>
-    <span class="relative"><i class="text-pegon right-0">إيڠاتاسى معنى</i><sup class="text-sup"></sup>على معنًى </span>
-    <span class="relative"><i class="text-pegon right-0">كاهانانى كلمه</i><sup class="text-sup">ظ</sup>فى نفسها </span>
-    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup">م</sup>وهو </span>
-    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup">خ</sup>الضربُ </span>
-    <span class="relative"><i class="text-pegon right-0">ببارڠان افا ...</i><sup class="text-sup"></sup>واقترنتْ </span>
-    <span class="relative"><i class="text-pegon right-0">زامان سأ ناليكو</i><sup class="text-sup">مط</sup>بزمان الحال </span>
-    <span class="relative"><i class="text-pegon right-0">زامان كڠ أرٓف تٓكو</i><sup class="text-sup">مط</sup>والاستقبالِ, </span>
-    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>واضرب </span>
-    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup">ج</sup>فإنه </span>
-    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup">خ</sup>كلمة </span>
-    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup">ن</sup>دلت </span>
-    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>على معنًى </span>
-    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup">ظ</sup>فى نفسها </span>
-    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup">م</sup>وهو </span>
-    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup">خ</sup>الضربُ, </span>
-    <span class="relative"><i class="text-pegon right-0">ببارڠان افا كلمه</i><sup class="text-sup"></sup>واقترنَتْ </span>
-    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup">مط</sup>بزمان الحل, </span>
-    <span class="relative"><i class="text-pegon right-0">حكمى فعل</i><sup class="text-sup">م</sup>وحكمه </span>
-    <span class="relative"><i class="text-pegon right-0">بنأ مبنى</i><sup class="text-sup">خ</sup>البناء </span>
-    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup">م</sup>وما </span>
-    <span class="relative"><i class="text-pegon right-0">كڠ تڬا</i><sup class="text-sup">ن</sup>جاء </span>
-    <span class="relative"><i class="text-pegon right-0">ساكيڠ فعل</i><sup class="text-sup"></sup>منه </span>
-    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup">حا</sup>معربا </span>
-    <span class="relative"><i class="text-pegon right-0">ما</i><sup class="text-sup">خ ج م</sup>فهو</span>
-    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup">خ</sup>على </span>
-    <span class="relative"><i class="text-pegon right-0">نتفى إيڠاتاسى حكم أسال</i><sup class="text-sup"></sup>خلاف الأصل</span>
-	<span class="relative"><strong>{حرف} </strong></span>
-    <span class="relative"><i class="text-pegon right-0">ماكنانى حرف</i><sup class="text-sup">ج م</sup>فمعناه </span>
-    <span class="relative"><i class="text-pegon right-0">معنى ...</i><sup class="text-sup">ظ</sup>لغة </span>
-    <span class="relative"><i class="text-pegon right-0">فيڠڬير</i><sup class="text-sup">خ</sup>الطرف </span>
-    <span class="relative"><i class="text-pegon right-0">دين واچا ...</i><sup class="text-sup">مط</sup>بفتح الراء, </span>
-    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup">م</sup>وأما </span>
-    <span class="relative"><i class="text-pegon right-0">معنى حرف</i><sup class="text-sup"></sup>معناه </span>
-    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup">ظ</sup>اصطلاحا </span>
-    <span class="relative"><i class="text-pegon right-0">معناه</i><sup class="text-sup">خ ج م</sup>فهو </span>
-    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup">خ</sup>كلمة </span>
-    <span class="relative"><i class="text-pegon right-0">كڠ نودوهاكن افا كلمۃ</i><sup class="text-sup">ن</sup>دلت </span>
-    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>على معنى </span>
-    <span class="relative"><i class="text-pegon right-0">لييانى كلمۃ</i><sup class="text-sup">ظ</sup>فى غيرها </span>
-    <span class="relative"><i class="text-pegon right-0">أورا ببارڠان افا كلمۃ</i><sup class="text-sup"></sup>ولم تقترن </span>
-    <span class="relative"><i class="text-pegon right-0">موڠصا</i><sup class="text-sup">مط</sup>بزمان </span>
-    <span class="relative"><i class="text-pegon right-0">كايا حرف من</i><sup class="text-sup"></sup>كمن </span>
-    <span class="relative"><i class="text-pegon right-0">دين واچا كاسراه ميمى</i><sup class="text-sup">مط</sup>بكسر الميم, </span>
-    <span class="relative"><i class="text-pegon right-0">ستوهونى مِن</i><sup class="text-sup">ج</sup>فإنها </span>
-    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup">خ</sup>كلمة </span>
-    <span class="relative"><i class="text-pegon right-0">كڠ نودوهاكن افا كلمۃ</i><sup class="text-sup">ن</sup>دلت </span>
-    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>على معنى </span>
-    <span class="relative"><i class="text-pegon right-0">لييانى كلمۃ</i><sup class="text-sup">ظ</sup>فى غيرها</span>
-    <span class="relative"><i class="text-pegon right-0">معنى ...</i><sup class="text-sup">م</sup>وهو </span>
-    <span class="relative"><i class="text-pegon right-0">كاويتان</i><sup class="text-sup">خ</sup>الابتداء </span>
-    <span class="relative"><i class="text-pegon right-0">أوفامانى</i><sup class="text-sup">مط</sup>مثلا, </span>
-    <span class="relative"><i class="text-pegon right-0">الإبتدأ</i><sup class="text-sup">م</sup>وهذا </span>
-    <span class="relative"><i class="text-pegon right-0">أورا بيصا دين ڤاهام افا هذا</i><sup class="text-sup"></sup>لا يفهم </span>
-    <span class="relative"><i class="text-pegon right-0">ساكيڠ مِن</i><sup class="text-sup"></sup>منها </span>
-    <span class="relative"><i class="text-pegon right-0">أڠيڠ كلوان كومفولى مِن</i><sup class="text-sup">مط</sup>إلا بانضمامها </span>
-    <span class="relative"><i class="text-pegon right-0">لييانى مِن</i><sup class="text-sup">ما</sup>إلى غيرها </span>
-    <span class="relative"><i class="text-pegon right-0">حكمى حرف</i><sup class="text-sup">م</sup>وحكمه </span>
-    <span class="relative"><i class="text-pegon right-0">بنأ مبنى</i><sup class="text-sup">خ</sup>البناء </span>
-	<span class="relative"><strong>{جاء لمعنى} </strong></span>
-    <span class="relative"><i class="text-pegon right-0">دين سٓلٓهاكٓن افا حرف</i><sup class="text-sup"></sup>اى وضع </span>
-    <span class="relative"><i class="text-pegon right-0">سوفايا نودوهاكن افا حرف</i><sup class="text-sup"></sup>ليدل </span>
-    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>على المعنى </span>
-    <span class="relative"><i class="text-pegon right-0">كايا مِن</i><sup class="text-sup"></sup>كمن </span>
-    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup">ج</sup>فإنها </span>
-    <span class="relative"><i class="text-pegon right-0">نودوهاكن افا مِن</i><sup class="text-sup">خ</sup>تدل </span>
-    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>على المعنى </span>
-    <span class="relative"><i class="text-pegon right-0">ألمعنى</i><sup class="text-sup">م</sup>وهو </span>
-    <span class="relative"><i class="text-pegon right-0">كاويتان</i><sup class="text-sup">خ</sup>الابتداء.</span>
-</p>
-
-<p class="text-matan">
-    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>فَالْإِسْمُ </span>
-    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>يُعْرَفُ </span>
-    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>بِالْخَفْضِ </span>
-    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>وَالْتَّنْوِيْنِ </span>
-    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>وَدُخُوْلِ الْأَلِفِ </span>
-    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>وَالَّامِ </span>
-    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>وَحُرُوْفِ الْخَفْضِ </span>
-    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>وَهِىَ </span>
-    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>مِنْ </span>
-    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>وَاِلٰى </span>
-    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>وَعَنْ </span>
-    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>وَعَلٰى </span>
-    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>وَفِي </span>
-    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>وَرُبَّ </span>
-    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>وَالْبَاءُ </span>
-    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>وَالْكَافُ </span>
-    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>وَالَّامُ </span>
-    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>وَحُرُوْفِ الْقَسَمِ </span>
-    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>وَهِيَ </span>
-    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>الْوَاوُ </span>
-    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>وَالْبَاءُ </span>
-    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>وَالتَّاءُ.</span>
-</p>
-
-<p class="text-sarah">
-	<span class="relative"><strong>{بالخفض} </strong></span>
-    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>معناه </span>
-    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>لغة </span>
-    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>التذلّل </span>
-    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>والخضوع, </span>
-    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>واصطلاحا </span>
-    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>عبارة </span>
-    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>عن الكسرة </span>
-    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>وما </span>
-    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>ناب </span>
-    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>عنها </span>
-    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>التى </span>
-    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>تحدث </span>
-    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>عند دخول عامل الخفض </span>
-    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>كقولك </span>
-    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>بسم الله الرحمن الرحيم </span>
-	<span class="relative"><strong>{التنوين} </strong></span>
-    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>وهو </span>
-    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>التصويت, </span>
-    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>واصطلاحا </span>
-    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>نون </span>
-    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>ساكنة </span>
-    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>زائدة </span>
-    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>تتبع </span>
-    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>آخر الاسم </span>
-    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>لفظا </span>
-    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>وتفارقه </span>
-    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>خطّا </span>
-    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>لغير توكيد </span>
-    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup></span>
-</p>
-
-<p class="text-matan">
-    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup></span>
-</p>
-
-<p class="text-sarah">
-	<span class="relative"><strong>{الكلام}</strong></span>
-    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup></span>
-</p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

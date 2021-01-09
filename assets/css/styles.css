@@ -169,56 +169,6 @@ figcaption h4 {
 /*! purgecss end ignore */
 
 
-.text-arabic,
-.text-matan,
-.text-sarah,
-.text-khat,
-.text-pegon {
+.text-arabic {
     direction: rtl;
-}
-
-.text-arabic,
-.text-matan {
-    @apply font-arabic font-medium text-xl text-gray-800 leading-tallest mb-6;
-}
-
-.text-sarah {
-    @apply font-body font-medium text-xl text-gray-800 leading-tallest mb-6;
-}
-
-.text-khat {
-    @apply font-arabic font-bold text-xl text-gray-800 text-center leading-tallest mb-6;
-}
-
-.text-pegon {
-    @apply font-body text-base not-italic text-gray-700 absolute w-56 top-12 transform -rotate-15;
-}
-
-@screen lg {
-	.text-khat,
-	.text-arabic,
-	.text-matan {
-		@apply text-2xl leading-tallest;
-	}
-	
-	.text-sarah {
-		@apply text-2xl leading-tallest;
-	}
-}
-
-.text-rujuk {
-    @apply inline-block text-xs text-red-500 absolute top-0 w-4 right-4 border border-solid border-red-500 rounded-full py-2 px-2;
-}
-
-.text-sup,
-.text-sub {
-    @apply text-xs text-red-500 absolute w-4 -right-2;
-}
-
-.text-sup {
-    @apply top-1;
-}
-
-.text-sub {
-    @apply top-6;
 }
