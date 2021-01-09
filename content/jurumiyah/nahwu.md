@@ -1,8 +1,8 @@
 ---
-title: Ajrumiyyah
-description: Ajrumiyyah
-date: "2019-11-18T10:34:07+07:00"
-slug: nahwu
+title: Muqoddimah dan Pengertian Kalam
+description: Muqoddimah dan Pengertian Kalam dalam ilmu nahwu
+date: "2020-10-18T10:34:07+07:00"
+slug: kalam
 weight: 192
 authors:
 - akhlis
@@ -317,6 +317,64 @@ layout: advanced
     <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>على المعنى </span>
     <span class="relative"><i class="text-pegon right-0">ألمعنى</i><sup class="text-sup">م</sup>وهو </span>
     <span class="relative"><i class="text-pegon right-0">كاويتان</i><sup class="text-sup">خ</sup>الابتداء.</span>
+</p>
+
+<p class="text-matan">
+    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>فَالْإِسْمُ </span>
+    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>يُعْرَفُ </span>
+    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>بِالْخَفْضِ </span>
+    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>وَالْتَّنْوِيْنِ </span>
+    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>وَدُخُوْلِ الْأَلِفِ </span>
+    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>وَالَّامِ </span>
+    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>وَحُرُوْفِ الْخَفْضِ </span>
+    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>وَهِىَ </span>
+    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>مِنْ </span>
+    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>وَاِلٰى </span>
+    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>وَعَنْ </span>
+    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>وَعَلٰى </span>
+    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>وَفِي </span>
+    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>وَرُبَّ </span>
+    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>وَالْبَاءُ </span>
+    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>وَالْكَافُ </span>
+    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>وَالَّامُ </span>
+    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>وَحُرُوْفِ الْقَسَمِ </span>
+    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>وَهِيَ </span>
+    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>الْوَاوُ </span>
+    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>وَالْبَاءُ </span>
+    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>وَالتَّاءُ.</span>
+</p>
+
+<p class="text-sarah">
+	<span class="relative"><strong>{بالخفض} </strong></span>
+    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>معناه </span>
+    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>لغة </span>
+    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>التذلّل </span>
+    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>والخضوع, </span>
+    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>واصطلاحا </span>
+    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>عبارة </span>
+    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>عن الكسرة </span>
+    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>وما </span>
+    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>ناب </span>
+    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>عنها </span>
+    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>التى </span>
+    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>تحدث </span>
+    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>عند دخول عامل الخفض </span>
+    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>كقولك </span>
+    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>بسم الله الرحمن الرحيم </span>
+	<span class="relative"><strong>{التنوين} </strong></span>
+    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>وهو </span>
+    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>التصويت, </span>
+    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>واصطلاحا </span>
+    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>نون </span>
+    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>ساكنة </span>
+    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>زائدة </span>
+    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>تتبع </span>
+    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>آخر الاسم </span>
+    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>لفظا </span>
+    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>وتفارقه </span>
+    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>خطّا </span>
+    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup>لغير توكيد </span>
+    <span class="relative"><i class="text-pegon right-0"></i><sup class="text-sup"></sup></span>
 </p>
 
 <p class="text-matan">
