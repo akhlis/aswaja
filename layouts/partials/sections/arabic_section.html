@@ -1,31 +1,31 @@
 {{ $section := .section }}
-<div class="section_content">
-    {{ if $section.title }}
-    <header>
-        <h2
-            class="text-arabic font-arabic text-center font-medium text-xl lg:text-2xl text-gray-800 leading-tallest lg:leading-tallest mb-6">
-            {{ $section.title }}</h2>
-    </header>
-    {{ end }}
-    {{ if $section.content }}
-    <div class="section__copy">
-        <p class="text-arabic text-xl lg:text-2xl text-gray-800 leading-tallest lg:leading-tallest mb-6">
-            {{range $index, $el := $section.content}}
-            <span
-                class="relative {{ if .matan }}font-arabic{{ end }}{{ if .sarah }}font-body{{ end }} font-medium">
-                {{ if .makna }}<i
-                    class="text-pegon font-body text-base not-italic text-gray-700 absolute w-56 top-12 transform -rotate-15 {{ if .makna_class }}{{ .makna_class }}{{ end }}">{{ .makna }}</i>{{ end }}
-                {{ if .text_rujuk }}<i
-                    class="text-rujuk inline-block text-xs text-red-500 absolute top-0 w-4 right-4 border border-solid border-red-500 rounded-full py-2 px-2">{{ .text_rujuk }}</i>{{ end }}
-                {{ if .text_sup }}<sup
-                    class="text-sup text-xs text-red-500 absolute w-4 -right-2">{{ .text_sup }}</sup>{{ end }}
-                {{ if .text_sub }}<sub
-                    class="text-sub text-xs text-red-500 absolute w-4 -right-2">{{ .text_sub }}</sub>{{ end }}
-                {{ if .matan }}{{ .matan | safeHTML }}{{ end }}
-                {{ if .sarah }}{{ .sarah | safeHTML }}{{ end }}
-            </span>
-            {{end}}
-        </p>
-    </div>
-    {{ end }}
+{{ if $section.title }}
+<header>
+    <h2 class="text-arabic font-arabic text-center font-medium text-xl lg:text-2xl text-gray-800 mb-0">
+        {{ $section.title }}</h2>
+</header>
+{{ end }}
+{{ if $section.content }}
+<div class="section__content">
+    {{range $section.content}}
+    {{ if .is_before }}
+    <p
+        class="{{ if .is_matan }}font-arabic {{end}}{{ if .is_sarah }}font-body {{end}}text-arabic font-medium text-xl lg:text-2xl text-gray-800 leading-tallest lg:leading-tallest mb-6">
+        {{end}}
+        <span class="relative">
+            {{ if .makna }}<i
+                class="text-pegon font-body text-base not-italic text-gray-700 absolute w-56 {{ if .is_matan }}top-18 {{end}}{{ if .is_sarah }}top-16 {{end}}transform -rotate-15 {{ if .makna_class }}{{ .makna_class }}{{ end }}">{{ .makna }}</i>{{ end }}
+            {{ if .text_rujuk }}<i
+                class="text-rujuk inline-block text-xs text-red-500 absolute top-0 w-4 right-4 border border-solid border-red-500 rounded-full py-2 px-2">{{ .text_rujuk }}</i>{{ end }}
+            {{ if .text_sup }}<sup
+                class="text-sup text-xs text-red-500 absolute w-4 -right-2">{{ .text_sup }}</sup>{{ end }}
+            {{ if .text_sub }}<sub
+                class="text-sub text-xs text-red-500 absolute w-4 -right-2">{{ .text_sub }}</sub>{{ end }}
+            {{ if .arabic }}{{ .arabic | safeHTML }}{{ end }}
+        </span>
+        {{ if .is_after }}
+    </p>
+    {{end}}
+    {{end}}
 </div>
+{{ end }}

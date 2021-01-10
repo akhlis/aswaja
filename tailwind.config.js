@@ -56,6 +56,11 @@ module.exports = {
 				warning: '#ffc107',
 			},
 			spacing: {
+				13: '3.25rem',
+				17: '4.25rem',
+				18: '4.5rem',
+				19: '4.75rem',
+				22: '5.5rem',
 				'-px': '-1px',
 				'-8': '-2rem',
 				'-6': '-1.5rem',
@@ -152,8 +157,8 @@ module.exports = {
 				...negative(theme('spacing')),
 			}),
             lineHeight: {
-                tall: '3',
-                tallest: '3.5',
+                tall: '3.5',
+                tallest: '4',
                 12: '3rem',
                 14: '3.5rem',
                 16: '4rem',
