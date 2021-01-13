@@ -13,14 +13,14 @@ const px = (px) => `${px}px`;
 module.exports = {
 	important: false,
 	purge: {
-		enabled: process.env.HUGO_ENVIRONMENT === 'production',
+		enabled: process.env.HUGO_ENVIRONMENT === 'development',
 		content: [
 			'./layouts/**/*.html',
 			'./content/**/*.html',
 		],
 		mode: 'all',
 		options: {
-			safelist: ['table', 'th', 'tr', 'td', 'w-screen', 'h-screen', 'max-w-screen-lg', 'aspect-w-6', 'aspect-h-7', 'left-6', 'right-6', 'bottom-8', 'pt-12', 'pt-20', 'lg:pt-20', 'col-span-9', 'lg:col-span-11', 'overflow-y-auto', 'bottom-0', 'border-gray-600', 'hover:border-red-500', 'swiper-pagination-bullet', 'swiper-pagination-bullet-active', 'autoComplete_result', 'autoComplete_highlighted', 'autoComplete_selected'],
+			safelist: ['table', 'th', 'tr', 'td', 'w-screen', 'h-screen', 'max-w-screen-lg', 'aspect-w-6', 'aspect-h-7', 'left-6', 'right-6', 'right-12', 'top-16', 'top-18', 'bottom-8', 'pt-12', 'pt-20', 'lg:pt-20', 'col-span-9', 'lg:col-span-11', 'overflow-y-auto', 'bottom-0', 'border-gray-600', 'hover:border-red-500', 'swiper-pagination-bullet', 'swiper-pagination-bullet-active', 'autoComplete_result', 'autoComplete_highlighted', 'autoComplete_selected'],
 			defaultExtractor: (content) => {
 				// Capture as liberally as possible, including things like `h-(screen-1.5)`
 				const broadMatches = content.match(/[^<>"'`\s]*[^<>"'`\s:]/g) || []

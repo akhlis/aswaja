@@ -20,7 +20,7 @@
             {{ if .text_sup }}<sup
                 class="text-sup text-xs text-red-500 absolute w-4 -right-2">{{ .text_sup }}</sup>{{ end }}
             {{ if .text_sub }}<sub
-                class="text-sub text-xs text-red-500 absolute w-4 -right-2">{{ .text_sub }}</sub>{{ end }}
+                class="text-sub text-xs text-red-500 absolute w-4 -right-2 bottom-1">{{ .text_sub }}</sub>{{ end }}
             {{ if .arabic }}{{ .arabic | safeHTML }}{{ end }}
         </span>
         {{ if .is_after }}

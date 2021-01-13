@@ -26,8 +26,8 @@ sections:
   - arabic: للهِ
     makna: تتف كدوي الله
     makna_class: ''
-    text_sup: ل
-    text_sub: ''
+    text_sup: خ
+    text_sub: ل
     text_rujuk: ''
     is_matan: 'TRUE'
     is_sarah: ''
@@ -35,7 +35,7 @@ sections:
     is_after: ''
   - arabic: الَّذِى
     makna: ذات
-    makna_class: ''
+    makna_class: 'right-12'
     text_sup: بد
     text_sub: ''
     text_rujuk: ٢
